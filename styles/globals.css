@@ -3,8 +3,8 @@
 
 :root{
   --accent-color: #FFCE58;
-  --background-color: white;
-  --background-secondary-color: rgb(245,245,245);
+  --background-color-1: white;
+  --background-color-2: rgb(245,245,245);
   --foreground-color-1: #000;
   --foreground-color-2: #222;
   --main-padding: 20px calc(50vw - 450px);
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root{
-      --background-color: #111;
-      --background-secondary-color: #222;
+      --background-color-1: #111;
+      --background-color-2: #222;
       --foreground-color-1: white;
       --foreground-color-2: #f2f2f2;
       --transparent-color-1: rgba(255,255,255,0.15);
@@ -33,7 +33,7 @@ html, body, #__next, #__next > div{
     color: var(--foreground-color-1);
     --casl: "CASL" 0.7;
     font-variation-settings: var(--casl);
-    background-color: var(--background-color);
+    background-color: var(--background-color-1);
     -webkit-text-size-adjust: 100%;
     font-size: 16px;
     line-height: 1.6;
@@ -65,15 +65,27 @@ html, body, #__next, #__next > div{
     margin-block-end: 0;
 }  
 
-h1 {
-  font-size: 3em;
+h1,h2,h3 {
   font-family: 'IBM Plex Serif';
   margin: 1rem 0 1rem 0
 }
 
+h1{
+  font-size: 3em;
+}
+
+
+h2{
+  font-size: 2em;
+}
+
+
+h3{
+  font-size: 1.5em;
+}
 
 button {
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-color-2);
   color: var(--foreground-color-1);
   border: none;
   transition: all 0.25s ease-out;
@@ -86,4 +98,19 @@ button:hover {
 button:active {
   transform: scale(0.9);
   opacity: 0.5;
+}
+
+a {
+  color: var(--foreground-color);
+  text-underline-position: under;
+  transition: color 0.25s;
+}
+
+a:hover{
+  color: var(--accent-color);
+}
+
+::selection {
+  color: var(--background-color-1);
+  background-color: var(--foreground-color-1);
 }

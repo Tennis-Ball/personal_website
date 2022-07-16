@@ -2,9 +2,32 @@
     width: 2.5em;
     height: 2.5em;
     background-color: var(--accent-color);
-    border-radius: 50%;
+    border-radius: 2.5em;
     border: 3px solid rgba(0,0,0,0.1);
     margin: 0.5em;
+    font-weight: bold;
+    transition: all 0.25s ease-out;
+}
+
+.media:hover button{
+  width: 5em;
+}
+
+.media button p{
+  background: linear-gradient(90deg, var(--foreground-color-1),#00000000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s;
+}
+
+.media:hover button p{
+  color: var(--foreground-color-1);
+  background:none;
+  background-clip:border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: var(--foreground-color-1);
+
 }
 
 .media {
