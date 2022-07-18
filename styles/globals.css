@@ -3,6 +3,8 @@
 
 :root{
   --accent-color: #FFCE58;
+  --accent-shadow: #FFCE58;
+  --shadow:#00000050;
   --background-color-1: white;
   --background-color-2: rgb(245,245,245);
   --foreground-color-1: #000;
@@ -14,12 +16,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root{
-      --background-color-1: #111;
-      --background-color-2: #222;
-      --foreground-color-1: white;
-      --foreground-color-2: #f2f2f2;
-      --transparent-color-1: rgba(255,255,255,0.15);
-      --transparent-color-2: rgba(214, 183, 183, 0.4);
+    --accent-shadow: #FFCE5890;
+    --background-color-1: #111;
+    --background-color-2: #222;
+    --foreground-color-1: white;
+    --foreground-color-2: #f2f2f2;
+    --transparent-color-1: rgba(255,255,255,0.15);
+    --transparent-color-2: rgba(214, 183, 183, 0.4);
   }
       
 }
@@ -86,11 +89,20 @@ h3{
   font-size: 1.5em;
 }
 
-button {
+button, .accent {
+  background-color: var(--accent-color);
+  color: var(--foreground-color-1);
+  border: 3px solid rgba(0,0,0,0.1);
+  transition: all 0.25s ease-out;
+  box-shadow: 1px 1px 4px var(--accent-shadow);
+}
+
+.neutral {
   background-color: var(--background-color-2);
   color: var(--foreground-color-1);
-  border: none;
+  border: 3px solid rgba(0,0,0,0.1);
   transition: all 0.25s ease-out;
+  box-shadow: 1px 1px 4px var(--shadow);
 }
 
 button:hover {

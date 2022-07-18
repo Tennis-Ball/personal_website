@@ -1,12 +1,16 @@
 .media button {
     width: 2.5em;
     height: 2.5em;
-    background-color: var(--accent-color);
     border-radius: 2.5em;
-    border: 3px solid rgba(0,0,0,0.1);
     margin: 0.5em;
     font-weight: bold;
     transition: all 0.25s ease-out;
+    padding:0;
+}
+
+.media button a {
+  display: block;
+  padding: 5px;
 }
 
 
@@ -36,5 +40,5 @@
   margin-left: -0.5em;
   margin-right: -0.5em;
   margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
 }
