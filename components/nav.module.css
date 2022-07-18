@@ -1,0 +1,17 @@
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.container .faded {
+    text-decoration: none;
+    opacity: 0.3;
+    transition: opacity 0.25s;
+}
+
+.container a:hover {
+    opacity: 1;
+    color: var(--foreground-color-1);
+}

@@ -9,6 +9,8 @@
     transition: all 0.25s ease-out;
 }
 
+
+/* 
 .media:hover button{
   width: 5em;
 }
@@ -28,7 +30,7 @@
   -webkit-background-clip: border-box;
   -webkit-text-fill-color: var(--foreground-color-1);
 
-}
+} */
 
 .media {
   margin-left: -0.5em;

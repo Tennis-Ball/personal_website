@@ -44,7 +44,7 @@ html, body, #__next, #__next > div{
     flex-direction: column;
     padding-left: calc(50% - 20em);
     padding-right: calc(50% - 20em);
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 80px;
     gap: 1.5em;
 }
@@ -72,6 +72,8 @@ h1,h2,h3 {
 
 h1{
   font-size: 3em;
+  margin: 2rem 0 2rem 0;
+  line-height: 1.2em;
 }
 
 
@@ -110,7 +112,11 @@ a:hover{
   color: var(--accent-color);
 }
 
-::selection {
+p::selection, h1::selection,  h2::selection, h3::selection{
   color: var(--background-color-1);
   background-color: var(--foreground-color-1);
+}
+
+a::selection {
+  background-color: var(--accent-color);
 }
