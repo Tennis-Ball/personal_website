@@ -90,7 +90,8 @@ h3{
 button, .accent {
   background-color: var(--accent-color);
   color: var(--foreground-color-1);
-  border: 3px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+  /* border:none; */
   transition: all 0.25s ease-out;
   box-shadow: 1px 1px 4px var(--accent-shadow);
 }
@@ -98,7 +99,8 @@ button, .accent {
 .neutral {
   background-color: var(--background-color-2);
   color: var(--foreground-color-1);
-  border: 3px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+  /* border:none; */
   transition: all 0.25s ease-out;
   box-shadow: 1px 1px 4px var(--shadow);
 }
