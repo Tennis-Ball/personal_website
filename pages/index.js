@@ -24,7 +24,7 @@ export default function Home() {
 				<button><a href="https://linkedin.com" target="_blank"><Image src="/home/images/LI-In-Bug.png" layout="responsive" width={540} height={540}/></a></button>
 			</div>
 
-			<Dropdown title="Test"></Dropdown>
+			<Dropdown title="Test"><p>dropdown content</p></Dropdown>
 			<Dropdown title="Test"></Dropdown>
 			<Dropdown title="Test"></Dropdown>
 			<Dropdown title="Test"></Dropdown>
