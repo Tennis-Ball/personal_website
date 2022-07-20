@@ -1,6 +1,6 @@
 .container{
     padding: 0 2rem;
-    margin: 1.5rem -1rem;
+    margin: 1.5rem 0;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -13,6 +13,7 @@
 
 .container .bar h2 {
     font-size: 1.5em;
+    flex-shrink: 1;
 }
 
 .container .bar button{
@@ -23,6 +24,8 @@
     color: black;
     border-radius: 50%;
     margin-right: -1rem;
+    margin-left: 1rem;
+    flex-shrink: 0;
 }
 
 .rotate{
@@ -30,14 +33,20 @@
 }
 
 .content{
-    transition: height 0.5s;
+    transition: height 0.5s, opacity 0.25s;
+    opacity:0;
 }
 
+.content > div {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 -4rem;
+    padding: 1rem 2rem;
+    transition: margin 0.25s ease-out;
+}
 
 @media screen and (max-width: 44em) {
-    .container{
-        margin: 1.5rem 0rem;
-    }
     .expanded{
         border-radius: 0;
         border-left: 0;
@@ -47,4 +56,13 @@
 
 .expanded{
     margin: 1.5rem -2rem;
+}
+
+.expanded .content{
+    opacity: 1;
+}
+
+.expanded .content > div {
+    margin: 0 -2rem;
+
 }

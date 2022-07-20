@@ -48,6 +48,7 @@ html, body, #__next, #__next > div{
     padding-top: 30px;
     padding-bottom: 80px;
     gap: 1.5em;
+    overflow: auto;
 }
 
 @media screen and (max-width: 44em) {
@@ -89,11 +90,15 @@ h3{
   line-height: 1.2;
 }
 
+p{
+  margin: 0.5rem 0;
+}
+
 button, .accent {
   background-color: var(--accent-color);
   color: var(--foreground-color-1);
   border: 1px solid rgba(0,0,0,0.1);
-  /* border:none; */
+  border-radius: 15px;
   transition: all 0.25s ease-out;
   box-shadow: 1px 1px 4px var(--accent-shadow);
 }
@@ -102,9 +107,10 @@ button, .accent {
   background-color: var(--background-color-2);
   color: var(--foreground-color-1);
   border: 1px solid rgba(0,0,0,0.1);
-  /* border:none; */
+  border-radius: 15px;
   transition: all 0.25s ease-out;
   box-shadow: 1px 1px 4px var(--shadow);
+
 }
 
 button:hover {
@@ -133,4 +139,11 @@ p::selection, h1::selection,  h2::selection, h3::selection{
 
 a::selection {
   background-color: var(--accent-color);
+}
+
+img, image{
+  display:block;
+  border-radius:5px;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  width: 100%;
 }

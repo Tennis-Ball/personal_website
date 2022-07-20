@@ -28,18 +28,17 @@ export default function Home() {
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, ranging from the most recent to the oldest. I have been creating projects on my Github since 2018.</p>
 				<Card>
-					<h3>Tunabl: July 2022 - Present</h3>
-					<p><a href="https://github.com">Github/website link</a></p>
+					<h3><a href="https://github.com">Tunabl: July 2022 - Present</a></h3>
 					<p>This is Tunabl, a mobile application built on the React Native framework for discovering new music. More details about Tunabl coming later. I think that there should be a better way to display the title, date, and link, maybe make the title a link and have a cool text under that with the dates.</p>
 				</Card>
 				<Card>
-					<h3>Filess: March 2022 - July 2022</h3>
-					<p><a href="https://github.com">Link</a></p>
+					<h3><a href="https://github.com">Filess: March 2022 - July 2022</a></h3>
 					<p>Another project</p>
 				</Card>
 				<Card>
 					<h3>Raytracer: time frame</h3>
-					<p>More description here, I think the text is a tiny bit bland. Could there be a way to add an image better? <Image src="/home/images/g.PNG" width={300} height={200}/></p>
+					<p>More description here, I think the text is a tiny bit bland. Could there be a way to add an image better?</p>
+					<Image src="/home/images/g.PNG" width={300} height={200}/>
 				</Card>
 				<Card>
 					<h3>Neural Network</h3>
@@ -69,8 +68,9 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Volunteering"></Dropdown>
 			<Dropdown title="Extracurriculars"></Dropdown>
-
-			<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} />
+			<div className={`neutral ${styles.github}`}>
+				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
+			</div>
 		</main>
 		
 		<footer>
