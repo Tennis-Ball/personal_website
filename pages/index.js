@@ -17,7 +17,8 @@ export default function Home() {
 		<main>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p> <a href="https://example.com">link</a> Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			{/* <p> <a href="https://example.com">link</a></p> */}
+			<p>Hi, my name is Mason and this is my personal website. This right now is some dummy text that is a placeholder for what I will actually write later. This is where I will put my bio, a short blurb about myself, my aspirations, and my skills. Thanks a ton Tony for helping me out creating the website!!</p>
 			<div className={styles.media}>
 				<button><a href="https://github.com" target="_blank"><Image src="/home/images/GitHub-Mark-120px-plus.png" layout="responsive" width={120} height={120}/></a></button>
 				<button><a href="mailto:example@example.com" target="_blank"><Image src="/home/images/mail_FILL1_wght700_GRAD0_opsz48-2.png" layout="responsive" width={48} height={48}/></a></button>
@@ -25,15 +26,51 @@ export default function Home() {
 			</div>
 
 			<Dropdown title="Projects">
-				<p>Lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>These are some of the projects I have developed over the years, ranging from the most recent to the oldest. I have been creating projects on my Github since 2018.</p>
 				<Card>
-					<h3>Ray Tracer</h3>
-					<p>hello</p>
+					<h3>Tunabl: July 2022 - Present</h3>
+					<p><a href="https://github.com">Github/website link</a></p>
+					<p>This is Tunabl, a mobile application built on the React Native framework for discovering new music. More details about Tunabl coming later. I think that there should be a better way to display the title, date, and link, maybe make the title a link and have a cool text under that with the dates.</p>
+				</Card>
+				<Card>
+					<h3>Filess: March 2022 - July 2022</h3>
+					<p><a href="https://github.com">Link</a></p>
+					<p>Another project</p>
+				</Card>
+				<Card>
+					<h3>Raytracer: time frame</h3>
+					<p>More description here, I think the text is a tiny bit bland. Could there be a way to add an image better? <Image src="/home/images/g.PNG" width={300} height={200}/></p>
+				</Card>
+				<Card>
+					<h3>Neural Network</h3>
+					<p>Built out a neural network from scratch by implementing statistical classification methods in Python with Numpy.</p>
+				</Card>
+				<Card>
+					<h3>Another Project: timeframe</h3>
+					<p><a href="randomlink.com">Needs to be a better way to link projects</a></p>
+					<p>I think it would be nice if there was an animation on the "+" to spin to an "x" or spin into a "-".</p>
 				</Card>
 			</Dropdown>
-			<Dropdown title="Test"></Dropdown>
-			<Dropdown title="Test"></Dropdown>
-			<Dropdown title="Test"></Dropdown>
+			<Dropdown title="Work">
+				<Card>
+					<h3>Work experience 2: dates</h3>
+					<p>Hmm, this dropdown doesn't look quite right, part of the card is visible when collapsed</p>
+				</Card>
+				<Card>
+					<h3>Work experience 1: dates</h3>
+					<p>More description here, maybe I we can link links to the title (h3 tag) and have a separate atom component (or just html) for  the dates.</p>
+				</Card>
+			</Dropdown>
+			<Dropdown title="School">
+				<Card>
+					<h3>Still undecided for what to put in here, idk if I want to stick with the cards or not. Same with the following 2 dropdowns, let's think about it.</h3>
+					<p>:)) Aloha!, might put this, Volunteering, and Extracurriculars in another page, idk yet</p>
+				</Card>
+			</Dropdown>
+			<Dropdown title="Volunteering"></Dropdown>
+			<Dropdown title="Extracurriculars"></Dropdown>
+
+			<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} />
 		</main>
 		
 		<footer>
