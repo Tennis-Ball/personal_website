@@ -2,6 +2,7 @@
     padding: 0 2rem;
     margin: 1.5rem -1rem;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .container .bar{
@@ -30,7 +31,6 @@
 
 .content{
     transition: height 0.5s;
-    overflow: hidden;
 }
 
 
