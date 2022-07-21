@@ -28,11 +28,13 @@ export default function Home() {
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, ranging from the most recent to the oldest. I have been creating projects on my Github since 2018.</p>
 				<Card>
-					<h3><a href="https://github.com">Tunabl: July 2022 - Present</a></h3>
+					<h3><a href="https://github.com">Tunabl</a></h3>
+					<p>July 2022 - Present</p>
 					<p>This is Tunabl, a mobile application built on the React Native framework for discovering new music. More details about Tunabl coming later. I think that there should be a better way to display the title, date, and link, maybe make the title a link and have a cool text under that with the dates.</p>
 				</Card>
 				<Card>
-					<h3><a href="https://github.com">Filess: March 2022 - July 2022</a></h3>
+					<h3><a href="https://github.com">Filess</a></h3>
+					<p>March 2022 - July 2022</p>
 					<p>Another project</p>
 				</Card>
 				<Card>

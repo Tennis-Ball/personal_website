@@ -26,6 +26,8 @@
     margin-right: -1rem;
     margin-left: 1rem;
     flex-shrink: 0;
+    padding: 3px;
+
 }
 
 .rotate{
