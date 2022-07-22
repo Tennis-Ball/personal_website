@@ -110,7 +110,12 @@ button, .accent {
   border-radius: 15px;
   transition: all 0.25s ease-out;
   box-shadow: 1px 1px 4px var(--shadow);
+}
 
+@media (prefers-color-scheme: dark) {
+  button, .accent {
+    color: var(--background-color-1);
+  }
 }
 
 button:hover {
