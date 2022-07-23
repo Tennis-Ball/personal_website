@@ -6,8 +6,7 @@ export default function Nav(props){
     return (
         <div className={styles.container}>
             <A url="/">Home</A>
-            <A url="/page1">Page 1</A>
-            <A url="/page2">Page 2</A>
+            <A url="/timeline">Timeline</A>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 .container{
     padding: 0 2rem;
-    margin: 1.5rem 0;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -9,12 +8,14 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    height: 4em;   
 }
 
 .container .bar h2 {
     font-size: 1.5em;
     flex-shrink: 1;
     max-width: calc(100% - 3rem);
+    margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -37,7 +38,7 @@
 }
 
 .content{
-    transition: height 0.4s ease-in-out, opacity 0.25s ease-in-out;
+    transition: height 0.4s ease, opacity 0.25s ease;
     opacity:0;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .expanded{
-    margin: 1.5rem -2rem;
+    margin: 0 -2rem;
 }
 
 .expanded .content{

@@ -13,8 +13,6 @@ export default function Home() {
 		<meta name="description" content="[Insert Description Here]" />
 		<link rel="icon" href="/favicon.ico" />
 		</Head>
-		
-		<main>
 			<Nav/>
 			<h1>Mason Choi</h1>
 			{/* <p> <a href="https://example.com">link</a></p> */}
@@ -73,11 +71,6 @@ export default function Home() {
 			<div className={`neutral ${styles.github}`}>
 				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
 			</div>
-		</main>
-		
-		<footer>
-		
-		</footer>
 		</div>
 		)
 	}

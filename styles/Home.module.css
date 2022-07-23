@@ -1,3 +1,11 @@
+
+.media {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  margin-top: -1em;
+}
+
+
 .media button {
     width: 2.5em;
     height: 2.5em;
@@ -15,36 +23,6 @@
 
 .media img{
   border:none !important;
-}
-
-
-/* 
-.media:hover button{
-  width: 5em;
-}
-
-.media button p{
-  background: linear-gradient(90deg, var(--foreground-color-1),#00000000);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.5s;
-}
-
-.media:hover button p{
-  color: var(--foreground-color-1);
-  background:none;
-  background-clip:border-box;
-  -webkit-background-clip: border-box;
-  -webkit-text-fill-color: var(--foreground-color-1);
-
-} */
-
-.media {
-  margin-left: -0.5em;
-  margin-right: -0.5em;
-  margin-top: 1em;
-  margin-bottom: 2em;
 }
 
 

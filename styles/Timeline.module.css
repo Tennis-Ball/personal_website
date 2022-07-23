@@ -1,0 +1,19 @@
+.box {
+    padding: 1rem;
+}
+
+.segment {
+    width: 2px;
+    background-color: var(--foreground-color-1);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+}
+
+.segment span{
+    background-color: var(--background-color-1);
+    white-space: nowrap;
+}
+
