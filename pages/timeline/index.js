@@ -17,8 +17,7 @@ export default function Timeline(){
         <div>
             <Head>
                 <title>Timeline | Mason Choi</title>
-                <meta name="description" content="[Insert Description Here]" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <Nav />
             <h1>Timeline</h1>
