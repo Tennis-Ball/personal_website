@@ -4,24 +4,19 @@ import Dropdown from '/components/dropdown'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import Card from '/components/card'
-
+import Contacts from '/components/contacts'
 export default function Home() {
 	return (
-		<div>
+		<>
 		<Head>
 		<title>Mason Choi</title>
 		<link rel="icon" href="/favicon.png" />
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			{/* <p> <a href="https://example.com">link</a></p> */}
 			<p>Hi, my name is Mason and this is my personal website. This right now is some dummy text that is a placeholder for what I will actually write later. This is where I will put my bio, a short blurb about myself, my aspirations, and my skills. Thanks a ton Tony for helping me out creating the website!!</p>
-			<div className={styles.media}>
-				<button><a href="https://github.com" target="_blank"><Image src="/home/images/GitHub-Mark-120px-plus.png" layout="responsive" width={120} height={120}/></a></button>
-				<button><a href="mailto:example@example.com" target="_blank"><Image src="/home/images/mail_FILL1_wght700_GRAD0_opsz48-2.png" layout="responsive" width={48} height={48}/></a></button>
-				<button><a href="https://linkedin.com" target="_blank"><Image src="/home/images/LI-In-Bug.png" layout="responsive" width={540} height={540}/></a></button>
-			</div>
-
+			
+			<Contacts/>
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, ranging from the most recent to the oldest. I have been creating projects on my Github since 2018.</p>
 				<Card>
@@ -70,7 +65,8 @@ export default function Home() {
 			<div className={`neutral ${styles.github}`}>
 				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
 			</div>
-		</div>
+			
+		</>
 		)
 	}
 	

@@ -64,6 +64,7 @@
 
 .expanded{
     margin: 0 -2rem;
+    color:black;
 }
 
 .expanded .content{

@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Component } from 'react'
 import Nav from '/components/nav'
 import styles from '/styles/Timeline.module.css'
+import Image from 'next/image'
+import Contacts from '/components/contacts'
 
 export default function Timeline(){
     let events = [
@@ -14,12 +16,12 @@ export default function Timeline(){
 
     ]
     return (
-        <div>
+        <>
             <Head>
                 <title>Timeline | Mason Choi</title>
-                <link rel="icon" href="/favicon.png" />
             </Head>
             <Nav />
+            
             <h1>Timeline</h1>
             {(()=>{
                 let formatted = events.map(e => {return {content: e.content, date: new Date(e.date)}}).sort((a,b)=> b.date.getTime() - a.date.getTime())
@@ -43,7 +45,8 @@ export default function Timeline(){
                 }
                 return components
             })()}
-        </div>
+            <Contacts/>
+        </>
     )
 }
 

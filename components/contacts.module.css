@@ -1,0 +1,31 @@
+
+.media {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    margin-top: -1em;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .media button {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 2.5em;
+      margin: 0.5em;
+      font-weight: bold;
+      transition: all 0.25s ease-out;
+      padding:0;
+  }
+  
+  .media button a {
+    display: block;
+    padding: 8px;
+  }
+  
+  .media img{
+    border:none !important;
+    border-radius: 3px;
+  }
+  
+  

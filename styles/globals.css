@@ -25,7 +25,7 @@
     --transparent-color-2: rgba(214, 183, 183, 0.4);
   }
 
-html, body, #__next, #__next > div{
+html, body, #__next{
     padding: 0;
     margin: 0;
     font-family: "IBM Plex Sans", "sans-serif";
@@ -38,7 +38,7 @@ html, body, #__next, #__next > div{
     line-height: 1.6;
 }
 
-#__next > div{
+#__next{
     display: flex;
     flex-direction: column;
     padding-left: calc(50% - 20em);
@@ -51,7 +51,7 @@ html, body, #__next, #__next > div{
 }
 
 @media screen and (max-width: 44em) {
-  #__next > div{
+  #__next{
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -110,6 +110,7 @@ button, .accent {
   border-radius: 15px;
   transition: all 0.25s ease-out;
   box-shadow: 1px 1px 4px var(--shadow);
+  padding:1em;
 }
 
 @media (prefers-color-scheme: dark) {
