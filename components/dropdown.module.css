@@ -30,15 +30,18 @@
     margin-left: 1rem;
     flex-shrink: 0;
     padding: 3px;
-
 }
 
-.rotate{
-    rotate:45deg;
+.container .bar button p {
+    transition: transform 0.25s ease-out;
+}
+
+.rotate p{
+    transform: rotate(45deg);
 }
 
 .content{
-    transition: height 0.4s ease, opacity 0.25s ease;
+    transition: height 0.5s ease, opacity 0.25s ease;
     opacity:0;
 }
 

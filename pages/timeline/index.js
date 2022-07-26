@@ -22,7 +22,7 @@ export default function Timeline(){
             <Nav />
             <h1>Timeline</h1>
             {(()=>{
-                let formatted = events.map(e => {return {content: e.content, date: new Date(e.date)}}).sort((a,b)=> a.date.getTime() < b.date.getTime())
+                let formatted = events.map(e => {return {content: e.content, date: new Date(e.date)}}).sort((a,b)=> b.date.getTime() - a.date.getTime())
                 let dateDiffs = []
                 for(let i = 0; i<formatted.length;i++){
                     let date1 = formatted[i]?.date
