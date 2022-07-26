@@ -2,4 +2,5 @@
     padding: 1rem;
     border-radius: 5px;
     margin: 0 -1rem;
+    background-color: var(--background-color-1);
 }
