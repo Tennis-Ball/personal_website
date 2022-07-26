@@ -1,35 +1,14 @@
 
-.media {
-  margin-left: -0.5em;
-  margin-right: -0.5em;
-  margin-top: -1em;
-}
-
-
-.media button {
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 2.5em;
-    margin: 0.5em;
-    font-weight: bold;
-    transition: all 0.25s ease-out;
-    padding:0;
-}
-
-.media button a {
-  display: block;
-  padding: 8px;
-}
-
-.media img{
-  border:none !important;
-}
-
-
 .github{
   padding: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .github img{
   border:none !important;
+  min-height: 80px;
+  min-width:600px;
+  padding: 0 1em;
 }
