@@ -31,3 +31,7 @@
 .container select:hover{
     opacity: 1;
 }
+
+.container select option{
+    color: initial;
+}
