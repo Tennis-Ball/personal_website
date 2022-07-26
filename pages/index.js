@@ -72,7 +72,9 @@ export default function Home() {
 			<div className={`neutral ${styles.github}`}>
 				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
 			</div>
-			
+
+			<div style={{borderTop: "1.5px solid black ", marginLeft: 20, marginRight: 20, marginTop: 10}}></div>
+			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this in next.js</p>
 		</>
 		)
 	}

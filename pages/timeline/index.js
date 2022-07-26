@@ -46,6 +46,9 @@ export default function Timeline(){
                 return components
             })()}
             <Contacts/>
+            <div style={{borderTop: "1.5px solid black ", marginLeft: 20, marginRight: 20, marginTop: 10}}></div>
+			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this in next.js</p>
+
         </>
     )
 }
