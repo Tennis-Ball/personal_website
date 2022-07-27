@@ -13,7 +13,7 @@ export default function Dropdown(props){
         return ()=>{window.removeEventListener('resize',listener)}
     })
     return (
-        <div className={`${isOpen ? `accent ${styles.expanded}` : 'neutral'} ${styles.container}`}>
+        <div className={`${isOpen ? `accent ${styles.expanded}` : 'neutral'} ${styles.container}`} onClick={(e)=>{setIsOpen(!isOpen)}}>
             <div className={styles.bar}>
                 <h2>{props.title}</h2>
                 {!props.forceOpen &&
