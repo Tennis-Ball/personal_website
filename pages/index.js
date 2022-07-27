@@ -14,25 +14,32 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi, my name is Mason and this is my personal website. This right now is some dummy text that is a placeholder for what I will actually write later. This is where I will put my bio, a short blurb about myself, my aspirations, and my skills. Thanks a ton Tony for helping me out creating the website!!</p>
+			<p>Ahoy!! My name is Mason Choi. I currently work as a developer/analyst at <a href="https://solveadvisors.com/">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national, individual level, and am an avid stock+etf trader, 3d printer, and roboticist.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
-				<p>These are some of the projects I have developed over the years, ranging from the most recent to the oldest. I have been creating projects on my Github since 2018.</p>
+				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
-					<h3><a href="https://github.com">Tunabl</a></h3>
+					<h3><a href="https://github.com/Tennis-Ball/MP-Predictor">Melting Point Estimator</a></h3>
 					<p>July 2022 - Present</p>
-					<p>This is Tunabl, a mobile application built on the React Native framework for discovering new music. More details about Tunabl coming later. I think that there should be a better way to display the title, date, and link, maybe make the title a link and have a cool text under that with the dates.</p>
+					<p>A deep learning neural network built using Tensorflow in Python, predicting the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
 				</Card>
 				<Card>
-					<h3><a href="https://github.com">Filess</a></h3>
+					<h3><a href="https://github.com/Tunabl">Tunabl</a></h3>
+					<p>July 2022 - Present</p>
+					<p>This is Tunabl, a mobile application built on the React Native framework for discovering new music. Tunabl is still in early development with no estimated date of release.</p>
+				</Card>
+				<Card>
+					<h3><a href="https://tony1324.github.io/raytracer/">Raytracer</a></h3>
+					<p>June 2022 - July 2022</p>
+					<p>Custom raytracer built from scratch in javascript. In collaboration with <a href="https://github.com/Tony1324">Tony Zhang</a></p>
+					<Image src="/home/images/RayTracer.png" width={150} height={150}></Image>
+				</Card>
+				<Card>
+					<h3><a href="https://filess.org">Filess</a></h3>
 					<p>March 2022 - July 2022</p>
-					<p>Another project</p>
-				</Card>
-				<Card>
-					<h3>Raytracer: time frame</h3>
-					<p>More description here, I think the text is a tiny bit bland. Could there be a way to add an image better?</p>
-					<Image src="/home/images/g.PNG" width={300} height={200}/>
+					<p>Filess is a static asset hosting service with the intent of seamless sharing made unique. Quickly upload images, videos, etc. and create your own custom URL link that can be shared. The website was built on top of the Flask framework with AWS S3 file hosting.</p>
+					<Image src="/home/images/filessDashboard.png" width={350} height={350}></Image>
 				</Card>
 				<Card>
 					<h3>Neural Network</h3>
@@ -65,7 +72,9 @@ export default function Home() {
 			<div className={`neutral ${styles.github}`}>
 				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
 			</div>
-			
+
+			<div style={{borderTop: "1.5px solid black ", marginLeft: 20, marginRight: 20, marginTop: 10}}></div>
+			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this in next.js</p>
 		</>
 		)
 	}
