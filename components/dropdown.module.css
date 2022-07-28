@@ -34,7 +34,16 @@
 
 .container .bar button p {
     transition: transform 0.25s ease-out;
+    margin: 0;
 }
+
+.container .container {
+    margin: 0 -2rem;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background-color: #ecba47;
+}å
 
 .rotate p{
     transform: rotate(45deg);

@@ -4,3 +4,7 @@
     margin: 0 -1rem;
     background-color: var(--background-color-1);
 }
+
+.card > * + * {
+  margin-top: 0.8em;
+}

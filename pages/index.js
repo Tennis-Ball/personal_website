@@ -61,6 +61,13 @@ export default function Home() {
 					<li>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing watch time by over 40%.</li>
 					<li>Both my <a href="https://github.com/Tennis-Ball/AI-Singer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer">AI singer</a> fashioned LSTM models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, ML.</li>
 				</Card>
+				<Dropdown title="test nested dropdown">
+					<Card>
+						<h3><a href="https://github.com/Tennis-Ball/Image-Analyzation-App">Image Analyzation App</a></h3>
+						<p>August 2021 - September 2021</p>
+						<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google's "Mobile Net" CNN model for classification on 1,000 classes.</p>
+					</Card>
+				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
