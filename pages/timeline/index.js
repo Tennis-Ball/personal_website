@@ -8,13 +8,9 @@ import Contacts from '/components/contacts'
 
 export default function Timeline(){
     let events = [
-        {content: <Box><h3>Hello 1</h3></Box>, date:"1/1/2020" },
-        {content: <Box><h3>Hello 2</h3></Box>, date:"1/1/2020" },
-        {content: <Box><h3>Hello 3</h3></Box>, date:"1/1/2020" },
-        {content: <Box><h3>Hello 4</h3></Box>, date:"1/1/2021" },
-        {content: <Box><h3>Hello 5</h3></Box>, date:"1/1/2022" },
-        {content: <Box><h3>Hello 6</h3></Box>, date:"1/20/2022" }
-
+        {content: <Box><h3>printf("Hello, World!");</h3></Box>, date:"5/10/2007" },
+        {content: <Box><h3>Start at Boston Latin School</h3></Box>, date:"9/01/2019" },
+        {content: <Box><h3>My personal website hosted!</h3></Box>, date:"8/01/2022" },
     ]
     return (
         <>

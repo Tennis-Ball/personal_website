@@ -22,7 +22,7 @@ export default function Home() {
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
-					<h3><a href="https://github.com/Tennis-Ball/MP-Predictor">Melting Point Estimator</a></h3>
+					<h3 className="cardTitle"><a href="https://github.com/Tennis-Ball/MP-Predictor">Melting Point Estimator</a></h3>
 					<p>July 2022 - Present</p>
 					<p>A deep learning neural network built using Tensorflow in Python, predicting the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
 				</Card>
@@ -34,7 +34,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://tony1324.github.io/raytracer/">Raytracer</a></h3>
 					<p>June 2022 - July 2022</p>
-					<p>Custom raytracer built from scratch in javascript. In collaboration with <a href="https://github.com/Tony1324">Tony Zhang</a></p>
+					<p>Custom raytracer built from scratch in javascript. Collaboration with <a href="https://github.com/Tony1324">Tony Zhang</a></p>
 					<Image src="/home/images/RayTracer.png" width={150} height={150}></Image>
 				</Card>
 				<Card>

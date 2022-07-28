@@ -17,7 +17,7 @@ export default function Dropdown(props){
             <div className={styles.bar}>
                 <h2>{props.title}</h2>
                 {!props.forceOpen &&
-                    <button className={`neutral ${isOpen ? styles.rotate : ""}`} onClick={()=>{setIsOpen(!isOpen)}}> <p>＋</p>
+                    <button className={`neutral ${isOpen ? styles.rotate : ""}`} onClick={()=>{setIsOpen(!isOpen)}}> <p style={{margin: "0.5rem 0 !important"}}>＋</p>
                     </button>
                 }
             </div>
