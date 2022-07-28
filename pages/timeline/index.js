@@ -5,6 +5,7 @@ import styles from '/styles/Timeline.module.css'
 import Image from 'next/image'
 import Contacts from '/components/contacts'
 
+
 export default function Timeline(){
     let events = [
         {content: <Box><h3>Hello 1</h3></Box>, date:"1/1/2020" },
@@ -46,9 +47,8 @@ export default function Timeline(){
                 return components
             })()}
             <Contacts/>
-            <div style={{borderTop: "1.5px solid black ", marginLeft: 20, marginRight: 20, marginTop: 10}}></div>
+            <div className='line'></div>
 			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this in next.js</p>
-
         </>
     )
 }

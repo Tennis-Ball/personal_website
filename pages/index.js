@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import Card from '/components/card'
 import Contacts from '/components/contacts'
+
+
 export default function Home() {
 	return (
 		<>
@@ -42,13 +44,22 @@ export default function Home() {
 					<Image src="/home/images/filessDashboard.png" width={350} height={350}></Image>
 				</Card>
 				<Card>
-					<h3>Neural Network</h3>
-					<p>Built out a neural network from scratch by implementing statistical classification methods in Python with Numpy.</p>
+					<h3><a href="https://tennis-ball.github.io/Character-Classification/">Neural Network</a></h3>
+					<p>April 2022 - May 2022</p>
+					<p>Built a neural network from scratch by implementing statistical classification methods in Python with Numpy. Ranks 6th best performing on the EMNIST Balanced benchmark dataset with over 96% accuracy.</p>
 				</Card>
 				<Card>
-					<h3>Another Project: timeframe</h3>
-					<p><a href="randomlink.com">Needs to be a better way to link projects</a></p>
-					<p>I think it would be nice if there was an animation on the "+" to spin to an "x" or spin into a "-".</p>
+					<h3><a href="https://github.com/Tennis-Ball/Image-Analyzation-App">Image Analyzation App</a></h3>
+					<p>August 2021 - September 2021</p>
+					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google's "Mobile Net" CNN model for classification on 1,000 classes.</p>
+				</Card>
+				<Card>
+					<h3>My Machine Learning Start</h3>
+					<p>March 2021 - February 2022</p>
+					<p>A short list of other cool ML projects I worked on:</p>
+					<li><a href="https://github.com/Tennis-Ball/Anchor-ai">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Tensorflow model was run daily in AWS EC2, assets stored in AWS S3, and website built with Django.</li>
+					<li>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing watch time by over 40%.</li>
+					<li>Both my <a href="https://github.com/Tennis-Ball/AI-Singer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer">AI singer</a> fashioned LSTM models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, ML.</li>
 				</Card>
 			</Dropdown>
 			<Dropdown title="Work">
@@ -61,19 +72,42 @@ export default function Home() {
 					<p>More description here, maybe I we can link links to the title (h3 tag) and have a separate atom component (or just html) for  the dates.</p>
 				</Card>
 			</Dropdown>
-			<Dropdown title="School">
+			<Dropdown title="Education">
+			</Dropdown>
+			<Dropdown title="Extracurriculars">
 				<Card>
-					<h3>Still undecided for what to put in here, idk if I want to stick with the cards or not. Same with the following 2 dropdowns, let's think about it.</h3>
-					<p>:)) Aloha!, might put this, Volunteering, and Extracurriculars in another page, idk yet</p>
+					<h3>Fencing</h3>
+					<p>2017 - Present</p>
+					<p>Nationally ranked fencer</p>
+				</Card>
+				<Card>
+					<h3>Homeless Outreach Ministry</h3>
+					<p>February 2022 - Present</p>
+					<p>See my entire community service <a href="">here</a></p>
 				</Card>
 			</Dropdown>
-			<Dropdown title="Volunteering"></Dropdown>
-			<Dropdown title="Extracurriculars"></Dropdown>
+			<Dropdown title="Hobbies">
+				<Card>
+					<h3>Finance</h3>
+				</Card>
+				<Card>
+					<h3>3d designing and printing</h3>
+				</Card>
+				<Card>
+					<h3>Travelling</h3>
+				</Card>
+				<Card>
+					<h3>Electrical and Mechanical Engineering</h3>
+				</Card>
+				<Card>
+					<h3>Being the best brother :)</h3>
+				</Card>
+			</Dropdown>
 			<div className={`neutral ${styles.github}`}>
 				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
 			</div>
 
-			<div style={{borderTop: "1.5px solid black ", marginLeft: 20, marginRight: 20, marginTop: 10}}></div>
+			<div class='line'></div>
 			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this in next.js</p>
 		</>
 		)
