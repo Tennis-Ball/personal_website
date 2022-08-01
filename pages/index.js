@@ -51,7 +51,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://github.com/Tennis-Ball/Image-Analyzation-App">Image Analyzation App</a></h3>
 					<p>August 2021 - September 2021</p>
-					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google's "Mobile Net" CNN model for classification on 1,000 classes.</p>
+					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google&apos;s &quot;Mobile Net&quot; CNN model for classification on 1,000 classes.</p>
 				</Card>
 				<Dropdown title="My Machine Learning Start">
 					<p>March 2021 - February 2022</p>
@@ -149,7 +149,7 @@ export default function Home() {
 				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
 			</div>
 
-			<div class='line'></div>
+			<div className={`line`}></div>
 			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
 		</>
 		)
