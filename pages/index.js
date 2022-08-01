@@ -69,15 +69,52 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
-					<h3>Work experience 2: dates</h3>
-					<p>Hmm, this dropdown doesn't look quite right, part of the card is visible when collapsed</p>
+					<h3>Solve Advisors Inc.</h3>
+					<p>March 2022 - Present</p>
+					<li>Worked with the AI/ML team to build a BDC investment parser, which disrupted the industry and saved the company an estimated 848 hours annually.</li>
+					<li>Automated manual bond and loan data pricing with Selenium and Google’s Oauth API in an AWS EC2 instance</li>
+					<li>Built a tool to aggregate global treasury yeild data and organize it</li>
 				</Card>
 				<Card>
-					<h3>Work experience 1: dates</h3>
-					<p>More description here, maybe I we can link links to the title (h3 tag) and have a separate atom component (or just html) for  the dates.</p>
+					<h3>Advantage Data Inc. + Best Credit Management Inc.</h3>
+					<p>September 2022 - March 2022</p>
+					<li>Developed Python scripts to scrape data from SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
+					<li>Collaborated with team to deploy data pipelines directing source data into our system with Python and SQL</li>
 				</Card>
 			</Dropdown>
 			<Dropdown title="Education">
+				<p>I currently attend Boston Latin School as a rising sophomore. I have found my high school cirriculum to be slightly limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.33 in 9th grade.</p>
+				<Dropdown title="College Courses">
+					<Card>
+						<h3>College Calculus I</h3>
+						<p>University of Pittsburgh | Final grade: 99%, A</p>
+					</Card>
+					<Card>
+						<h3>Computer Science 121</h3>
+						<p>University of Massachussettes Amherst | Final grade:</p>
+					</Card>
+					<Card>
+						<h3>Statistics 111</h3>
+						<p>University of Massachussettes Amherst | Final grade:</p>
+					</Card>
+				</Dropdown>
+				<Dropdown title="Awards and Recognition">
+					<Card>
+						<h3>National Latin Exam Gold</h3>
+						<p>Summa Cum Laude 2020, 2021, and 2022</p>
+					</Card>
+				</Dropdown>
+				<Dropdown title="Courseload">
+					<Card>
+						<h3>2022 - 2023 (BLS 10th grade)</h3>
+						<li>English 10 - Honors</li>
+						<li>AP World History</li>
+						<li>Chinese 3 - Honors</li>
+						<li>Advanced Precalculus - Honors</li>
+						<li>Physics 1 - Honors</li>
+						<li>Latin Prose - Honors</li>
+					</Card>
+				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Extracurriculars">
 				<Card>
