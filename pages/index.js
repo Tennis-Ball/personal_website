@@ -53,21 +53,19 @@ export default function Home() {
 					<p>August 2021 - September 2021</p>
 					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google's "Mobile Net" CNN model for classification on 1,000 classes.</p>
 				</Card>
-				<Card>
-					<h3>My Machine Learning Start</h3>
+				<Dropdown title="My Machine Learning Start">
 					<p>March 2021 - February 2022</p>
-					<p>A short list of other cool ML projects I worked on:</p>
-					<li><a href="https://github.com/Tennis-Ball/Anchor-ai">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Tensorflow model was run daily in AWS EC2, assets stored in AWS S3, and website built with Django.</li>
-					<li>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing watch time by over 40%.</li>
-					<li>Both my <a href="https://github.com/Tennis-Ball/AI-Singer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer">AI singer</a> fashioned LSTM models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, ML.</li>
-				</Card>
-				<Dropdown title="test nested dropdown">
 					<Card>
-						<h3><a href="https://github.com/Tennis-Ball/Image-Analyzation-App">Image Analyzation App</a></h3>
-						<p>August 2021 - September 2021</p>
-						<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google's "Mobile Net" CNN model for classification on 1,000 classes.</p>
+						<p><a href="https://github.com/Tennis-Ball/Anchor-ai">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Tensorflow model was run daily in AWS EC2, assets stored in AWS S3, and website built with Django.</p>
+					</Card>
+					<Card>
+						<p>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing watch time by over 40%.</p>
+					</Card>
+					<Card>
+						<p>Both my <a href="https://github.com/Tennis-Ball/AI-Singer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer">AI singer</a> fashioned LSTM models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, ML.</p>
 					</Card>
 				</Dropdown>
+				<p>You can view more of my projects on my Github</p>
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
@@ -115,7 +113,7 @@ export default function Home() {
 			</div>
 
 			<div class='line'></div>
-			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this in next.js</p>
+			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
 		</>
 		)
 	}
