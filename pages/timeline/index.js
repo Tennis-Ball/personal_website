@@ -10,7 +10,7 @@ export default function Timeline(){
     let events = [
         {content: <Box><h3>printf(&quot;Hello, World!&quot;);</h3></Box>, date:"5/10/2007" },
         {content: <Box><h3>Start at Boston Latin School</h3></Box>, date:"9/01/2019" },
-        {content: <Box><h3>My personal website hosted!</h3></Box>, date:"8/01/2022" },
+        {content: <Box><h3>Website hosted with Vercel!</h3></Box>, date:"8/01/2022" },
     ]
     return (
         <>
@@ -44,7 +44,7 @@ export default function Timeline(){
             })()}
             <Contacts/>
             <div className={`line`}></div>
-			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
+			<p style={{textAlign: "center"}}>A special thank you to my friend <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
         </>
     )
 }

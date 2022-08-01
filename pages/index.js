@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Ahoy!! My name is Mason Choi. I currently work as a developer/analyst at <a href="https://solveadvisors.com/">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national, individual level, and am an avid stock+etf trader, 3d printer, and roboticist.</p>
+			<p>Ahoy!! My name is Mason Choi. I currently work as a developer/analyst at <a href="https://solveadvisors.com/">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf trader, 3d printer, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -117,6 +117,7 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Extracurriculars">
+				<p>To be completed</p>
 				<Card>
 					<h3>Fencing</h3>
 					<p>2017 - Present</p>
@@ -129,6 +130,7 @@ export default function Home() {
 				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
+				<p>To be completed</p>
 				<Card>
 					<h3>Finance</h3>
 				</Card>
@@ -141,16 +143,13 @@ export default function Home() {
 				<Card>
 					<h3>Electrical and Mechanical Engineering</h3>
 				</Card>
-				<Card>
-					<h3>Being the best brother :)</h3>
-				</Card>
 			</Dropdown>
 			<div className={`neutral ${styles.github}`}>
-				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive"/>
+				<img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive" alt="Github contributions graph"/>
 			</div>
 
 			<div className={`line`}></div>
-			<p style={{textAlign: "center"}}>A special thank you to <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
+			<p style={{textAlign: "center"}}>A special thank you to my friend <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
 		</>
 		)
 	}
