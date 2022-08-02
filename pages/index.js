@@ -120,12 +120,12 @@ export default function Home() {
 				<Card>
 					<h3>Fencing</h3>
 					<p>2017 - Present</p>
-					<p>I currently rank 38th in the nation and 11th regionally for the Cadet age group (U17), and 16th regionally for the Junior age group (U19). I am working towards a spot (top 20) on the USA Cadet Men's Epee world team.</p>
+					<p>I currently rank 38th in the nation and 11th regionally for the Cadet age group (U17), and 16th regionally for the Junior age group (U19). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
 				</Card>
 				<Card>
 					<h3>Homeless Outreach Ministry</h3>
 					<p>February 2022 - Present</p>
-					<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 Naitonal Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="norefferer">here</a>.</p>
+					<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 Naitonal Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
 				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
@@ -145,7 +145,7 @@ export default function Home() {
 				</Card>
 				<Card>
 					<h3>Fishing</h3>
-					<p>I love fishing with friends and family at 4AM, especially when we don't catch anything and realize one of our wading boots has a hole in it... Jokes aside, freshwater fishing for bass and carp is always fun.</p>
+					<p>I love fishing with friends and family at 4AM, especially when we don&apos;t catch anything and realize one of our wading boots has a hole in it... Jokes aside, freshwater fishing for bass and carp is always fun.</p>
 				</Card>
 			</Dropdown>
 			<div className={`neutral ${styles.github}`}>
