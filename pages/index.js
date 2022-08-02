@@ -134,9 +134,8 @@ export default function Home() {
 					<p>I currently rank 38th in the nation and 11th regionally for the Cadet age group (U17), and 16th regionally for the Junior age group (U19). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
 				</Card>
 				<Card>
-					<h3>Homeless Outreach Ministry</h3>
-					<p>February 2022 - Present</p>
-					<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 Naitonal Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
+					<h3>Community Service</h3>
+					<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 National Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
 				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
