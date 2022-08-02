@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Ahoy!! My name is Mason Choi. I currently work as a developer/analyst at <a href="https://solveadvisors.com/">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf trader, 3d printer, and fisherman 🎣.</p>
+			<p>Ahoy!! My name is Mason Choi. I currently work as a developer/analyst at <a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf trader, 3d printer, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -117,31 +117,35 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Extracurriculars">
-				<p>To be completed</p>
 				<Card>
 					<h3>Fencing</h3>
 					<p>2017 - Present</p>
-					<p>Nationally ranked fencer</p>
+					<p>I currently rank 38th in the nation and 11th regionally for the Cadet age group (U17), and 16th regionally for the Junior age group (U19). I am working towards a spot (top 20) on the USA Cadet Men's Epee world team.</p>
 				</Card>
 				<Card>
 					<h3>Homeless Outreach Ministry</h3>
 					<p>February 2022 - Present</p>
-					<p>See my entire community service <a href="">here</a></p>
+					<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 Naitonal Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="norefferer">here</a>.</p>
 				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
-				<p>To be completed</p>
 				<Card>
 					<h3>Finance</h3>
+					<p>I enjoy doing research on the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on getting into the bond/loan markets as I work closely with them at work.</p>
 				</Card>
 				<Card>
 					<h3>3d designing and printing</h3>
+					<p></p>
+					<Image src="/home/images/3dPrint.jpg" width={250} height={160}></Image>
+					<p>A 3d printed robotic prosthetic hand with an experimental printed fabric.</p>
 				</Card>
 				<Card>
-					<h3>Travelling</h3>
+					<h3>World Travelling</h3>
+					<p>I have been to over 30 countries and 4 continents, experiencing both similar and different cultures, languages, and environments.</p>
 				</Card>
 				<Card>
-					<h3>Electrical and Mechanical Engineering</h3>
+					<h3>Fishing</h3>
+					<p>I love fishing with friends and family at 4AM, especially when we don't catch anything and realize one of our wading boots has a hole in it... Jokes aside, freshwater fishing for bass and carp is always fun.</p>
 				</Card>
 			</Dropdown>
 			<div className={`neutral ${styles.github}`}>
@@ -149,7 +153,7 @@ export default function Home() {
 			</div>
 
 			<div className={`line`}></div>
-			<p style={{textAlign: "center"}}>A special thank you to my friend <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
+			<p style={{textAlign: "center"}}>A special thank you to my friend <a href="https://github.com/Tony1324" target="_blank" rel="noreferrer">Tony</a> for helping me build this with next.js</p>
 		</>
 		)
 	}

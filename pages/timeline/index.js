@@ -44,7 +44,7 @@ export default function Timeline(){
             })()}
             <Contacts/>
             <div className={`line`}></div>
-			<p style={{textAlign: "center"}}>A special thank you to my friend <a href="https://github.com/Tony1324">Tony</a> for helping me build this with next.js</p>
+			<p style={{textAlign: "center"}}>A special thank you to my friend <a href="https://github.com/Tony1324" target="_blank" rel="noreferrer">Tony</a> for helping me build this with next.js</p>
         </>
     )
 }
