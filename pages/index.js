@@ -41,7 +41,7 @@ export default function Home() {
 					<h3><a href="https://filess.org">Filess</a></h3>
 					<p>March 2022 - July 2022</p>
 					<p>Filess is a static asset hosting service with the intent of seamless sharing made unique. Quickly upload images, videos, etc. and create your own custom URL link that can be shared. The website was built on top of the Flask framework with AWS S3 file hosting.</p>
-					<Image src="/home/images/filessDashboard.png" width={350} height={350}></Image>
+					<Image src="/home/images/filessDashboard.PNG" width={350} height={350}></Image>
 				</Card>
 				<Card>
 					<h3><a href="https://tennis-ball.github.io/Character-Classification/">Neural Network</a></h3>
@@ -98,10 +98,21 @@ export default function Home() {
 						<p>University of Massachussettes Amherst | Final grade:</p>
 					</Card>
 				</Dropdown>
-				<Dropdown title="Awards and Recognition">
+				<Dropdown title="Languages">
+					<Card>
+						<h3>Modern Languages</h3>
+						<li>English - Native or bilingual proficiency</li>
+						<li>Mandarin - Professional working proficiency (Although I am Korean)</li>
+					</Card>
 					<Card>
 						<h3>National Latin Exam Gold</h3>
 						<p>Summa Cum Laude 2020, 2021, and 2022</p>
+					</Card>
+					<Card>
+						<h3>Computer Languages</h3>
+						<li>Python - Expert</li>
+						<li>HTML/CSS - Proficient</li>
+						<li>Java, C++, Javascript - Proficient</li>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Courseload">
