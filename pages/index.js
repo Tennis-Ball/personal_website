@@ -129,14 +129,25 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Extracurriculars">
 				<Card>
-					<h3>Fencing</h3>
-					<p>2017 - Present</p>
+					<h3>Fencing - Individual</h3>
+					<p>2016 - Present</p>
 					<p>I currently rank 38th in the nation and 11th regionally for the Cadet age group (U17), and 16th regionally for the Junior age group (U19). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
 				</Card>
 				<Card>
-					<h3>Community Service</h3>
-					<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 National Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
+					<h3>Fencing - Varsity</h3>
+					<p>2019 - Present</p>
+					<p>Part of the Boston Latin School varsity fencing team since 7th grade, bringing the team to the state finals every year fenced. I exchange A and B positions (first and second) at competitions.</p>
 				</Card>
+				<Dropdown title="Community Service">
+					<Card>
+						<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 National Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
+					</Card>
+					<Card>
+						<h3>Homeless Outreach Ministry & Engagement (HOME)</h3>
+						<p>January 2022 - Present</p>
+						<p>Every week I volunteer with HOME to cook meals, prepare food/drink, distribute clothing, and lend an ear to my homeless neighbors of Boston.</p>
+					</Card>
+				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Hobbies">
 				<Card>
