@@ -9,6 +9,7 @@
   --shadow:#00000050;
   --background-color-1: white;
   --background-color-2: rgb(245,245,245);
+  --transperant-background: #00FFFFF;
   --foreground-color-1: #000;
   --foreground-color-2: #222;
   --main-padding: 20px calc(50vw - 450px);
@@ -21,6 +22,7 @@
     --accent-shadow: #d7aa4190;
     --background-color-1: #111;
     --background-color-2: #2A2A2A;
+    --transperant-background: #00FFFFF;
     --foreground-color-1: white;
     --foreground-color-2: #f2f2f2;
     --transparent-color-1: rgba(255,255,255,0.15);
@@ -34,7 +36,8 @@ html, body, #__next{
     height: 100%;
     width: 100%;
     color: var(--foreground-color-1);
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-1);  /* ##### */
+    background-color:var(--transparent-color);
     -webkit-text-size-adjust: 100%;
     font-size: 16px;
     line-height: 1.6;
