@@ -86,16 +86,20 @@ export default function Home() {
 				<p>I currently attend Boston Latin School as a rising sophomore. I have found my high school cirriculum to be slightly limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.33 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
-						<h3>College Calculus I</h3>
-						<p>University of Pittsburgh | Final grade: 99%, A</p>
-					</Card>
-					<Card>
-						<h3>Computer Science 121</h3>
-						<p>University of Massachussettes Amherst | Final grade:</p>
+						<h3>Principles of Big Data Processing (CSCI E-80)</h3>
+						<p>Harvard Extension School | Final grade:  | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Statistics 111</h3>
-						<p>University of Massachussettes Amherst | Final grade:</p>
+						<p>University of Massachussettes Amherst | Final grade:  | Credits: 4</p>
+					</Card>
+					<Card>
+						<h3>Computer Science 121</h3>
+						<p>University of Massachussettes Amherst | Final grade:  | Credits: 4</p>
+					</Card>
+					<Card>
+						<h3>College Calculus I</h3>
+						<p>University of Pittsburgh | Final grade: 99% | Credits: 3</p>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Languages">
@@ -148,6 +152,10 @@ export default function Home() {
 						<p>Every week I volunteer with HOME to cook meals, prepare food/drink, distribute clothing, and lend an ear to my homeless neighbors of Boston.</p>
 					</Card>
 				</Dropdown>
+				<Card>
+					<h3>Computer Science/ Business</h3>
+					<p>My passion for computer technologies and entrepreneurship has probably already made itself clear, my past/current projects and businesses can be found above along with my professional work experience.</p>
+				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
 				<Card>
