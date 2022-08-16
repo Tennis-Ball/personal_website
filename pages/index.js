@@ -81,6 +81,14 @@ export default function Home() {
 					<li>Developed Python scripts to scrape data from SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
 					<li>Collaborated with team to deploy data pipelines directing source data into our system with Python and SQL</li>
 				</Card>
+				<Dropdown title="Honorable Mentions">
+					<Card>
+						<p>First offer as a <b>front end software engineer intern</b> at trucking logistics company Relaymile</p>
+					</Card>
+					<Card>
+						<p>Making the 3rd stage technical interview with <b>Uber</b> for <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was by far the craziest and most surreal interview process I have experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
+					</Card>
+				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
 				<p>I currently attend Boston Latin School as a rising sophomore. I have found my high school cirriculum to be slightly limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.33 in 9th grade.</p>
