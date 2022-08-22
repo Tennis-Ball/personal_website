@@ -8,7 +8,7 @@ import Contacts from '/components/contacts'
 
 export default function Timeline(){
     let events = [
-        {content: <Box><h3>printf(&quot;Hello, World!&quot;);</h3></Box>, date:"5/10/2007" },
+        {content: <Box><h3>System.out.println(&quot;Hello, World!&quot;);</h3></Box>, date:"5/10/2007" },
         {content: <Box><h3>Start at Boston Latin School</h3></Box>, date:"9/01/2019" },
         {content: <Box><h3>Website hosted with Vercel!</h3></Box>, date:"8/01/2022" },
     ]
@@ -44,7 +44,7 @@ export default function Timeline(){
             })()}
             <Contacts/>
             <div className={`line`}></div>
-			<p style={{textAlign: "center"}}>Website build using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
+			<p style={{textAlign: "center"}}>Website built using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
         </>
     )
 }

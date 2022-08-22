@@ -190,7 +190,7 @@ export default function Home() {
 			</div>
 
 			<div className={`line`}></div>
-			<p style={{textAlign: "center"}}>Website build using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
+			<p style={{textAlign: "center"}}>Website built using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
 		</>
 		)
 	}
