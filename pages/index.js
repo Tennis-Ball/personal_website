@@ -99,11 +99,11 @@ export default function Home() {
 					</Card>
 					<Card>
 						<h3>Statistics 111</h3>
-						<p>University of Massachussettes Amherst | Final grade:  | Credits: 4</p>
+						<p>University of Massachussettes Amherst | Final grade: 98.80% | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Computer Science 121</h3>
-						<p>University of Massachussettes Amherst | Final grade:  | Credits: 4</p>
+						<p>University of Massachussettes Amherst | Final grade: 99.05% | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>College Calculus I</h3>
