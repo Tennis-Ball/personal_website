@@ -40,7 +40,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://filess.org" target="_blank" rel="noreferrer">Filess</a></h3>
 					<p>March 2022 - July 2022</p>
-					<p>Filess is a static asset hosting service with the intent of seamless sharing made unique. Quickly upload images, videos, etc. and create your own custom URL link that can be shared. The website was built on top of the Flask framework with AWS S3 file hosting.</p>
+					<p>Filess is a static asset hosting service with the intent of seamless sharing made unique. Quickly upload images, videos, etc. and create your own custom URL link that can be shared. The website was built on top of the Flask framework with AWS S3 (cloud storage) file hosting.</p>
 					<Image src="/home/images/filessDashboard.PNG" width={350} height={350}></Image>
 				</Card>
 				<Card>
@@ -51,18 +51,18 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://github.com/Tennis-Ball/Image-Analyzation-App" target="_blank" rel="noreferrer">Image Analyzation App</a></h3>
 					<p>August 2021 - September 2021</p>
-					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google&apos;s &quot;Mobile Net&quot; CNN model for classification on 1,000 classes.</p>
+					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google&apos;s &quot;Mobile Net&quot; Convolutional Neural Network (CNN) model for classification on 1,000 classes.</p>
 				</Card>
 				<Dropdown title="My Machine Learning Start">
 					<p>March 2021 - February 2022</p>
 					<Card>
-						<p><a href="https://github.com/Tennis-Ball/Anchor-ai" target="_blank" rel="noreferrer">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Tensorflow model was run daily in AWS EC2, assets stored in AWS S3, and website built with Django.</p>
+						<p><a href="https://github.com/Tennis-Ball/Anchor-ai" target="_blank" rel="noreferrer">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Its Tensorflow model was run daily in an AWS Elastic Cloud Compute (EC2) instance, assets stored in AWS S3, and website built with Django.</p>
 					</Card>
 					<Card>
 						<p>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool" target="_blank" rel="noreferrer">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing watch time by over 40%.</p>
 					</Card>
 					<Card>
-						<p>Both my <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI singer</a> fashioned LSTM models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, ML.</p>
+						<p>Both my <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI singer</a> fashioned Long Short-Term Memory (LSTM) models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, machine learning (ML).</p>
 					</Card>
 				</Dropdown>
 				<p>You can view more of my projects on my Github</p>
@@ -83,15 +83,15 @@ export default function Home() {
 				</Card>
 				<Dropdown title="Honorable Mentions">
 					<Card>
-						<p>First offer as a <b>front end software engineer intern</b> at trucking logistics company Relaymile</p>
+						<p>First offer as a <b>front end software engineer intern</b> at trucking logistics company Relaymile in August of 2021</p>
 					</Card>
 					<Card>
-						<p>Making the 3rd stage technical interview with <b>Uber</b> for <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was by far the craziest and most surreal interview process I have experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
+						<p>Making the 3rd stage technical interview with <b>Uber</b> for their <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was by far the craziest and most surreal interview process I have experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
 					</Card>
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I currently attend Boston Latin School as a rising sophomore. I have found my high school cirriculum to be slightly limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.33 in 9th grade.</p>
+				<p>I currently attend Boston Latin School (BLS) as a rising sophomore. I have found my high school cirriculum to be slightly limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.33 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-80)</h3>
@@ -103,11 +103,11 @@ export default function Home() {
 					</Card>
 					<Card>
 						<h3>Computer Science 121</h3>
-						<p>University of Massachussettes Amherst | Final grade: 99.05% | Credits: 4</p>
+						<p>University of Massachussettes Amherst | Final grade: 100.00% | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>College Calculus I</h3>
-						<p>University of Pittsburgh | Final grade: 99% | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: 99.00% | Credits: 3</p>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Languages">
@@ -115,6 +115,7 @@ export default function Home() {
 						<h3>Modern Languages</h3>
 						<li>English - Native or bilingual proficiency</li>
 						<li>Mandarin - Professional working proficiency (Although I am Korean)</li>
+						<li>Korean - Elementary proficiency</li>
 					</Card>
 					<Card>
 						<h3>National Latin Exam Gold</h3>
@@ -125,6 +126,7 @@ export default function Home() {
 						<li>Python - Expert</li>
 						<li>HTML/CSS - Proficient</li>
 						<li>Java, C++, Javascript - Proficient</li>
+						<li>SQL - Proficient</li>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Courseload">
@@ -135,7 +137,7 @@ export default function Home() {
 						<li>Chinese 3 - Honors</li>
 						<li>Advanced Precalculus - Honors</li>
 						<li>Physics 1 - Honors</li>
-						<li>Latin Prose - Honors</li>
+						<li>Latin Prose (advanced 4) - Honors</li>
 					</Card>
 				</Dropdown>
 			</Dropdown>

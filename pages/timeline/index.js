@@ -11,6 +11,8 @@ export default function Timeline(){
         {content: <Box><h3>System.out.println(&quot;Hello, World!&quot;);</h3></Box>, date:"5/10/2007" },
         {content: <Box><h3>Start at Boston Latin School</h3></Box>, date:"9/01/2019" },
         {content: <Box><h3>Website hosted with Vercel!</h3></Box>, date:"8/01/2022" },
+        {content: <Box><h3>Summer trips to Barcelona (Spain) and London (England), Paris (France), and Algarve (Portugal)</h3></Box>, date:"8/11/2022" },
+
     ]
     return (
         <>
