@@ -53,8 +53,11 @@ export default function Home() {
 					<p>August 2021 - September 2021</p>
 					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google&apos;s &quot;Mobile Net&quot; Convolutional Neural Network (CNN) model for classification on 1,000 classes.</p>
 				</Card>
-				<Dropdown title="My Machine Learning Start">
-					<p>March 2021 - February 2022</p>
+				<Dropdown title="My Machine Learning Journey">
+					<p>March 2021 - Present</p>
+					<Card>
+						I expanded on my Python neural network from scratch into a <a href="https://github.com/Tennis-Ball/Cross-Compatible-ML-Library" target="_blank" rel="noreferrer">pseudo-library</a> for machine learning in Python, Java, and C++.
+					</Card>
 					<Card>
 						<p><a href="https://github.com/Tennis-Ball/Anchor-ai" target="_blank" rel="noreferrer">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Its Tensorflow model was run daily in an AWS Elastic Cloud Compute (EC2) instance, assets stored in AWS S3, and website built with Django.</p>
 					</Card>
