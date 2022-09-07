@@ -86,7 +86,7 @@ export default function Home() {
 				</Card>
 				<Dropdown title="Honorable Mentions">
 					<Card>
-						<p>First offer as a <b>front end software engineer intern</b> at trucking logistics company Relaymile in August of 2021</p>
+						<p>First job offer as a <b>front end software engineer intern</b> at trucking logistics company Relaymile in August of 2021</p>
 					</Card>
 					<Card>
 						<p>Making the 3rd stage technical interview with <b>Uber</b> for their <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was by far the craziest and most surreal interview process I have experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
@@ -97,7 +97,7 @@ export default function Home() {
 				<p>I currently attend Boston Latin School (BLS) as a rising sophomore. I have found my high school cirriculum to be slightly limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.33 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
-						<h3>Principles of Big Data Processing (CSCI E-80)</h3>
+						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
 						<p>Harvard Extension School | Final grade:  | Credits: 4</p>
 					</Card>
 					<Card>
