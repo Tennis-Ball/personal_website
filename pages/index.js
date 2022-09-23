@@ -94,26 +94,26 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I currently attend Boston Latin School (BLS) as a rising sophomore. I have found my high school cirriculum to be slightly limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.33 in 9th grade.</p>
+				<p>I currently attend Boston Latin School (BLS) as a rising sophomore. I have found my high school cirriculum to be limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
 						<p>Harvard Extension School | Final grade:  | Credits: 4</p>
 					</Card>
 					<Card>
-						<h3>Statistics 111</h3>
+						<h3>Elementary Statistics (STAT 111)</h3>
 						<p>University of Massachusetts Amherst | Final grade: 98.80% | Credits: 4</p>
 					</Card>
 					<Card>
-						<h3>Computer Science 121</h3>
+						<h3>Principles of Computer Science (COMPSCI 121)</h3>
 						<p>University of Massachusetts Amherst | Final grade: 100.00% | Credits: 4</p>
 					</Card>
 					<Card>
-						<h3>College Calculus I</h3>
+						<h3>Calculus I</h3>
 						<p>University of Pittsburgh | Final grade: 99.00% | Credits: 3</p>
 					</Card>
 				</Dropdown>
-				<Dropdown title="Languages">
+				<Dropdown title="Skills">
 					<Card>
 						<h3>Modern Languages</h3>
 						<li>English - Native or bilingual proficiency</li>
@@ -131,6 +131,19 @@ export default function Home() {
 						<li>Java, C++, Javascript - Proficient</li>
 						<li>SQL - Proficient</li>
 					</Card>
+					<Card>
+						<h3>Tech Stack</h3>
+						<li>Frameworks: React, Flask, Django, React Native</li>
+						<li>Tools: AWS, MS/G suites, Git, Github</li>
+						<li>Libraries: Tensorflow, Pandas, Numpy, Matplotlib</li>
+					</Card>
+					<Card>
+						<h3>Key Skills</h3>
+						<li>Communicative</li>
+						<li>Hard working</li>
+						<li>Leader</li>
+						<li>Flexible</li>
+					</Card>
 				</Dropdown>
 				<Dropdown title="Courseload">
 					<Card>
@@ -142,13 +155,17 @@ export default function Home() {
 						<li>Physics 1 - Honors</li>
 						<li>Latin Prose (advanced 4) - Honors</li>
 					</Card>
+					<Card>
+						<h3>Approbation with Distinction</h3>
+						<p>Earned every term for excellent performance average of A- or above in every course</p>
+					</Card>
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Extracurriculars">
 				<Card>
 					<h3>Fencing - Individual</h3>
 					<p>2016 - Present</p>
-					<p>I currently rank 38th in the nation and 11th regionally for the Cadet age group (U17), and 16th regionally for the Junior age group (U19). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
+					<p>I currently rank 38th in the nation and 2th regionally for the Cadet age group (U17), 4th regionally for the Junior age group (U19 - of 183). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
 				</Card>
 				<Card>
 					<h3>Fencing - Varsity</h3>
