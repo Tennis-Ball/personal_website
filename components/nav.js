@@ -27,16 +27,19 @@ export default function Nav(props){
         <div className={styles.container}>
             <A url="/">Home</A>
             <A url="/timeline">Timeline</A>
-            <div className="spacer"></div>
-            <select value={theme} onChange={(e)=>{
-                setTheme(e.target.value)
-                localStorage.setItem('theme',e.target.value)
-                setHTMLAttrib(e.target.value)
-            }} style={{display: `${theme ? "" : "none"}`}}>
-                <option value="auto">Auto</option>
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-            </select>
+            <A url="/resumes">Resumes</A>
+            {/* <div className="spacer"></div> */}
+            <div className="linkRight">
+                <select value={theme} onChange={(e)=>{
+                    setTheme(e.target.value)
+                    localStorage.setItem('theme',e.target.value)
+                    setHTMLAttrib(e.target.value)
+                }} style={{display: `${theme ? "" : "none"}`}}>
+                    <option value="auto">Auto</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
         </div>
     )
 

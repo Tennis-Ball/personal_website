@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import options from "../public/home/particles/particles.json"
+import options from "../public/particles/particles.json"
 
 
 function MyApp({ Component, pageProps }) {

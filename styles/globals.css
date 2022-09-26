@@ -178,3 +178,8 @@ img, image{
 /* .cardTitle {
   margin-bottom: 0px;
 } */
+
+.linkRight {
+  margin-left: auto;
+  margin-right: 0;
+}

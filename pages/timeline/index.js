@@ -12,6 +12,7 @@ export default function Timeline(){
         {content: <Box><h3>Start at Boston Latin School</h3></Box>, date:"9/01/2019" },
         {content: <Box><h3>Website hosted with Vercel!</h3></Box>, date:"8/01/2022" },
         {content: <Box><h3>Summer trips to Barcelona (Spain) and London (England), Paris (France), and Algarve (Portugal)</h3></Box>, date:"8/11/2022" },
+        {content: <Box><h3>Earned A22 fencing rating by placing first at the <a href="https://fencingtimelive.com/events/results/635AD483CD574D16A19A1FB9661A0DBF" target="_blank" rel="noreferrer">Star Cup RYC/RJCC</a></h3></Box>, date:"9/17/22"}
 
     ]
     return (

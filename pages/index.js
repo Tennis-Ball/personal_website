@@ -23,25 +23,25 @@ export default function Home() {
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
 					<h3 className="cardTitle"><a href="https://github.com/Tennis-Ball/MP-Predictor" target="_blank" rel="noreferrer">Melting Point Estimator</a></h3>
-					<p>July 2022 - Present</p>
+					<p>July 2022 - Paused</p>
 					<p>A deep learning neural network built using Tensorflow in Python, predicting the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://github.com/Tunabl" target="_blank" rel="noreferrer">Tunabl</a></h3>
-					<p>July 2022 - Present</p>
+					<p>July 2022 - Paused</p>
 					<p>This is Tunabl, a mobile application built on the React Native framework for discovering new music. Tunabl is still in early development with no estimated date of release.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://tony1324.github.io/raytracer/" target="_blank" rel="noreferrer">Raytracer</a></h3>
 					<p>June 2022 - July 2022</p>
 					<p>Custom raytracer built from scratch in javascript. Collaboration with <a href="https://github.com/Tony1324" target="_blank" rel="noreferrer">Tony Zhang</a></p>
-					<Image src="/home/images/RayTracer.png" width={150} height={150}></Image>
+					<Image src="/images/RayTracer.png" width={150} height={150}></Image>
 				</Card>
 				<Card>
 					<h3><a href="https://filess.org" target="_blank" rel="noreferrer">Filess</a></h3>
 					<p>March 2022 - July 2022</p>
 					<p>Filess is a static asset hosting service with the intent of seamless sharing made unique. Quickly upload images, videos, etc. and create your own custom URL link that can be shared. The website was built on top of the Flask framework with AWS S3 (cloud storage) file hosting.</p>
-					<Image src="/home/images/filessDashboard.PNG" width={350} height={350}></Image>
+					<Image src="/images/filessDashboard.PNG" width={350} height={350}></Image>
 				</Card>
 				<Card>
 					<h3><a href="https://tennis-ball.github.io/Character-Classification/" target="_blank" rel="noreferrer">Neural Network</a></h3>
@@ -195,7 +195,7 @@ export default function Home() {
 				<Card>
 					<h3>3d designing and printing</h3>
 					<p></p>
-					<Image src="/home/images/3dPrint.jpg" width={250} height={160}></Image>
+					<Image src="/images/3dPrint.jpg" width={250} height={160}></Image>
 					<p>A 3d printed robotic prosthetic hand with an experimental printed fabric.</p>
 				</Card>
 				<Card>
