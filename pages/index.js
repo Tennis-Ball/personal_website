@@ -22,6 +22,11 @@ export default function Home() {
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
+					<h3><a href="https://github.com/Fantasy-Fencing" target="_blank" rel="noreferrer">Fantasy Fencing</a> X <a href="https://github.com/Tennis-Ball/The-Fencing-Project" target="_blank" rel="noreferrer">The Fencing Project</a></h3>
+					<p>September 2022 - Present</p>
+					<p>A small dev team founded by fencing celebrity Cyrus of Chaos to deliver a Fantasy Football inspired fencing platform. Incorporates elements from my project "The Fencing Project" which scrapes and manipulates all available fencing data. I mainly head backend development and systems design, occasionally touching our beautiful frontend UI.</p>
+				</Card>
+				<Card>
 					<h3 className="cardTitle"><a href="https://github.com/Tennis-Ball/MP-Predictor" target="_blank" rel="noreferrer">Melting Point Estimator</a></h3>
 					<p>July 2022 - Paused</p>
 					<p>A deep learning neural network built using Tensorflow in Python, predicting the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
