@@ -24,7 +24,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://github.com/Fantasy-Fencing" target="_blank" rel="noreferrer">Fantasy Fencing</a> X <a href="https://github.com/Tennis-Ball/The-Fencing-Project" target="_blank" rel="noreferrer">The Fencing Project</a></h3>
 					<p>September 2022 - Present</p>
-					<p>A small dev team founded by fencing celebrity Cyrus of Chaos to deliver a Fantasy Football inspired fencing platform. Incorporates elements from my project "The Fencing Project" which scrapes and manipulates all available fencing data. I mainly head backend development and systems design, occasionally touching our beautiful frontend UI.</p>
+					<p>A small dev team founded by fencing celebrity Cyrus of Chaos to deliver a Fantasy Football inspired fencing platform. Incorporates elements from my project &quot;The Fencing Project&quot; which scrapes and manipulates all available fencing data. I mainly head backend development and systems design, occasionally touching our beautiful frontend UI.</p>
 				</Card>
 				<Card>
 					<h3 className="cardTitle"><a href="https://github.com/Tennis-Ball/MP-Predictor" target="_blank" rel="noreferrer">Melting Point Estimator</a></h3>
