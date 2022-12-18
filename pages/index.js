@@ -94,7 +94,7 @@ export default function Home() {
 						<p>First job offer as a <b>front end software engineer intern</b> at trucking logistics company Relaymile in August of 2021</p>
 					</Card>
 					<Card>
-						<p>Making the 3rd stage technical interview with <b>Uber</b> for their <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was by far the craziest and most surreal interview process I have experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
+						<p>Making the 3rd stage technical interview with <b>Uber</b> for their <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was one of the most intense interview processes I had experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
 					</Card>
 				</Dropdown>
 			</Dropdown>
@@ -103,7 +103,7 @@ export default function Home() {
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
-						<p>Harvard Extension School | Final grade:  | Credits: 4</p>
+						<p>Harvard Extension School | Final grade: 100.00% | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Elementary Statistics (STAT 111)</h3>
@@ -170,7 +170,7 @@ export default function Home() {
 				<Card>
 					<h3>Fencing - Individual</h3>
 					<p>2016 - Present</p>
-					<p>I currently rank 38th in the nation and 2th regionally for the Cadet age group (U17), 4th regionally for the Junior age group (U19 - of 183). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
+					<p>I currently rank 30th in the nation and 1st regionally for the Cadet age group (U17), 5th regionally for the Junior age group (U20). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
 				</Card>
 				<Card>
 					<h3>Fencing - Varsity</h3>
