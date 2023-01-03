@@ -152,6 +152,11 @@ export default function Home() {
 						<li>HTML/CSS - Proficient</li>
 						<li>Java, C++, Javascript - Proficient</li>
 						<li>SQL - Proficient</li>
+						<br></br>
+						<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
+							<img align="center" src="https://github-readme-stats-api-clone.vercel.app/api/top-langs/?username=Tennis-Ball&layout=compact&hide_border=true&card_width=400" />
+						</a>
+
 					</Card>
 					<Card>
 						<h3>Tech Stack</h3>
@@ -231,7 +236,12 @@ export default function Home() {
 			</Dropdown>
 			<div className={`neutral ${styles.github}`}>
 				<a href="https://github.com/Tennis-Ball" target="_blank" rel="noreferrer"><img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive" alt="Github contributions graph"/></a>
+				<br></br>
+				<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
+					<img align="center" src="https://github-readme-stats-api-clone.vercel.app/api?username=Tennis-Ball&count_private=true&show_icons=true&hide_border=true&theme=gruvbox_light" alt="Tennis Ball's github stats" />
+				</a>
 			</div>
+			
 
 			<div className={`line`}></div>
 			<p style={{textAlign: "center"}}>Website built using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
