@@ -16,11 +16,16 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Ahoy!! My name is Mason Choi. I currently work as a developer/analyst at <a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf trader, 3d printer, and fisherman 🎣.</p>
+			<p>Ahoy!! My name is Mason Choi. I currently work as a Data Engineer at <a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
+				<Card>
+					<h3><a href="https://text2notes.com/" target="_blank" rel="noreferrer">OpenAI Text to Notes Converter</a></h3>
+					<p>December 2022 - January 2022</p>
+					<p>A simple website hosting technology made possible by OpenAI's GPT-3 API. Combined with custom code, the technology can convert any textbook text into note form effectively streamlining the notetaking process.</p>
+				</Card>
 				<Card>
 					<h3><a href="https://github.com/Fantasy-Fencing" target="_blank" rel="noreferrer">Fantasy Fencing</a> X <a href="https://github.com/Tennis-Ball/The-Fencing-Project" target="_blank" rel="noreferrer">The Fencing Project</a></h3>
 					<p>September 2022 - Present</p>
@@ -102,6 +107,18 @@ export default function Home() {
 				<p>I currently attend Boston Latin School (BLS) as a rising sophomore. I have found my high school cirriculum to be limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
+						<h3>Database Systems (CSCI E-66)</h3>
+						<p>Harvard Extension School | Final grade:  | Credits: 4</p>
+					</Card>
+					<Card>
+						<h3>Business I</h3>
+						<p>University of Pittsburgh | Final grade:  | Credits: 3</p>
+					</Card>
+					<Card>
+						<h3>Economics I</h3>
+						<p>University of Pittsburgh | Final grade:  | Credits: 3</p>
+					</Card>
+					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
 						<p>Harvard Extension School | Final grade: 100.00% | Credits: 4</p>
 					</Card>
@@ -122,7 +139,7 @@ export default function Home() {
 					<Card>
 						<h3>Modern Languages</h3>
 						<li>English - Native or bilingual proficiency</li>
-						<li>Mandarin - Professional working proficiency (Although I am Korean)</li>
+						<li>Mandarin - Professional working proficiency</li>
 						<li>Korean - Elementary proficiency</li>
 					</Card>
 					<Card>
