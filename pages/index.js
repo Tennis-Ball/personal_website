@@ -24,7 +24,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://text2notes.com/" target="_blank" rel="noreferrer">OpenAI Text to Notes Converter</a></h3>
 					<p>December 2022 - January 2022</p>
-					<p>A simple website hosting technology made possible by OpenAI's GPT-3 API. Combined with custom code, the technology can convert any textbook text into note form effectively streamlining the notetaking process.</p>
+					<p>A simple website hosting custom technology made possible by OpenAI's GPT-3 API. The technology can convert any textbook text into note form broken down by topic, effectively streamlining the notetaking process.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://github.com/Fantasy-Fencing" target="_blank" rel="noreferrer">Fantasy Fencing</a> X <a href="https://github.com/Tennis-Ball/The-Fencing-Project" target="_blank" rel="noreferrer">The Fencing Project</a></h3>
@@ -44,7 +44,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://tony1324.github.io/raytracer/" target="_blank" rel="noreferrer">Raytracer</a></h3>
 					<p>June 2022 - July 2022</p>
-					<p>Custom raytracer built from scratch in javascript. Collaboration with <a href="https://github.com/Tony1324" target="_blank" rel="noreferrer">Tony Zhang</a></p>
+					<p>Custom raytracer built from scratch in javascript. In collaboration with <a href="https://github.com/Tony1324" target="_blank" rel="noreferrer">Tony Zhang</a></p>
 					<Image src="/images/RayTracer.png" width={150} height={150}></Image>
 				</Card>
 				<Card>
@@ -108,15 +108,15 @@ export default function Home() {
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Database Systems (CSCI E-66)</h3>
-						<p>Harvard Extension School | Final grade:  | Credits: 4</p>
+						<p>Harvard Extension School | Final grade: --% | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Business I</h3>
-						<p>University of Pittsburgh | Final grade:  | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: --% | Credits: 3</p>
 					</Card>
 					<Card>
 						<h3>Economics I</h3>
-						<p>University of Pittsburgh | Final grade:  | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: --% | Credits: 3</p>
 					</Card>
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
@@ -154,7 +154,7 @@ export default function Home() {
 						<li>SQL - Proficient</li>
 						<br></br>
 						<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
-							<img align="center" src="https://github-readme-stats-api-clone.vercel.app/api/top-langs/?username=Tennis-Ball&layout=compact&hide_border=true&card_width=400" />
+							<img align="left" width="185" height="185" src="https://github-readme-stats-api-clone.vercel.app/api/top-langs/?username=Tennis-Ball&layout=compact&hide_border=true&card_width=400" />
 						</a>
 
 					</Card>
@@ -184,7 +184,7 @@ export default function Home() {
 					</Card>
 					<Card>
 						<h3>Approbation with Distinction</h3>
-						<p>Earned every term for excellent performance average of A- or above in every course</p>
+						<p>Earned every term (grade 7-present), for an excellent performance average of A- or above in each course</p>
 					</Card>
 				</Dropdown>
 			</Dropdown>
@@ -238,7 +238,7 @@ export default function Home() {
 				<a href="https://github.com/Tennis-Ball" target="_blank" rel="noreferrer"><img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive" alt="Github contributions graph"/></a>
 				<br></br>
 				<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
-					<img align="center" src="https://github-readme-stats-api-clone.vercel.app/api?username=Tennis-Ball&count_private=true&show_icons=true&hide_border=true&theme=gruvbox_light" alt="Tennis Ball's github stats" />
+					<img align="center" width="180" height="180" src="https://github-readme-stats-api-clone.vercel.app/api?username=Tennis-Ball&count_private=true&show_icons=true&hide_border=true&theme=gruvbox_light" alt="Tennis Ball's github stats" />
 				</a>
 			</div>
 			
