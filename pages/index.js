@@ -24,7 +24,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://text2notes.com/" target="_blank" rel="noreferrer">OpenAI Text to Notes Converter</a></h3>
 					<p>December 2022 - January 2022</p>
-					<p>A simple website hosting custom technology made possible by OpenAI's GPT-3 API. The technology can convert any textbook text into note form broken down by topic, effectively streamlining the notetaking process.</p>
+					<p>A simple website hosting custom technology made possible by OpenAI&apos;s GPT-3 API. The technology can convert any textbook text into note form broken down by topic, effectively streamlining the notetaking process.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://github.com/Fantasy-Fencing" target="_blank" rel="noreferrer">Fantasy Fencing</a> X <a href="https://github.com/Tennis-Ball/The-Fencing-Project" target="_blank" rel="noreferrer">The Fencing Project</a></h3>
