@@ -22,6 +22,11 @@ export default function Home() {
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
+					<h3>Albert</h3>
+					<p>January 2022 - Present</p>
+					<p>Albert is an experimental research project exploring the possibilities of using a transformer model such as GPT-3 to help train the custom transformer model, Albert.</p>
+				</Card>		
+				<Card>
 					<h3><a href="https://text2notes.com/" target="_blank" rel="noreferrer">OpenAI Text to Notes Converter</a></h3>
 					<p>December 2022 - January 2022</p>
 					<p>A simple website hosting custom technology made possible by OpenAI&apos;s GPT-3 API. The technology can convert any textbook text into note form broken down by topic, effectively streamlining the notetaking process.</p>
