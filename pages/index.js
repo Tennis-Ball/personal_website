@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Ahoy!! My name is Mason Choi. I currently work as a Data Engineer at <a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering/analysis to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I currently work as a Data Engineer at <a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -24,7 +24,7 @@ export default function Home() {
 				<Card>
 					<h3>Albert</h3>
 					<p>January 2022 - Present</p>
-					<p>Albert is an experimental research project exploring the possibilities of using a transformer model such as GPT-3 to help train the custom transformer model, Albert.</p>
+					<p>Albert is an experimental research project exploring the possibilities of using a transformer model such as GPT-3 to help train a custom transformer model, Albert.</p>
 				</Card>		
 				<Card>
 					<h3><a href="https://text2notes.com/" target="_blank" rel="noreferrer">OpenAI Text to Notes Converter</a></h3>
@@ -39,7 +39,7 @@ export default function Home() {
 				<Card>
 					<h3 className="cardTitle"><a href="https://github.com/Tennis-Ball/MP-Predictor" target="_blank" rel="noreferrer">Melting Point Estimator</a></h3>
 					<p>July 2022 - Paused</p>
-					<p>A deep learning neural network built using Tensorflow in Python, predicting the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
+					<p>A deep learning neural network built using Tensorflow in Python which predicts the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://github.com/Tunabl" target="_blank" rel="noreferrer">Tunabl</a></h3>
@@ -61,7 +61,7 @@ export default function Home() {
 				<Card>
 					<h3><a href="https://tennis-ball.github.io/Character-Classification/" target="_blank" rel="noreferrer">Neural Network</a></h3>
 					<p>April 2022 - May 2022</p>
-					<p>Built a neural network from scratch by implementing statistical classification methods in Python with Numpy. Ranks 6th best performing on the EMNIST Balanced benchmark dataset with over 96% accuracy.</p>
+					<p>Built a neural network from scratch by implementing statistical classification methods in Python with NumPy. Ranks 6th best performing on the EMNIST Balanced benchmark dataset with over 96% accuracy.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://github.com/Tennis-Ball/Image-Analyzation-App" target="_blank" rel="noreferrer">Image Analyzation App</a></h3>
@@ -77,31 +77,31 @@ export default function Home() {
 						<p><a href="https://github.com/Tennis-Ball/Anchor-ai" target="_blank" rel="noreferrer">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Its Tensorflow model was run daily in an AWS Elastic Cloud Compute (EC2) instance, assets stored in AWS S3, and website built with Django.</p>
 					</Card>
 					<Card>
-						<p>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool" target="_blank" rel="noreferrer">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing watch time by over 40%.</p>
+						<p>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool" target="_blank" rel="noreferrer">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing average watch time by over 40%.</p>
 					</Card>
 					<Card>
 						<p>Both my <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI singer</a> fashioned Long Short-Term Memory (LSTM) models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, machine learning (ML).</p>
 					</Card>
 				</Dropdown>
-				<p>You can view more of my projects on my Github</p>
+				<p>You can view more of my projects on <a href="https://github.com/Tennis-Ball" target="_blank" rel="noreferrer">my Github</a></p>
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
 					<h3>Solve Advisors Inc.</h3>
 					<p>March 2022 - Present</p>
-					<li>Worked with the AI/ML team to build a BDC investment parser, which disrupted the industry and saved the company an estimated 848 hours annually.</li>
+					<li>Worked with the AI/ML team to build a Business Development Company (BDC) financial statement parser, which disrupted the industry and saved the company an estimated 848 hours annually</li>
 					<li>Automated manual bond and loan data pricing with Selenium and Google’s Oauth API in an AWS EC2 instance</li>
-					<li>Built a tool to aggregate global treasury yeild data and organize it</li>
+					<li>Built tools to aggregate global treasury yeild data and organize it</li>
 				</Card>
 				<Card>
 					<h3>Advantage Data Inc. + Best Credit Management Inc.</h3>
 					<p>September 2022 - March 2022</p>
-					<li>Developed Python scripts to scrape data from SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
-					<li>Collaborated with team to deploy data pipelines directing source data into our system with Python and SQL</li>
+					<li>Developed Python scripts to scrape data from the SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
+					<li>Collaborated with dev team to deploy data pipelines directing source data into our system with Python and SQL</li>
 				</Card>
 				<Dropdown title="Honorable Mentions">
 					<Card>
-						<p>First job offer as a <b>front end software engineer intern</b> at trucking logistics company Relaymile in August of 2021</p>
+						<p>First job offer as a <b>front end software engineer intern</b> at trucking logistics company <a href="https://relaymile.com/" target="_blank" rel="norefferer">Relaymile</a> in August of 2021</p>
 					</Card>
 					<Card>
 						<p>Making the 3rd stage technical interview with <b>Uber</b> for their <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was one of the most intense interview processes I had experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
@@ -109,7 +109,7 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I currently attend Boston Latin School (BLS) as a rising sophomore. I have found my high school cirriculum to be limiting both in terms of pace and content, which is why I have enrolled in several college courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
+				<p>I currently attend the Boston Latin School (BLS) as a sophomore. In order to accelerate my learning in computer science and related feilds, I have enrolled in several college and online courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Database Systems (CSCI E-66)</h3>
@@ -167,7 +167,7 @@ export default function Home() {
 						<h3>Tech Stack</h3>
 						<li>Frameworks: React, Flask, Django, React Native</li>
 						<li>Tools: AWS, MS/G suites, Git, Github</li>
-						<li>Libraries: Tensorflow, Pandas, Numpy, Matplotlib</li>
+						<li>Libraries: Tensorflow, Pandas, NumPy, Matplotlib</li>
 					</Card>
 					<Card>
 						<h3>Key Skills</h3>
@@ -206,7 +206,7 @@ export default function Home() {
 				</Card>
 				<Dropdown title="Community Service">
 					<Card>
-						<p>Was awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 National Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
+						<p>Awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 National Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
 					</Card>
 					<Card>
 						<h3>Homeless Outreach Ministry & Engagement (HOME)</h3>
@@ -216,13 +216,13 @@ export default function Home() {
 				</Dropdown>
 				<Card>
 					<h3>Computer Science/ Business</h3>
-					<p>My passion for computer technologies and entrepreneurship has probably already made itself clear, my past/current projects and businesses can be found above along with my professional work experience.</p>
+					<p>My passion for computer technologies and entrepreneurship has most likely already made itself clear; my past+current projects and businesses can be found above along with my professional work experience.</p>
 				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
 				<Card>
 					<h3>Finance</h3>
-					<p>I enjoy doing research on the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on getting into the bond/loan markets as I work closely with them at work.</p>
+					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on getting into the bond/loan markets as I work closely with them at my company.</p>
 				</Card>
 				<Card>
 					<h3>3d designing and printing</h3>
