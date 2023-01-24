@@ -101,7 +101,7 @@ export default function Home() {
 				</Card>
 				<Dropdown title="Honorable Mentions">
 					<Card>
-						<p>First job offer as a <b>front end software engineer intern</b> at trucking logistics company <a href="https://relaymile.com/" target="_blank" rel="norefferer">Relaymile</a> in August of 2021</p>
+						<p>First job offer as a <b>front end software engineer intern</b> at trucking logistics company <a href="https://relaymile.com/" target="_blank" rel="noreferrer">Relaymile</a> in August of 2021</p>
 					</Card>
 					<Card>
 						<p>Making the 3rd stage technical interview with <b>Uber</b> for their <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was one of the most intense interview processes I had experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
@@ -226,9 +226,14 @@ export default function Home() {
 				</Card>
 				<Card>
 					<h3>3d designing and printing</h3>
-					<p></p>
+					<p><br></br></p>
 					<Image src="/images/3dPrint.jpg" width={250} height={160}></Image>
-					<p>A 3d printed robotic prosthetic hand with an experimental printed fabric.</p>
+					<p style={{fontSize: 14}}>A 3d printed robotic prosthetic hand with an experimental printed fabric.</p>
+					<hr></hr><p></p>
+					<Image src="/images/kinetic_art_pic.jpg" width={250} height={250}></Image>
+					<br></br>
+					<Image src="/images/kinetic_art_gif.gif" width={250} height={160}></Image>
+					<p style={{fontSize: 14}}>Mechatronic kinetic art project inspired by artist <a href="https://www.artsy.net/artist/willem-van-weeghel/works-for-sale" target="_blank" rel="noreferrer">Willem van Weeghel</a></p>
 				</Card>
 				<Card>
 					<h3>World Travelling</h3>
