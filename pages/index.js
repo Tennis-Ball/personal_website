@@ -117,11 +117,11 @@ export default function Home() {
 					</Card>
 					<Card>
 						<h3>Business I</h3>
-						<p>University of Pittsburgh | Final grade: --% | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: 93.00% | Credits: 3</p>
 					</Card>
 					<Card>
 						<h3>Economics I</h3>
-						<p>University of Pittsburgh | Final grade: --% | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: 93.00% | Credits: 3</p>
 					</Card>
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
