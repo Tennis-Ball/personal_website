@@ -113,31 +113,31 @@ export default function Home() {
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Database Systems (CSCI E-66)</h3>
-						<p>Harvard Extension School | Final grade: --% | Credits: 4</p>
+						<p>Harvard Extension School | Final grade: --% (-) | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Business I</h3>
-						<p>University of Pittsburgh | Final grade: 93.00% | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: 93.70% (A) | Credits: 3</p>
 					</Card>
 					<Card>
 						<h3>Economics I</h3>
-						<p>University of Pittsburgh | Final grade: 93.00% | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: 92.60% (A) | Credits: 3</p>
 					</Card>
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
-						<p>Harvard Extension School | Final grade: 100.00% | Credits: 4</p>
+						<p>Harvard Extension School | Final grade: 100.00% (A) | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Elementary Statistics (STAT 111)</h3>
-						<p>University of Massachusetts Amherst | Final grade: 98.80% | Credits: 4</p>
+						<p>University of Massachusetts Amherst | Final grade: 98.80% (A) | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Principles of Computer Science (COMPSCI 121)</h3>
-						<p>University of Massachusetts Amherst | Final grade: 100.00% | Credits: 4</p>
+						<p>University of Massachusetts Amherst | Final grade: 100.00% (A) | Credits: 4</p>
 					</Card>
 					<Card>
 						<h3>Calculus I</h3>
-						<p>University of Pittsburgh | Final grade: 99.00% | Credits: 3</p>
+						<p>University of Pittsburgh | Final grade: 99.00% (A) | Credits: 3</p>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Skills">
