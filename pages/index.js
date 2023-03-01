@@ -250,8 +250,7 @@ export default function Home() {
 				<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
 					<img align="center" width="180" height="180" src="https://github-readme-stats-api-clone.vercel.app/api?username=Tennis-Ball&count_private=true&show_icons=true&hide_border=true&theme=gruvbox_light" alt="Tennis Ball's github stats" />
 				</a>
-			</div>
-			
+			</div>	
 
 			<div className={`line`}></div>
 			<p style={{textAlign: "center"}}>Website built using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
