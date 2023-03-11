@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import { Component } from 'react'
 import Nav from '/components/nav'
-import Contacts from '/components/contacts'
 import Card from '/components/card'
 
 
