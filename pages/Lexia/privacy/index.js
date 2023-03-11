@@ -11,7 +11,7 @@ export default function LexiaPP(){
             </Head>
             <Nav />
             
-            <h1><a href="https://github.com/Tennis-Ball/lexia" target="_blank" rel="noreferrer">Lexia</a>'s Privacy Policy</h1>
+            <h1><a href="https://github.com/Tennis-Ball/lexia" target="_blank" rel="noreferrer">Lexia</a>&apos;s Privacy Policy</h1>
             
             <h3></h3>
             <Card>
@@ -31,7 +31,7 @@ export default function LexiaPP(){
 			<Card>
 				<h3>Updates</h3>
 				<p>
-					While unlikely, Lexia's Privacy Policy may change in the future.
+					While unlikely, Lexia&apos;s Privacy Policy may change in the future.
 					Thus, it is recommended to check this page from time to time.
 				</p>
 				<p>Last updated: 10 March 2023</p>
