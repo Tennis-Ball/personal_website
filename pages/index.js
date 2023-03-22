@@ -22,7 +22,7 @@ export default function Home() {
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
-					<h3>Albert</h3>
+					<h3><a href="https://github.com/Tennis-Ball/Albert" target="_blank" rel="noreferrer">Albert</a></h3>
 					<p>January 2022 - Present</p>
 					<p>Albert is an experimental research project exploring the possibilities of using a transformer model such as GPT-3 to help train a custom transformer model, Albert.</p>
 				</Card>		
