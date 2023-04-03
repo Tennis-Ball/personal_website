@@ -112,7 +112,7 @@ export default function Home() {
 				<p>I currently attend the Boston Latin School (BLS) as a sophomore. In order to accelerate my learning in computer science and related feilds, I have enrolled in several college and online courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
-						<h3>Database Systems (CSCI E-66)</h3>
+						<h3>Database Systems (CSCI E-66, graduate level)</h3>
 						<p>Harvard Extension School | Final grade: --% (-) | Credits: 4</p>
 					</Card>
 					<Card>
@@ -124,7 +124,7 @@ export default function Home() {
 						<p>University of Pittsburgh | Final grade: 92.60% (A) | Credits: 3</p>
 					</Card>
 					<Card>
-						<h3>Principles of Big Data Processing (CSCI E-80, graduate)</h3>
+						<h3>Principles of Big Data Processing (CSCI E-88, graduate level)</h3>
 						<p>Harvard Extension School | Final grade: 100.00% (A) | Credits: 4</p>
 					</Card>
 					<Card>
