@@ -16,29 +16,34 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I currently work as a Data Engineer at <a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a> My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I am a rising freshman at the Manning College of Information and Computer Science at UMass Amherst and currently work as a Data Engineer at Solve Advisors Inc. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
+					<h3>FoodCraft</h3>
+					<p>April 2023 - Present</p>
+					<p>FoodCraft is a service accessible by mobile and web application that enables users to quickly log ingredients they possess and provides detailed recipes based on their personal preferences.</p>
+				</Card>
+				<Card>
 					<h3><a href="https://github.com/Tennis-Ball/Albert" target="_blank" rel="noreferrer">Albert</a></h3>
-					<p>January 2022 - Present</p>
+					<p>January 2023 - March 2023</p>
 					<p>Albert is an experimental research project exploring the possibilities of using a transformer model such as GPT-3 to help train a custom transformer model, Albert.</p>
 				</Card>		
 				<Card>
 					<h3><a href="https://text2notes.com/" target="_blank" rel="noreferrer">OpenAI Text to Notes Converter</a></h3>
-					<p>December 2022 - January 2022</p>
+					<p>December 2022 - January 2023</p>
 					<p>A simple website hosting custom technology made possible by OpenAI&apos;s GPT-3 API. The technology can convert any textbook text into note form broken down by topic, effectively streamlining the notetaking process.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://github.com/Fantasy-Fencing" target="_blank" rel="noreferrer">Fantasy Fencing</a> X <a href="https://github.com/Tennis-Ball/The-Fencing-Project" target="_blank" rel="noreferrer">The Fencing Project</a></h3>
-					<p>September 2022 - Present</p>
+					<p>September 2022 - Paused</p>
 					<p>A small dev team founded by fencing celebrity Cyrus of Chaos to deliver a Fantasy Football inspired fencing platform. Incorporates elements from my project &quot;The Fencing Project&quot; which scrapes and manipulates all available fencing data. I mainly head backend development and systems design, occasionally touching our beautiful frontend UI.</p>
 				</Card>
 				<Card>
 					<h3 className="cardTitle"><a href="https://github.com/Tennis-Ball/MP-Predictor" target="_blank" rel="noreferrer">Melting Point Estimator</a></h3>
-					<p>July 2022 - Paused</p>
+					<p>July 2022 - September 2022</p>
 					<p>A deep learning neural network built using Tensorflow in Python which predicts the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
 				</Card>
 				<Card>
@@ -87,14 +92,14 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
-					<h3>Solve Advisors Inc.</h3>
+					<h3><a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a></h3>
 					<p>March 2022 - Present</p>
 					<li>Worked with the AI/ML team to build a Business Development Company (BDC) financial statement parser, which disrupted the industry and saved the company an estimated 848 hours annually</li>
 					<li>Automated manual bond and loan data pricing with Selenium and Google’s Oauth API in an AWS EC2 instance</li>
 					<li>Built tools to aggregate global treasury yeild data and organize it</li>
 				</Card>
 				<Card>
-					<h3>Advantage Data Inc. + Best Credit Management Inc.</h3>
+					<h3><a href="https://advantagedata.com/" target="_blank" rel="noreferrer">Advantage Data Inc. + Best Credit Management Inc.</a></h3>
 					<p>September 2022 - March 2022</p>
 					<li>Developed Python scripts to scrape data from the SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
 					<li>Collaborated with dev team to deploy data pipelines directing source data into our system with Python and SQL</li>
@@ -111,6 +116,10 @@ export default function Home() {
 			<Dropdown title="Education">
 				<p>I currently attend the Boston Latin School (BLS) as a sophomore. In order to accelerate my learning in computer science and related feilds, I have enrolled in several college and online courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
 				<Dropdown title="College Courses">
+					<Card>
+						<h3>Financial Accounting I</h3>
+						<p>University of Pittsburgh | Final grade: --% (-) | Credits: 3</p>
+					</Card>
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
 						<p>Harvard Extension School | Final grade: --% (-) | Credits: 4</p>
@@ -197,12 +206,12 @@ export default function Home() {
 				<Card>
 					<h3>Fencing - Individual</h3>
 					<p>2016 - Present</p>
-					<p>I currently rank 30th in the nation and 1st regionally for the Cadet age group (U17), 5th regionally for the Junior age group (U20). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
+					<p>I currently rank 17th in the nation and 1st regionally for the Cadet age group (U17), 5th regionally for the Junior age group (U20). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
 				</Card>
 				<Card>
 					<h3>Fencing - Varsity</h3>
 					<p>2019 - Present</p>
-					<p>Part of the Boston Latin School varsity fencing team since 7th grade, bringing the team to the state finals every year fenced. I exchange A and B positions (first and second) at competitions.</p>
+					<p>Part of the Boston Latin School varsity fencing team since 7th grade, bringing home the state championships title in 2023. I exchange A and B positions (first and second) at competitions.</p>
 				</Card>
 				<Dropdown title="Community Service">
 					<Card>
