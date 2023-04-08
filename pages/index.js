@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I am a rising freshman at the Manning College of Information and Computer Science at UMass Amherst and currently work as a Data Engineer at Solve Advisors Inc. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I am an incoming freshman at the Manning College of Information and Computer Science at the University of Massachusetts Amherst and currently work as a Data Engineer at Solve Advisors Inc. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -114,7 +114,7 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I currently attend the Boston Latin School (BLS) as a sophomore. In order to accelerate my learning in computer science and related feilds, I have enrolled in several college and online courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
+				<p>I currently attend the Boston Latin School (BLS) as a sophomore. In order to accelerate my learning in computer science and related fields, I have enrolled in several college and online courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Financial Accounting I</h3>
