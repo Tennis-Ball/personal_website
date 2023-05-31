@@ -113,7 +113,11 @@ export default function Home() {
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
-						<p>Harvard Extension School | Final grade: --% (-) | Credits: 4</p>
+						<p>Harvard Extension School | Final grade: ~95% (A) | Credits: 4</p>
+					</Card>
+					<Card>
+						<h3>Financial Accounting I</h3>
+						<p>University of Pittsburgh | Final grade: 93.30% (A) | Credits: 3<</p>
 					</Card>
 					<Card>
 						<h3>Business I</h3>
