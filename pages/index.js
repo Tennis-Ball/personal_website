@@ -92,8 +92,12 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
+					<h3>Atlantic Prime Estates</h3>
+					<p>July 2023 - Present</p>
+				</Card>
+				<Card>
 					<h3><a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a></h3>
-					<p>March 2022 - Present</p>
+					<p>March 2022 - July 2023</p>
 					<li>Worked with the AI/ML team to build a Business Development Company (BDC) financial statement parser, which disrupted the industry and saved the company an estimated 848 hours annually</li>
 					<li>Automated manual bond and loan data pricing with Selenium and Google’s Oauth API in an AWS EC2 instance</li>
 					<li>Built tools to aggregate global treasury yeild data and organize it</li>
@@ -114,7 +118,7 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I currently attend the Boston Latin School (BLS) as a sophomore. In order to accelerate my learning in computer science and related fields, I have enrolled in several college and online courses. I earned an unweighted GPA of 4.3/4.3 in 9th grade.</p>
+				<p>In order to accelerate my learning in computer science, business, and related fields during my 2 years (freshman and sophomore) at the Boston Latin School, I enrolled in several college courses listed below. I earned a GPA of 4.41 and was able to skip my junior and senior years of highschool by fully matriculating into the Manning College of Information and Computer Science at the University of Massachussetts Amherst.
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
@@ -215,11 +219,11 @@ export default function Home() {
 				</Card>
 				<Dropdown title="Community Service">
 					<Card>
-						<p>Awarded the 2021-22 ZERO HERO Award for my work on eliminating hunger in the greator Boston area, and the 2021-22 National Community Service Merit Award for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
+						<p>Awarded the ZERO HERO Award (2021-2023) for my work on eliminating hunger in the greator Boston area, and the National Community Service Merit Award (2021-2023) for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
 					</Card>
 					<Card>
 						<h3>Homeless Outreach Ministry & Engagement (HOME)</h3>
-						<p>January 2022 - Present</p>
+						<p>January 2022 - February 2023</p>
 						<p>Every week I volunteer with HOME to cook meals, prepare food/drink, distribute clothing, and lend an ear to my homeless neighbors of Boston.</p>
 					</Card>
 				</Dropdown>
@@ -250,7 +254,7 @@ export default function Home() {
 				</Card>
 				<Card>
 					<h3>Fishing</h3>
-					<p>I love fishing with friends and family at 4AM, especially when we don&apos;t catch anything and realize one of our wading boots has a hole in it... Jokes aside, freshwater fishing for bass and carp is always fun.</p>
+					<p>I love fishing with friends and family at 4AM, especially when we don&apos;t catch anything and realize one of our wading boots has a hole in it... Freshwater fishing for bass and carp is always fun.</p>
 				</Card>
 			</Dropdown>
 			<div className={`neutral ${styles.github}`}>
