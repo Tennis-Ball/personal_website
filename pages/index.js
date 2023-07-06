@@ -118,7 +118,7 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>In order to accelerate my learning in computer science, business, and related fields during my 2 years (freshman and sophomore) at the Boston Latin School, I enrolled in several college courses listed below. I earned a GPA of 4.41 and was able to skip my junior and senior years of highschool by fully matriculating into the Manning College of Information and Computer Science at the University of Massachussetts Amherst.
+				<p>In order to accelerate my learning in computer science, business, and related fields during my 2 years (freshman and sophomore) at the Boston Latin School, I enrolled in several college courses listed below. I earned a GPA of 4.41 and was able to skip my junior and senior years of highschool by fully matriculating into the Manning College of Information and Computer Science at the University of Massachussetts Amherst.</p>
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
