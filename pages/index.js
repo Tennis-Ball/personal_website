@@ -104,7 +104,7 @@ export default function Home() {
 				</Card>
 				<Card>
 					<h3><a href="https://advantagedata.com/" target="_blank" rel="noreferrer">Advantage Data Inc. + Best Credit Management Inc.</a></h3>
-					<p>September 2022 - March 2022</p>
+					<p>September 2021 - March 2022</p>
 					<li>Developed Python scripts to scrape data from the SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
 					<li>Collaborated with dev team to deploy data pipelines directing source data into our system with Python and SQL</li>
 				</Card>
