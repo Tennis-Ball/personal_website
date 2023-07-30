@@ -11,7 +11,7 @@ export default function Timeline(){
         {content: <Box><h3>System.out.println(&quot;Hello, World!&quot;);</h3></Box>, date:"5/10/2007" },
         {content: <Box><h3>Start at Boston Latin School</h3></Box>, date:"9/01/2019" },
         {content: <Box><h3>Website hosted with Vercel!</h3></Box>, date:"8/01/2022" },
-        {content: <Box><h3>Summer trips to Barcelona (Spain) and London (England), Paris (France), and Algarve (Portugal)</h3></Box>, date:"8/11/2022" },
+        {content: <Box><h3>Summer trips to Barcelona (Spain), London (England), Paris (France), and Algarve (Portugal)</h3></Box>, date:"8/11/2022" },
         {content: <Box><h3>Scored 1550 (790 Math, 760 EBRW) on the SAT</h3></Box>, date:"9/27/22"},
         {content: <Box><h3>Earned A22 fencing rating by placing first at the <a href="https://fencingtimelive.com/events/results/635AD483CD574D16A19A1FB9661A0DBF" target="_blank" rel="noreferrer">Star Cup RYC/RJCC</a></h3></Box>, date:"9/17/22"},
         {content: <Box><h3>Won the Massachusetts State Championships with the Boston Latin School Men&apos;s Fencing Team</h3></Box>, date:"2/26/23"},

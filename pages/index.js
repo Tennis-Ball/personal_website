@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I am an incoming freshman at the Manning College of Information and Computer Science at the University of Massachusetts Amherst and currently work as a Data Engineer at Solve Advisors Inc. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I am an incoming freshman at the Manning College of Information and Computer Science at the University of Massachusetts Amherst and currently work as a Data Engineer at Atlantic Prime Estates. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -179,7 +179,7 @@ export default function Home() {
 					<Card>
 						<h3>Tech Stack</h3>
 						<li>Frameworks: React, Flask, Django, React Native</li>
-						<li>Tools: AWS, MS/G suites, Git, Github</li>
+						<li>Tools: AWS, MS/G suites, Git</li>
 						<li>Libraries: Tensorflow, Pandas, NumPy, Matplotlib</li>
 					</Card>
 					<Card>
@@ -209,8 +209,8 @@ export default function Home() {
 			<Dropdown title="Extracurriculars">
 				<Card>
 					<h3>Fencing - Individual</h3>
-					<p>2016 - Present</p>
-					<p>I currently rank 17th in the nation and 1st regionally for the Cadet age group (U17), 5th regionally for the Junior age group (U20). I am working towards a spot (top 20) on the USA Cadet Men&apos;s Epee world team.</p>
+					<p>2016 - 2023</p>
+					<p>I peaked at 13th in the nation and 1st regionally for the Cadet age group (U17), 5th regionally for the Junior age group (U20). Had I continued training I hoped to join the USA Cadet Men&apos;s Epee world team (top 20).</p>
 				</Card>
 				<Card>
 					<h3>Fencing - Varsity</h3>
@@ -229,13 +229,13 @@ export default function Home() {
 				</Dropdown>
 				<Card>
 					<h3>Computer Science/ Business</h3>
-					<p>My passion for computer technologies and entrepreneurship has most likely already made itself clear; my past+current projects and businesses can be found above along with my professional work experience.</p>
+					<p>My passion for computer technologies and entrepreneurship has likely already made itself clear; my past+current projects and businesses endeavors can be found above along with my professional work experience.</p>
 				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
 				<Card>
 					<h3>Finance</h3>
-					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on getting into the bond/loan markets as I work closely with them at my company.</p>
+					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on exploring the bond/loan markets as I work closely with them at my company.</p>
 				</Card>
 				<Card>
 					<h3>3d designing and printing</h3>
