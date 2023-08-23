@@ -16,6 +16,8 @@ export default function Timeline(){
         {content: <Box><h3>Earned A22 fencing rating by placing first at the <a href="https://fencingtimelive.com/events/results/635AD483CD574D16A19A1FB9661A0DBF" target="_blank" rel="noreferrer">Star Cup RYC/RJCC</a></h3></Box>, date:"9/17/22"},
         {content: <Box><h3>Won the Massachusetts State Championships with the Boston Latin School Men&apos;s Fencing Team</h3></Box>, date:"2/26/23"},
         {content: <Box><h3>Accepted to the <a href="https://www.cics.umass.edu/" target="_blank" rel="noreferrer">Manning College of Information and Computer Sciences</a> at UMass Amherst where I will attend as part of the class of 2027</h3></Box>, date:"3/21/23"},
+        {content: <Box><h3>Began a Data Engineer Contract position with real estate startup Atlantic Prime Estates</h3></Box>, date:"7/01/2023" },
+        {content: <Box><h3>Summer trips to Budapest (Hungary), Vienna (Austria), Prague (Czech Republic), and the Maldives</h3></Box>, date:"8/06/2023" },
     ]
     return (
         <>
