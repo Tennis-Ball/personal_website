@@ -27,6 +27,11 @@ export default function Home() {
 					<p>FoodCraft is a service accessible by mobile and web application that enables users to quickly log ingredients they possess and provides detailed recipes based on their personal preferences.</p>
 				</Card>
 				<Card>
+					<h3><a href="https://chrome.google.com/webstore/detail/lexia/pikdcobajohdjlhcohgkenhkjedgdcpo" target="_blank" rel="noreferrer">Lexia</a></h3>
+					<p>March 2023</p>
+					<p>A simple Google Chrome extension written in javascript to improve the readability of online text, made specifically for a friend with dyslexia.</p>
+				</Card>	
+				<Card>
 					<h3><a href="https://github.com/Tennis-Ball/Albert" target="_blank" rel="noreferrer">Albert</a></h3>
 					<p>January 2023 - March 2023</p>
 					<p>Albert is an experimental research project exploring the possibilities of using a transformer model such as GPT-3 to help train a custom transformer model, Albert.</p>
