@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I am a sophomore by credits pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst and currently work as a Data Engineer at Atlantic Prime Estates. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I am a current sophomore student expecting to graduate in January 2026 pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work part time as a Data Engineer at Atlantic Prime Estates. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -97,8 +97,10 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
-					<h3>Atlantic Prime Estates</h3>
+					<h3><a href="https://www.atlanticprimeestates.com/" target="_blank" rel="noreferrer">Atlantic Prime Estates</a></h3>
 					<p>July 2023 - Present</p>
+					<li>Building advanced housing data aggregation pipelines to push exclusive API data into AWS hosted MySQL databases for later mathematical analysis</li>
+					<li>Comparing multiple regression and time series models to more accurately predict appreciation rates, building out the fund’s most valuable market analysis tool</li>
 				</Card>
 				<Card>
 					<h3><a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a></h3>
@@ -123,15 +125,11 @@ export default function Home() {
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>In order to accelerate my learning in computer science, business, and related fields during my 2 years (freshman and sophomore) at the Boston Latin School, I enrolled in several college courses listed below. I earned a GPA of 4.41 and was able to skip my junior and senior years of highschool by fully matriculating into the Manning College of Information and Computer Science at the University of Massachussetts Amherst.</p>
+				<p>I earned a 4.41 GPA at the Boston Latin School during which time I also enrolled in several college courses to accelerate my learning in computer science, business, and related fields. I currently hold a 4.0 GPA at the University of Massachussetts Amherst. Relevant courses are listed below.</p>
 				<Dropdown title="College Courses">
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
 						<p>Harvard Extension School | Final grade: ~95% (A) | Credits: 4</p>
-					</Card>
-					<Card>
-						<h3>Financial Accounting I</h3>
-						<p>University of Pittsburgh | Final grade: 93.30% (A) | Credits: 3</p>
 					</Card>
 					<Card>
 						<h3>Business I</h3>
@@ -154,8 +152,16 @@ export default function Home() {
 						<p>University of Massachusetts Amherst | Final grade: 100.00% (A) | Credits: 4</p>
 					</Card>
 					<Card>
-						<h3>Calculus I</h3>
-						<p>University of Pittsburgh | Final grade: 99.00% (A) | Credits: 3</p>
+						<h3>Introduction to Linear Algebra (Math 235)</h3>
+						<p>University of Massachusetts Amherst | Final grade: --% (--) | Credits: 4</p>
+					</Card>
+					<Card>
+						<h3>Object-Oriented Programming (CICS 160)</h3>
+						<p>University of Massachusetts Amherst | Final grade: --% (--) | Credits: 4</p>
+					</Card>
+					<Card>
+						<h3>Calculus II (Math 132)</h3>
+						<p>University of Massachusetts Amherst | Final grade: --% (--) | Credits: 4</p>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Skills">
