@@ -201,21 +201,6 @@ export default function Home() {
 						<li>Flexible</li>
 					</Card>
 				</Dropdown>
-				<Dropdown title="Courseload">
-					<Card>
-						<h3>2022 - 2023 (BLS 10th grade)</h3>
-						<li>English 10 - Honors</li>
-						<li>AP World History</li>
-						<li>Chinese 3 - Honors</li>
-						<li>Advanced Precalculus - Honors</li>
-						<li>Physics 1 - Honors</li>
-						<li>Latin Prose (advanced 4) - Honors</li>
-					</Card>
-					<Card>
-						<h3>Approbation with Distinction</h3>
-						<p>Earned every term (grade 7-present), for an excellent performance average of A- or above in each course</p>
-					</Card>
-				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Extracurriculars">
 				<Card>
