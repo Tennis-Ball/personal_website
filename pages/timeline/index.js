@@ -18,6 +18,7 @@ export default function Timeline(){
         {content: <Box><h3>Accepted to the <a href="https://www.cics.umass.edu/" target="_blank" rel="noreferrer">Manning College of Information and Computer Sciences</a> at UMass Amherst where I will attend as part of the class of 2027</h3></Box>, date:"3/21/23"},
         {content: <Box><h3>Began a Data Engineer Contract position with real estate startup Atlantic Prime Estates</h3></Box>, date:"7/01/2023" },
         {content: <Box><h3>Summer trips to Budapest (Hungary), Vienna (Austria), Prague (Czech Republic), and the Maldives</h3></Box>, date:"8/06/2023" },
+        {content: <Box><h3>Accepted an internship position at ISO New Englad for summer 2024</h3></Box>, date:"11/27/2023" },
     ]
     return (
         <>

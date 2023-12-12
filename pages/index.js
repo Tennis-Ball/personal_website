@@ -210,8 +210,13 @@ export default function Home() {
 				</Card>
 				<Card>
 					<h3>Fencing - Varsity</h3>
-					<p>2019 - Present</p>
-					<p>Part of the Boston Latin School varsity fencing team since 7th grade, bringing home the state championships title in 2023. I exchange A and B positions (first and second) at competitions.</p>
+					<p>2019 - 2023</p>
+					<p>Was part of the Boston Latin School varsity fencing team since 7th grade, bringing home the state championships title in 2023. I exchange A and B positions (first and second) at competitions.</p>
+				</Card>
+				<Card>
+					<h3>Fencing - Club</h3>
+					<p>2023 - present</p>
+					<p>Currently fencing on the UMass club fencing team, taking first place at the 2023 Smith individual invitational competition.</p> 
 				</Card>
 				<Dropdown title="Community Service">
 					<Card>
