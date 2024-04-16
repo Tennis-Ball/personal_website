@@ -131,7 +131,7 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Education">
 				<p>I earned a 4.41 GPA at the Boston Latin School during which time I also enrolled in several college courses to accelerate my learning in computer science, business, and related fields. I currently hold a 4.0 GPA at the University of Massachussetts Amherst. Relevant courses are listed below.</p>
-				<Dropdown title="College Courses">
+				<Dropdown title="Coursework">
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
 						<p>Harvard Extension School | Final grade: A | Credits: 4</p>
