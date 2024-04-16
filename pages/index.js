@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I am a current sophomore student expecting to graduate in May 2025 pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work part time as a Data Engineer at Atlantic Prime Estates. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I am a current junior by credits expecting to graduate in May 2025 pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work part time as a Data Engineer at Atlantic Prime Estates. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
