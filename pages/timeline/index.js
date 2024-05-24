@@ -18,7 +18,7 @@ export default function Timeline(){
         {content: <Box><h3>Began a Data Engineer Contract position with real estate startup Atlantic Prime Estates</h3></Box>, date:"7/01/2023" },
         {content: <Box><h3>Summer trips to Budapest (Hungary), Vienna (Austria), Prague (Czech Republic), and the Maldives</h3></Box>, date:"8/06/2023" },
         {content: <Box><h3>Cofounded software company QUAD</h3></Box>, date:"11/1/2023" },
-        {content: <Box><h3>Accepted an internship position at ISO New England for summer 2024</h3></Box>, date:"11/27/2023" },
+        {content: <Box><h3>Accepted a full time position at a fintech AI startup for summer 2024</h3></Box>, date:"4/1/2024" },
     ]
     return (
         <>

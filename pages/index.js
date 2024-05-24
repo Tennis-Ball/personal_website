@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I am a current junior by credits expecting to graduate in May 2025 pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work part time as a Data Engineer at Atlantic Prime Estates. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I am a current junior by credits expecting to graduate in May 2025 pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work as the lead software engineer at a finance AI company. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -102,10 +102,21 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
+					<h3>Fintech AI Startup</h3>
+					<p>April 2024 - Present</p>
+					<li>Configuring company servers to handle large streams of financial data and deploying machine learning models to extract insights from them.</li>
+				</Card>
+				<Card>
+					<h3><a href="https://www.minutemenalternativeinvestmentfund.com/">Minutemen Alternative Investment Fund</a></h3>
+					<p>February 2024 - Present</p>
+					<li>Co-leading a derivatives trading team part of the quant arm of MAIF as a quantitative researcher</li>
+					<li>Deploying live gamma scalping scalping algorithms to generate upwards of 3% alpha against the benchmark index SPY</li>
+				</Card>
+				<Card>
 					<h3><a href="https://www.atlanticprimeestates.com/" target="_blank" rel="noreferrer">Atlantic Prime Estates</a></h3>
-					<p>July 2023 - Present</p>
-					<li>Building advanced housing data aggregation pipelines to push exclusive API data into AWS hosted MySQL databases for later mathematical analysis</li>
-					<li>Comparing multiple regression and time series models to more accurately predict appreciation rates, building out the fund’s most valuable market analysis tool</li>
+					<p>July 2023 - April 2024</p>
+					<li>Built advanced housing data aggregation pipelines to push exclusive API data into AWS hosted MySQL databases for later mathematical analysis</li>
+					<li>Compared multiple regression and time series models to more accurately predict appreciation rates, building out the fund’s most valuable market analysis tool</li>
 				</Card>
 				<Card>
 					<h3><a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a></h3>
@@ -120,49 +131,41 @@ export default function Home() {
 					<li>Developed Python scripts to scrape data from the SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
 					<li>Collaborated with dev team to deploy data pipelines directing source data into our system with Python and SQL</li>
 				</Card>
-				<Dropdown title="Honorable Mentions">
-					<Card>
-						<p>First job offer as a <b>front end software engineer intern</b> at trucking logistics company <a href="https://relaymile.com/" target="_blank" rel="noreferrer">Relaymile</a> in August of 2021</p>
-					</Card>
-					<Card>
-						<p>Making the 3rd stage technical interview with <b>Uber</b> for their <u>Software Engineer 2 - Data - Rider Verticals</u> position. This was one of the most intense interview processes I had experienced, 1 full day of onsite interviews away from a full time position at the transportation giant.</p>
-					</Card>
-				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I earned a 4.41 GPA at the Boston Latin School during which time I also enrolled in several college courses to accelerate my learning in computer science, business, and related fields. I currently hold a 4.0 GPA at the University of Massachussetts Amherst. Relevant courses are listed below.</p>
+				<p>I currently hold a 4.0 GPA at the University of Massachussetts Amherst.</p>
 				<Dropdown title="Coursework">
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
-						<p>Harvard Extension School | Final grade: A | Credits: 4</p>
+						<p>Harvard Extension School | Final grade: A</p>
 					</Card>
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-88)</h3>
-						<p>Harvard Extension School | Final grade: A | Credits: 4</p>
-					</Card>
-					<Card>
-						<h3>Statistics I (STAT 515)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A | Credits: 3</p>
-					</Card>
-					<Card>
-						<h3>Introduction to Linear Algebra (Math 235)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A | Credits: 3</p>
+						<p>Harvard Extension School | Final grade: A</p>
 					</Card>
 					<Card>
 						<h3>Object-Oriented Programming (CICS 160)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A | Credits: 4</p>
+						<p>University of Massachusetts Amherst | Final grade: A</p>
 					</Card>
 					<Card>
-						<h3>Calculus III (Math 233)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A | Credits: 4</p>
+						<h3>Data Structures (CS 210)</h3>
+						<p>University of Massachusetts Amherst | Final grade: A</p>
 					</Card>
 					<Card>
-						<h3>Business I</h3>
-						<p>University of Pittsburgh | Final grade: A | Credits: 3</p>
+						<h3>Introduction to Algorithms (CS 311)</h3>
+						<p>University of Massachusetts Amherst | Final grade: ~A</p>
 					</Card>
 					<Card>
-						<h3>Economics I</h3>
-						<p>University of Pittsburgh | Final grade: A | Credits: 3</p>
+						<h3>Scientific Computing (MATH 551)</h3>
+						<p>University of Massachusetts Amherst | Final grade: A</p>
+					</Card>
+					<Card>
+						<h3>Statistics II (STAT 516)</h3>
+						<p>University of Massachusetts Amherst | Final grade: ~A</p>
+					</Card>
+					<Card>
+						<h3>Applications of Linear Algebra (Math 545)</h3>
+						<p>University of Massachusetts Amherst | Final grade: ~A</p>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Skills">
@@ -173,14 +176,9 @@ export default function Home() {
 						<li>Korean - Elementary proficiency</li>
 					</Card>
 					<Card>
-						<h3>National Latin Exam Gold</h3>
-						<p>Summa Cum Laude 2020, 2021, and 2022</p>
-					</Card>
-					<Card>
 						<h3>Computer Languages</h3>
 						<li>Python - Expert</li>
-						<li>HTML/CSS - Proficient</li>
-						<li>Java, C++, Javascript - Proficient</li>
+						<li>Java, C, Javascript - Proficient</li>
 						<li>SQL - Proficient</li>
 						<br></br>
 						<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
