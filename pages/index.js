@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I am a current junior by credits expecting to graduate in May 2025 pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work as the lead software engineer at a finance AI company. My expertise ranges from machine learning and data engineering to building out web and mobile applications. I am a competitive fencer at the national level, and am an avid stock+etf investor, 3d printer, climber, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I am a rising senior pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work as the lead software engineer at a finance AI company and cofounded an AI shopping startup. My interests range from machine learning and AI safety to scalable cloud infrastructure and data processing. I am a competitive fencer at the national level, and am an avid stock+option investor, 3d printer, climber, and fisherman 🎣.</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
@@ -133,7 +133,7 @@ export default function Home() {
 				</Card>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I currently hold a 4.0 GPA at the University of Massachussetts Amherst.</p>
+				<p>I currently hold a 3.95 GPA at the University of Massachussetts Amherst.</p>
 				<Dropdown title="Coursework">
 					<Card>
 						<h3>Database Systems (CSCI E-66, graduate level)</h3>
@@ -153,7 +153,7 @@ export default function Home() {
 					</Card>
 					<Card>
 						<h3>Introduction to Algorithms (CS 311)</h3>
-						<p>University of Massachusetts Amherst | Final grade: ~A</p>
+						<p>University of Massachusetts Amherst | Final grade: A</p>
 					</Card>
 					<Card>
 						<h3>Scientific Computing (MATH 551)</h3>
