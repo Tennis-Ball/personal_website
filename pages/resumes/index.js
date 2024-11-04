@@ -13,8 +13,7 @@ export default function Timeline(){
             <h1>Resumes</h1>
             
             <h3></h3>
-            <div className={`neutral`}><a href="/resumes/work_resume.pdf">Work Resume</a></div>
-            <div className={`neutral`}><a href="/resumes/academic_resume.pdf">Academic Resume</a></div>
+            <div className={`neutral`}><a href="/resumes/Mason_Choi_Resume.pdf">Resume</a></div>
 
             <div className={`line`}></div>
 			<p style={{textAlign: "center"}}>Website built using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
