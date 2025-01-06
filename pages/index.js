@@ -16,7 +16,7 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I'm a current senior pursuing a dual degree in computer science and math (stats+ds concentration) at the University of Massachusetts Amherst. I've worked in the finance and real estate industries as a data engineer and am now exploring the fashion AI startup space. My interests lie in computing for the common good, particularly in scalable cloud infrastructure and AI safety. I'm a competitive fencer at the national level, and an avid options gambler, 3d printer, climber, and fisherman 🎣.
+			<p>Hi! My name is Mason Choi. I&apos;m a current senior pursuing a dual degree in computer science and math (stats+ds concentration) at the University of Massachusetts Amherst. I&apos;ve worked in the finance and real estate industries as a data engineer and am now exploring the fashion AI startup space. My interests lie in computing for the common good, particularly in scalable cloud infrastructure and AI safety. I&apos;m a competitive fencer at the national level, and an avid options gambler, 3d printer, climber, and fisherman 🎣.
 			</p>
 			
 			<Contacts/>
@@ -235,7 +235,7 @@ export default function Home() {
 			<Dropdown title="Hobbies">
 				<Card>
 					<h3>Finance</h3>
-					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on exploring the fixed income and foreign exchange markets as I've work closely with them in my previous roles.</p>
+					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on exploring the fixed income and foreign exchange markets as I&apos;ve work closely with them in my previous roles.</p>
 				</Card>
 				<Card>
 					<h3>3d designing and printing</h3>
