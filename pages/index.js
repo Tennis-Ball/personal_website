@@ -16,20 +16,16 @@ export default function Home() {
 		</Head>
 			<Nav/>
 			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I am a rising senior pursuing a dual degree in computer science and mathematics (with a concentration in statistics+data science) at the University of Massachusetts Amherst. I work as the lead software engineer at a finance AI company and cofounded an AI shopping startup. My interests range from machine learning and AI safety to scalable cloud infrastructure and data processing. I am a competitive fencer at the national level, and am an avid stock+option investor, 3d printer, climber, and fisherman 🎣.</p>
+			<p>Hi! My name is Mason Choi. I'm a current senior pursuing a dual degree in computer science and math (stats+ds concentration) at the University of Massachusetts Amherst. I've worked in the finance and real estate industries as a data engineer and am now exploring the fashion AI startup space. My interests lie in computing for the common good, particularly in scalable cloud infrastructure and AI safety. I'm a competitive fencer at the national level, and an avid options gambler, 3d printer, climber, and fisherman 🎣.
+			</p>
 			
 			<Contacts/>
 			<Dropdown title="Projects">
 				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
 				<Card>
 					<h3>Campus Quad</h3>
-					<p>November 2023 - Present</p>
-					<p>A mobile app being developed under parent company QUAD, seeking to bring college students together under one campus. The app features both a social and marketplace side hosting features ranging from chat rooms based on academic class, forum posts for news and sports, and buy, sell, and rent options for goods and services.</p>
-				</Card>
-				<Card>
-					<h3>FoodCraft</h3>
-					<p>March 2023 - Archived</p>
-					<p>FoodCraft is a service accessible by mobile and web application that enables users to quickly log ingredients they possess and provides detailed recipes based on their personal preferences.</p>
+					<p>November 2023 - May 2024</p>
+					<p>A mobile app developed under parent company QUAD, seeking to bring college students together under one campus. The app features both a social and marketplace side hosting features ranging from chat rooms based on academic class, forum posts for news and sports, and buy, sell, and rent options for goods and services.</p>
 				</Card>
 				<Card>
 					<h3><a href="https://chrome.google.com/webstore/detail/lexia/pikdcobajohdjlhcohgkenhkjedgdcpo" target="_blank" rel="noreferrer">Lexia</a></h3>
@@ -102,15 +98,16 @@ export default function Home() {
 			</Dropdown>
 			<Dropdown title="Work">
 				<Card>
-					<h3>Fintech AI Startup</h3>
-					<p>April 2024 - Present</p>
-					<li>Configuring company servers to handle large streams of financial data and deploying machine learning models to extract insights from them.</li>
+					<h3>Stealth Startup</h3>
+					<p>XX XX - Present</p>
+					<li>Cofounded startup operating in the fashion AI space</li>
+					<li>Working on bringing exciting technology to the consumer markets in 2025!</li>
 				</Card>
 				<Card>
-					<h3><a href="https://www.minutemenalternativeinvestmentfund.com/">Minutemen Alternative Investment Fund</a></h3>
-					<p>February 2024 - Present</p>
-					<li>Co-leading a derivatives trading team part of the quant arm of MAIF as a quantitative researcher</li>
-					<li>Deploying live gamma scalping scalping algorithms to generate upwards of 3% alpha against the benchmark index SPY</li>
+					<h3>AlphaSeeker AI</h3>
+					<p>April 2024 - November 2024</p>
+					<li>Configured company servers to handle large streams of financial data</li>
+					<li>Deployed machine learning models to extract insights from them</li>
 				</Card>
 				<Card>
 					<h3><a href="https://www.atlanticprimeestates.com/" target="_blank" rel="noreferrer">Atlantic Prime Estates</a></h3>
@@ -133,15 +130,23 @@ export default function Home() {
 				</Card>
 			</Dropdown>
 			<Dropdown title="Education">
-				<p>I currently hold a 3.95 GPA at the University of Massachussetts Amherst.</p>
-				<Dropdown title="Coursework">
+				<p>I currently hold a 3.94 GPA at the University of Massachussetts Amherst.</p>
+				<Dropdown title="Relevant Coursework">
 					<Card>
-						<h3>Database Systems (CSCI E-66, graduate level)</h3>
+						<h3>Machine Learning (CS 589)</h3>
+						<p>University of Massachusetts Amherst | Final grade: A</p>
+					</Card>
+					<Card>
+						<h3>Database Systems (CSCI E-66)</h3>
 						<p>Harvard Extension School | Final grade: A</p>
 					</Card>
 					<Card>
 						<h3>Principles of Big Data Processing (CSCI E-88)</h3>
 						<p>Harvard Extension School | Final grade: A</p>
+					</Card>
+					<Card>
+						<h3>Natural Language Processing (CS 485)</h3>
+						<p>University of Massachusetts Amherst | Final grade: A</p>
 					</Card>
 					<Card>
 						<h3>Object-Oriented Programming (CICS 160)</h3>
@@ -161,11 +166,11 @@ export default function Home() {
 					</Card>
 					<Card>
 						<h3>Statistics II (STAT 516)</h3>
-						<p>University of Massachusetts Amherst | Final grade: ~A</p>
+						<p>University of Massachusetts Amherst | Final grade: A</p>
 					</Card>
 					<Card>
 						<h3>Applications of Linear Algebra (Math 545)</h3>
-						<p>University of Massachusetts Amherst | Final grade: ~A</p>
+						<p>University of Massachusetts Amherst | Final grade: B</p>
 					</Card>
 				</Dropdown>
 				<Dropdown title="Skills">
@@ -184,24 +189,23 @@ export default function Home() {
 						<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
 							<img align="left" width="185" height="185" src="https://github-readme-stats-api-clone.vercel.app/api/top-langs/?username=Tennis-Ball&layout=compact&hide_border=true&card_width=400" />
 						</a>
-
 					</Card>
 					<Card>
 						<h3>Tech Stack</h3>
 						<li>Frameworks: React, Flask, Django, React Native</li>
-						<li>Tools: AWS, MS/G suites, Git</li>
+						<li>Tools: AWS, GCP, Azure, MS/G suites, Git</li>
 						<li>Libraries: Tensorflow, Pandas, NumPy, Matplotlib</li>
-					</Card>
-					<Card>
-						<h3>Key Skills</h3>
-						<li>Communicative</li>
-						<li>Hard working</li>
-						<li>Leader</li>
-						<li>Flexible</li>
 					</Card>
 				</Dropdown>
 			</Dropdown>
 			<Dropdown title="Extracurriculars">
+				<Card>
+					<h3><a href="https://www.minutemenalternativeinvestmentfund.com/">Minutemen Alternative Investment Fund</a></h3>
+					<p>February 2024 - Present</p>
+					<li>Currently serving as president of the Premier Quantitative Finance Fund at UMass</li>
+					<li>Led a derivatives trading team part of the quant arm of MAIF as a quantitative researcher</li>
+					<li>Deployed live gamma scalping scalping algorithms to generate upwards of 3% alpha against the benchmark index SPY</li>
+				</Card>
 				<Card>
 					<h3>Fencing - Individual</h3>
 					<p>2016 - 2023</p>
@@ -227,15 +231,11 @@ export default function Home() {
 						<p>Every week I volunteered with HOME to cook meals, prepare food/drink, distribute clothing, and lend an ear to my homeless neighbors of Boston.</p>
 					</Card>
 				</Dropdown>
-				<Card>
-					<h3>Computer Science/Business</h3>
-					<p>My passion for computer technologies and entrepreneurship has likely already made itself clear; my past+current projects and businesses endeavors can be found above along with my professional work experience.</p>
-				</Card>
 			</Dropdown>
 			<Dropdown title="Hobbies">
 				<Card>
 					<h3>Finance</h3>
-					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on exploring the bond/loan markets as I work closely with them at my company.</p>
+					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on exploring the fixed income and foreign exchange markets as I've work closely with them in my previous roles.</p>
 				</Card>
 				<Card>
 					<h3>3d designing and printing</h3>

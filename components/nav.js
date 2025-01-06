@@ -27,7 +27,7 @@ export default function Nav(props){
         <div className={styles.container}>
             <A url="/">Home</A>
             <A url="/timeline">Timeline</A>
-            <A url="/resumes">Resumes</A>
+            <A url="/resumes/Mason_Choi_Resume.pdf">Resume</A>
             {/* <div className="spacer"></div> */}
             <div className="linkRight">
                 <select value={theme} onChange={(e)=>{
@@ -54,8 +54,13 @@ function A(props){
         setIsCurrent(window.location.pathname == props.url)
     })
     
-
-    return (
-        <Link href={props.url}><a  className={isCurrent ? "" : styles.faded}>{props.children}</a></Link>
-    )
+    if(props.url == "/resumes/Mason_Choi_Resume.pdf"){
+        return (
+            <Link href={props.url}><a className={isCurrent ? "" : styles.faded} target="_blank" rel="noreferrer">{props.children}</a></Link>
+        )
+    } else {
+        return (
+            <Link href={props.url}><a className={isCurrent ? "" : styles.faded}>{props.children}</a></Link>
+        )
+    }
 }
