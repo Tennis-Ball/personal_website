@@ -1,273 +1,315 @@
 import Head from 'next/head'
-import Nav from '/components/nav'
-import Dropdown from '/components/dropdown'
-import styles from '../styles/Home.module.css'
-import Image from 'next/image'
-import Card from '/components/card'
-import Contacts from '/components/contacts'
+import { useEffect } from 'react'
 
+/* ============================================================
+   Content — Mason Choi. Each leaf of the fan is a section.
+   ============================================================ */
+const HOME = {
+  t: 'Mason Choi', idx: 'Engineer · Boston',
+  b: 'Data infrastructure, machine learning, and now fashion AI — with an épée in the other hand.',
+}
+
+const LEAVES = [
+  { key:'work', t:'Work', idx:'Ⅰ · Employment',
+    b:'Five years of data & ML roles — most recent first.',
+    lede:'From SEC-scraping ETL to deploying models on live financial streams — and now cofounding.',
+    li:[
+      {a:'Stealth Startup', d:'Cofounder — building in fashion AI, bringing the technology to consumer markets.', y:'2025—'},
+      {a:'AlphaSeeker AI', d:'Configured servers for large streams of financial data; deployed ML to extract insight.', y:'2024'},
+      {a:'Atlantic Prime Estates', d:'Housing-data pipelines into AWS-hosted MySQL; regression & time-series appreciation models.', y:'2023–24', href:'https://www.atlanticprimeestates.com/'},
+      {a:'Solve Advisors', d:'BDC financial-statement parser saving ~848 hrs/yr; automated bond & loan pricing on EC2.', y:'2022–23', href:'https://solveadvisors.com/'},
+      {a:'Advantage Data · Best Credit Mgmt', d:'Python ETL scraping the SEC into the company database, replacing hundreds of manual hours.', y:'2021–22', href:'https://advantagedata.com/'},
+    ]},
+  { key:'projects', t:'Projects', idx:'Ⅱ · Register',
+    b:'A register of things built since 2018.',
+    lede:'Selected work across mobile, ML, and the web. More on GitHub.',
+    li:[
+      {a:'Campus Quad', d:'Mobile app bringing college students together — social feeds and a goods/services marketplace.', y:'2023–24'},
+      {a:'Lexia', d:'Chrome extension improving online-text readability, made for a friend with dyslexia.', y:'2023', href:'https://chromewebstore.google.com/detail/pikdcobajohdjlhcohgkenhkjedgdcpo'},
+      {a:'Albert', d:'Research project using GPT-3 to help train a custom transformer.', y:'2023', href:'https://github.com/Tennis-Ball/Albert'},
+      {a:'Text2Notes', d:'GPT-3 tool converting textbook prose into topic-broken notes.', y:'2022–23'},
+      {a:'Melting Point Estimator', d:'TensorFlow network predicting molecular melting points from SMILES + mass.', y:'2022', href:'https://github.com/Tennis-Ball/MP-Predictor'},
+      {a:'Raytracer', d:'A raytracer built from scratch in JavaScript, with Tony Zhang.', y:'2022', href:'https://tony1324.github.io/raytracer/'},
+      {a:'Filess', d:'Static asset host on Flask + AWS S3 with custom share links.', y:'2022', href:'https://filess.org'},
+      {a:'EMNIST net', d:'Neural net from scratch in NumPy — 96%+ on EMNIST Balanced.', y:'2022', href:'https://tennis-ball.github.io/Character-Classification/'},
+    ]},
+  { key:'finance', t:'Finance', idx:'Ⅲ · Markets',
+    b:'President of the Minutemen Alternative Investment Fund.',
+    lede:'Leading the quant arm at UMass — derivatives research and live trading.',
+    li:[
+      {a:'MAIF — President', d:'Leading the premier quantitative finance fund at UMass.', y:'2024—', href:'https://www.minutemenalternativeinvestmentfund.com/'},
+      {a:'Derivatives desk', d:'Led a derivatives trading team as a quantitative researcher.', y:'2024'},
+      {a:'Gamma scalping', d:'Deployed live options algorithms generating ~3% alpha against SPY.', y:'2024'},
+      {a:'Markets', d:'Researching how politics, economics, and events shape equities, ETFs, and increasingly fixed income & FX.', y:'ongoing'},
+    ]},
+  { key:'education', t:'Education', idx:'Ⅳ · Study',
+    b:'Computer science & mathematics at UMass Amherst.',
+    lede:'A dual degree, with a statistics & data-science concentration.',
+    li:[
+      {a:'UMass Amherst', d:'Dual degree — computer science and mathematics (statistics & data-science concentration).', y:'—'},
+      {a:'Coursework', d:'Machine Learning, NLP, Algorithms, Data Structures, Scientific Computing, Statistics II, Linear Algebra.', y:''},
+      {a:'Harvard Extension', d:'Database Systems and Principles of Big Data Processing.', y:''},
+      {a:'Toolkit', d:'Python (expert); Java, C, JavaScript, SQL. TensorFlow, Pandas, NumPy. AWS, GCP, Azure. React, Flask, Django.', y:''},
+      {a:'Languages', d:'English (native), Mandarin (professional), Korean (elementary).', y:''},
+    ]},
+  { key:'fencing', t:'Fencing', idx:'Ⅴ · Sport',
+    b:'Épée, at the national level for seven years.',
+    lede:'Nationally ranked, a state champion, and still on the strip.',
+    li:[
+      {a:'Individual', d:'Peaked 13th in the nation and 1st regionally (Cadet/U17); 5th regionally Junior (U20).', y:'2016–23'},
+      {a:'Boston Latin', d:'Varsity since 7th grade; Massachusetts state champions, exchanging A/B positions.', y:'2019–23'},
+      {a:'UMass club', d:'1st place at the Smith individual invitational.', y:'2023—'},
+    ]},
+  { key:'life', t:'Life', idx:'Ⅵ · Off the clock',
+    b:'Making things, and being outside.',
+    lede:'Objects that move, places to go, and the occasional 4AM fishing trip.',
+    li:[
+      {a:'3D design & printing', d:'A printed robotic prosthetic hand in an experimental printed fabric.', y:''},
+      {a:'Kinetic art', d:'A mechatronic kinetic sculpture inspired by artist Willem van Weeghel.', y:''},
+      {a:'Travel', d:'Over 30 countries across four continents.', y:''},
+      {a:'Outside', d:'Climbing, and 4AM fishing for bass and carp.', y:''},
+      {a:'Service', d:'ZERO HERO Award for hunger-relief work; weekly meals with Boston’s HOME ministry.', y:'2021–23'},
+    ]},
+  { key:'contact', t:'Contact', idx:'Ⅶ · Reach',
+    b:'The quickest way is email.',
+    lede:'Say hello — or take the one-page résumé.',
+    li:[
+      {a:'Email', d:'choi.mason@gmail.com', y:'→', href:'mailto:choi.mason@gmail.com'},
+      {a:'GitHub', d:'github.com/Tennis-Ball', y:'→', href:'https://github.com/Tennis-Ball'},
+      {a:'LinkedIn', d:'in/masonchoi', y:'→', href:'https://www.linkedin.com/in/masonchoi/'},
+      {a:'Résumé', d:'One page, PDF.', y:'→', href:'/resumes/Mason_Choi_Resume.pdf'},
+    ]},
+]
+
+const ROMAN = ['Ⅰ','Ⅱ','Ⅲ','Ⅳ','Ⅴ','Ⅵ','Ⅶ']
 
 export default function Home() {
-	return (
-		<>
-		<Head>
-		<title>Mason Choi</title>
-		<link rel="icon" href="/favicon.png" />
-		</Head>
-			<Nav/>
-			<h1>Mason Choi</h1>
-			<p>Hi! My name is Mason Choi. I&apos;m a current senior pursuing a dual degree in computer science and math (stats+ds concentration) at the University of Massachusetts Amherst. I&apos;ve worked in the finance and real estate industries as a data engineer and am now exploring the fashion AI startup space. My interests lie in computing for the common good, particularly in scalable cloud infrastructure and AI safety. I&apos;m a competitive fencer at the national level, and an avid options gambler, 3d printer, climber, and fisherman 🎣.
-			</p>
-			
-			<Contacts/>
-			<Dropdown title="Projects">
-				<p>These are some of the projects I have developed over the years, starting from the most recent to the oldest. I have been creating projects with code since 2018.</p>
-				<Card>
-					<h3>Campus Quad</h3>
-					<p>November 2023 - May 2024</p>
-					<p>A mobile app developed under parent company QUAD, seeking to bring college students together under one campus. The app features both a social and marketplace side hosting features ranging from chat rooms based on academic class, forum posts for news and sports, and buy, sell, and rent options for goods and services.</p>
-				</Card>
-				<Card>
-					<h3><a href="https://chrome.google.com/webstore/detail/lexia/pikdcobajohdjlhcohgkenhkjedgdcpo" target="_blank" rel="noreferrer">Lexia</a></h3>
-					<p>March 2023</p>
-					<p>A simple Google Chrome extension written in javascript to improve the readability of online text, made specifically for a friend with dyslexia.</p>
-				</Card>	
-				<Card>
-					<h3><a href="https://github.com/Tennis-Ball/Albert" target="_blank" rel="noreferrer">Albert</a></h3>
-					<p>January 2023 - March 2023</p>
-					<p>Albert is an experimental research project exploring the possibilities of using a transformer model such as GPT-3 to help train a custom transformer model, Albert.</p>
-				</Card>		
-				<Card>
-					<h3><a href="https://text2notes.com/" target="_blank" rel="noreferrer">OpenAI Text to Notes Converter</a></h3>
-					<p>December 2022 - January 2023</p>
-					<p>A simple website hosting custom technology made possible by OpenAI&apos;s GPT-3 API. The technology can convert any textbook text into note form broken down by topic, effectively streamlining the notetaking process.</p>
-				</Card>
-				<Card>
-					<h3><a href="https://github.com/Fantasy-Fencing" target="_blank" rel="noreferrer">Fantasy Fencing</a> X <a href="https://github.com/Tennis-Ball/The-Fencing-Project" target="_blank" rel="noreferrer">The Fencing Project</a></h3>
-					<p>September 2022 - Archived</p>
-					<p>A small dev team founded by fencing celebrity Cyrus of Chaos to deliver a Fantasy Football inspired fencing platform. Incorporates elements from my project &quot;The Fencing Project&quot; which scrapes and manipulates all available fencing data. I mainly head backend development and systems design, occasionally touching our beautiful frontend UI.</p>
-				</Card>
-				<Card>
-					<h3 className="cardTitle"><a href="https://github.com/Tennis-Ball/MP-Predictor" target="_blank" rel="noreferrer">Melting Point Estimator</a></h3>
-					<p>July 2022 - September 2022</p>
-					<p>A deep learning neural network built using Tensorflow in Python which predicts the melting points of molecules given their molecular structures in the standard SMILE notation and average mass.</p>
-				</Card>
-				<Card>
-					<h3><a href="https://github.com/Tunabl" target="_blank" rel="noreferrer">Tunabl</a></h3>
-					<p>July 2022 - Archived</p>
-					<p>This is Tunabl, a mobile application built on the React Native framework for discovering new music. Tunabl is still in early development with no estimated date of release.</p>
-				</Card>
-				<Card>
-					<h3><a href="https://tony1324.github.io/raytracer/" target="_blank" rel="noreferrer">Raytracer</a></h3>
-					<p>June 2022 - July 2022</p>
-					<p>Custom raytracer built from scratch in javascript. In collaboration with <a href="https://github.com/Tony1324" target="_blank" rel="noreferrer">Tony Zhang</a></p>
-					<Image src="/images/RayTracer.png" width={150} height={150}></Image>
-				</Card>
-				<Card>
-					<h3><a href="https://filess.org" target="_blank" rel="noreferrer">Filess</a></h3>
-					<p>March 2022 - July 2022</p>
-					<p>Filess is a static asset hosting service with the intent of seamless sharing made unique. Quickly upload images, videos, etc. and create your own custom URL link that can be shared. The website was built on top of the Flask framework with AWS S3 (cloud storage) file hosting.</p>
-					<Image src="/images/filessDashboard.PNG" width={350} height={350}></Image>
-				</Card>
-				<Card>
-					<h3><a href="https://tennis-ball.github.io/Character-Classification/" target="_blank" rel="noreferrer">Neural Network</a></h3>
-					<p>April 2022 - May 2022</p>
-					<p>Built a neural network from scratch by implementing statistical classification methods in Python with NumPy. Ranks 6th best performing on the EMNIST Balanced benchmark dataset with over 96% accuracy.</p>
-				</Card>
-				<Card>
-					<h3><a href="https://github.com/Tennis-Ball/Image-Analyzation-App" target="_blank" rel="noreferrer">Image Analyzation App</a></h3>
-					<p>August 2021 - September 2021</p>
-					<p>React Native mobile application built with Expo, providing various tools centered around images. Contained Google&apos;s &quot;Mobile Net&quot; Convolutional Neural Network (CNN) model for classification on 1,000 classes.</p>
-				</Card>
-				<Dropdown title="My Machine Learning Journey">
-					<p>March 2021 - Present</p>
-					<Card>
-						I expanded on my Python neural network from scratch into a <a href="https://github.com/Tennis-Ball/Cross-Compatible-ML-Library" target="_blank" rel="noreferrer">pseudo-library</a> for machine learning in Python, Java, and C++.
-					</Card>
-					<Card>
-						<p><a href="https://github.com/Tennis-Ball/Anchor-ai" target="_blank" rel="noreferrer">Anchor</a> was a website providing multiple regression model predictions on over 2,500 stock symbols. Its Tensorflow model was run daily in an AWS Elastic Cloud Compute (EC2) instance, assets stored in AWS S3, and website built with Django.</p>
-					</Card>
-					<Card>
-						<p>Simple <a href="https://github.com/Tennis-Ball/Fencing-Video-Tool" target="_blank" rel="noreferrer">fencing analysis tool</a> that spliced fencing video footage for fencing frames only with a CNN, reducing average watch time by over 40%.</p>
-					</Card>
-					<Card>
-						<p>Both my <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI composer</a> and <a href="https://github.com/Tennis-Ball/AI-Singer" target="_blank" rel="noreferrer">AI singer</a> fashioned Long Short-Term Memory (LSTM) models to generate their own, original musical pieces. This required webscraping, data cleaning, and, of course, machine learning (ML).</p>
-					</Card>
-				</Dropdown>
-				<p>You can view more of my projects on <a href="https://github.com/Tennis-Ball" target="_blank" rel="noreferrer">my Github</a></p>
-			</Dropdown>
-			<Dropdown title="Work">
-				<Card>
-					<h3>Stealth Startup</h3>
-					<p>XX XX - Present</p>
-					<li>Cofounded startup operating in the fashion AI space</li>
-					<li>Working on bringing exciting technology to the consumer markets in 2025!</li>
-				</Card>
-				<Card>
-					<h3>AlphaSeeker AI</h3>
-					<p>April 2024 - November 2024</p>
-					<li>Configured company servers to handle large streams of financial data</li>
-					<li>Deployed machine learning models to extract insights from them</li>
-				</Card>
-				<Card>
-					<h3><a href="https://www.atlanticprimeestates.com/" target="_blank" rel="noreferrer">Atlantic Prime Estates</a></h3>
-					<p>July 2023 - April 2024</p>
-					<li>Built advanced housing data aggregation pipelines to push exclusive API data into AWS hosted MySQL databases for later mathematical analysis</li>
-					<li>Compared multiple regression and time series models to more accurately predict appreciation rates, building out the fund’s most valuable market analysis tool</li>
-				</Card>
-				<Card>
-					<h3><a href="https://solveadvisors.com/" target="_blank" rel="noreferrer">Solve Advisors Inc.</a></h3>
-					<p>March 2022 - July 2023</p>
-					<li>Worked with the AI/ML team to build a Business Development Company (BDC) financial statement parser, which disrupted the industry and saved the company an estimated 848 hours annually</li>
-					<li>Automated manual bond and loan data pricing with Selenium and Google’s Oauth API in an AWS EC2 instance</li>
-					<li>Built tools to aggregate global treasury yeild data and organize it</li>
-				</Card>
-				<Card>
-					<h3><a href="https://advantagedata.com/" target="_blank" rel="noreferrer">Advantage Data Inc. + Best Credit Management Inc.</a></h3>
-					<p>September 2021 - March 2022</p>
-					<li>Developed Python scripts to scrape data from the SEC, parse and transform the data, and load it into the company database (ETL process), replacing hundreds of hours of manual work</li>
-					<li>Collaborated with dev team to deploy data pipelines directing source data into our system with Python and SQL</li>
-				</Card>
-			</Dropdown>
-			<Dropdown title="Education">
-				<p>I currently hold a 3.94 GPA at the University of Massachussetts Amherst.</p>
-				<Dropdown title="Relevant Coursework">
-					<Card>
-						<h3>Machine Learning (CS 589)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Database Systems (CSCI E-66)</h3>
-						<p>Harvard Extension School | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Principles of Big Data Processing (CSCI E-88)</h3>
-						<p>Harvard Extension School | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Natural Language Processing (CS 485)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Object-Oriented Programming (CICS 160)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Data Structures (CS 210)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Introduction to Algorithms (CS 311)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Scientific Computing (MATH 551)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Statistics II (STAT 516)</h3>
-						<p>University of Massachusetts Amherst | Final grade: A</p>
-					</Card>
-					<Card>
-						<h3>Applications of Linear Algebra (Math 545)</h3>
-						<p>University of Massachusetts Amherst | Final grade: B</p>
-					</Card>
-				</Dropdown>
-				<Dropdown title="Skills">
-					<Card>
-						<h3>Modern Languages</h3>
-						<li>English - Native or bilingual proficiency</li>
-						<li>Mandarin - Professional working proficiency</li>
-						<li>Korean - Elementary proficiency</li>
-					</Card>
-					<Card>
-						<h3>Computer Languages</h3>
-						<li>Python - Expert</li>
-						<li>Java, C, Javascript - Proficient</li>
-						<li>SQL - Proficient</li>
-						<br></br>
-						<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
-							<img align="left" width="185" height="185" src="https://github-readme-stats-api-clone.vercel.app/api/top-langs/?username=Tennis-Ball&layout=compact&hide_border=true&card_width=400" />
-						</a>
-					</Card>
-					<Card>
-						<h3>Tech Stack</h3>
-						<li>Frameworks: React, Flask, Django, React Native</li>
-						<li>Tools: AWS, GCP, Azure, MS/G suites, Git</li>
-						<li>Libraries: Tensorflow, Pandas, NumPy, Matplotlib</li>
-					</Card>
-				</Dropdown>
-			</Dropdown>
-			<Dropdown title="Extracurriculars">
-				<Card>
-					<h3><a href="https://www.minutemenalternativeinvestmentfund.com/">Minutemen Alternative Investment Fund</a></h3>
-					<p>February 2024 - Present</p>
-					<li>Currently serving as president of the Premier Quantitative Finance Fund at UMass</li>
-					<li>Led a derivatives trading team part of the quant arm of MAIF as a quantitative researcher</li>
-					<li>Deployed live gamma scalping scalping algorithms to generate upwards of 3% alpha against the benchmark index SPY</li>
-				</Card>
-				<Card>
-					<h3>Fencing - Individual</h3>
-					<p>2016 - 2023</p>
-					<p>I peaked at 13th in the nation and 1st regionally for the Cadet age group (U17), 5th regionally for the Junior age group (U20). Had I continued training I hoped to join the USA Cadet Men&apos;s Epee world team (top 20).</p>
-				</Card>
-				<Card>
-					<h3>Fencing - Varsity</h3>
-					<p>2019 - 2023</p>
-					<p>Was part of the Boston Latin School varsity fencing team since 7th grade, bringing home the state championships title in 2023. I exchange A and B positions (first and second) at competitions.</p>
-				</Card>
-				<Card>
-					<h3>Fencing - Club</h3>
-					<p>2023 - present</p>
-					<p>Currently fencing on the UMass club fencing team, taking first place at the 2023 Smith individual invitational competition.</p> 
-				</Card>
-				<Dropdown title="Community Service">
-					<Card>
-						<p>Awarded the ZERO HERO Award (2021-2023) for my work on eliminating hunger in the greator Boston area, and the National Community Service Merit Award (2021-2023) for hours served. See my entire community service <a href="https://innerview.org/masonchoi" target="_blank" rel="noreferrer">here</a>.</p>
-					</Card>
-					<Card>
-						<h3>Homeless Outreach Ministry & Engagement (HOME)</h3>
-						<p>January 2022 - February 2023</p>
-						<p>Every week I volunteered with HOME to cook meals, prepare food/drink, distribute clothing, and lend an ear to my homeless neighbors of Boston.</p>
-					</Card>
-				</Dropdown>
-			</Dropdown>
-			<Dropdown title="Hobbies">
-				<Card>
-					<h3>Finance</h3>
-					<p>I enjoy researching the way politics, economics, and current events shape the various financial markets, using this knowledge to make profitable stock and ETF trades. I plan on exploring the fixed income and foreign exchange markets as I&apos;ve work closely with them in my previous roles.</p>
-				</Card>
-				<Card>
-					<h3>3d designing and printing</h3>
-					<p><br></br></p>
-					<Image src="/images/3dPrint.jpg" width={250} height={160}></Image>
-					<p style={{fontSize: 14}}>A 3d printed robotic prosthetic hand with an experimental printed fabric.</p>
-					<hr></hr><p></p>
-					<Image src="/images/kinetic_art_pic.jpg" width={250} height={250}></Image>
-					<br></br>
-					<Image src="/images/kinetic_art_gif.gif" width={250} height={160}></Image>
-					<p style={{fontSize: 14}}>Mechatronic kinetic art project inspired by artist <a href="https://www.artsy.net/artist/willem-van-weeghel/works-for-sale" target="_blank" rel="noreferrer">Willem van Weeghel</a></p>
-				</Card>
-				<Card>
-					<h3>World Travelling</h3>
-					<p>I have been to over 30 countries and 4 continents, experiencing both similar and different cultures, languages, and environments.</p>
-				</Card>
-				<Card>
-					<h3>Fishing</h3>
-					<p>I love fishing with friends and family at 4AM, especially when we don&apos;t catch anything and realize one of our wading boots has a hole in it... Freshwater fishing for bass and carp is always fun.</p>
-				</Card>
-			</Dropdown>
-			<div className={`neutral ${styles.github}`}>
-				<a href="https://github.com/Tennis-Ball" target="_blank" rel="noreferrer"><img src="https://ghchart.rshah.org/b58e31/Tennis-Ball" width={650} height={100} layout="responsive" alt="Github contributions graph"/></a>
-				<br></br>
-				<a href="https://github.com/anuraghazra/github-readme-stats" target="_blank" rel="noreferrer">
-					<img align="center" width="180" height="180" src="https://github-readme-stats-api-clone.vercel.app/api?username=Tennis-Ball&count_private=true&show_icons=true&hide_border=true&theme=gruvbox_light" alt="Tennis Ball's github stats" />
-				</a>
-			</div>	
+  useEffect(() => { return initFan() }, [])
 
-			<div className={`line`}></div>
-			<p style={{textAlign: "center"}}>Website built using <a href="https://github.com/Tennis-Ball/personal_website" target="_blank" rel="noreferrer">Next.js</a></p>
-		</>
-		)
-	}
-	
+  return (
+    <>
+      <Head>
+        <title>Mason Choi</title>
+        <meta name="description" content="Mason Choi — engineer working in data infrastructure, machine learning, and fashion AI. Quantitative finance, national-level épée, and maker." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+        <meta property="og:title" content="Mason Choi" />
+        <meta property="og:description" content="Engineer · data infrastructure, ML, and fashion AI." />
+        <meta property="og:type" content="website" />
+        <meta name="theme-color" content="#E9E4D8" />
+      </Head>
+
+      <div className="ruling" />
+      <div className="grain" />
+
+      <div className="corner tl">Mason Choi</div>
+      <div className="corner tr">MMXXVI</div>
+      <div className="corner bl hint">Hover a leaf &nbsp;·&nbsp; <b>click the rivet</b> or press space to fold &nbsp;·&nbsp; centre to read</div>
+
+      {/* ---------- the fan (desktop) ---------- */}
+      <div className="stage" id="stage" aria-hidden="true">
+        <div className="ground" />
+        <div className="fanwrap">
+          <div className="fangroup" id="fangroup">
+            <div className="tassel" id="tassel"><div className="cord" /><div className="bob" /><div className="tuft" /></div>
+            <div className="rivet" id="rivet" />
+          </div>
+        </div>
+      </div>
+
+      <div className="readout" id="readout" aria-hidden="true">
+        <span className="idx fade" id="r-idx">{HOME.idx}</span>
+        <h1 className="fade" id="r-title">{HOME.t}</h1>
+        <p className="fade" id="r-body">{HOME.b}</p>
+        <span className="more fade" id="r-more">Open ↗</span>
+      </div>
+
+      {/* ---------- the index (mobile + accessible + crawlable) ---------- */}
+      <nav className="index-list" aria-label="Sections">
+        <header className="masthead">
+          <p className="kick">{HOME.idx}</p>
+          <h1>Mason Choi</h1>
+          <p>{HOME.b}</p>
+        </header>
+        {LEAVES.map((L, i) => (
+          <button key={L.key} className="leaf-row" data-i={i}>
+            <span>
+              <span className="lr-name">{L.t}</span>
+              <span className="lr-blurb">{L.b}</span>
+            </span>
+            <span className="lr-rn">{ROMAN[i]}</span>
+          </button>
+        ))}
+        <p className="list-foot">
+          <a href="mailto:choi.mason@gmail.com">Email</a> · <a href="https://github.com/Tennis-Ball" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/masonchoi/" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="/resumes/Mason_Choi_Resume.pdf">Résumé</a>
+        </p>
+      </nav>
+
+      {/* ---------- reading panel (shared) ---------- */}
+      <div className="panel" id="panel" role="dialog" aria-modal="true" aria-label="Section detail">
+        <div className="card">
+          <span className="rn" id="p-rn" />
+          <h2 id="p-title" />
+          <p className="lede" id="p-lede" />
+          <div id="p-list" />
+          <button className="back" id="p-back">↩ Close</button>
+        </div>
+      </div>
+
+      {/* ---------- full content for search engines / no-JS ---------- */}
+      <div className="sr-only">
+        {LEAVES.map((L) => (
+          <section key={L.key}>
+            <h2>{L.t}</h2><p>{L.lede}</p>
+            <ul>{L.li.map((x, k) => <li key={k}>{x.a} — {x.d} {x.y}</li>)}</ul>
+          </section>
+        ))}
+      </div>
+    </>
+  )
+}
+
+/* ============================================================
+   The fan engine. Runs client-side; returns a cleanup fn.
+   ============================================================ */
+function initFan() {
+  if (typeof window === 'undefined') return
+  const N = LEAVES.length, FULL = 118, SCENE = '/art/fan-scene.jpg'
+  const ac = new AbortController(), sig = { signal: ac.signal }
+  let raf = 0
+  const $ = (id) => document.getElementById(id)
+  const fangroup = $('fangroup'), rivet = $('rivet'), tassel = $('tassel'),
+        readout = $('readout'), panel = $('panel'), stage = $('stage')
+  if (!fangroup || !panel) return
+
+  const desktop = window.matchMedia('(min-width:760px) and (pointer:fine)').matches
+  const blades = [], tags = []
+  let hoverIdx = -1, sel = -1, shown = -2
+  let openF = 0.06, openTarget = 1
+  let cursorX = null, cxF = 0, cyF = 0, tiltX = 0, tiltY = 0
+  let tPhi = 0, tOmega = 0
+  const start = performance.now()
+
+  // ---- reading panel (used by fan + list) ----
+  function openPanel(i) {
+    const S = LEAVES[i]; if (!S) return
+    $('p-rn').textContent = S.idx
+    $('p-title').textContent = S.t
+    $('p-lede').textContent = S.lede
+    $('p-list').innerHTML = S.li.map((x) => {
+      const name = x.href
+        ? `<a class="en-link" href="${x.href}" target="_blank" rel="noreferrer">${x.a}</a>`
+        : x.a
+      return `<div class="entry"><span class="en">${name}<span class="ed">${x.d}</span></span><span class="ey">${x.y || ''}</span></div>`
+    }).join('')
+    panel.classList.add('on')
+  }
+  function closePanel() { panel.classList.remove('on') }
+  $('p-back').addEventListener('click', closePanel, sig)
+  panel.addEventListener('click', (e) => { if (e.target === panel) closePanel() }, sig)
+
+  // wire the accessible / mobile list
+  document.querySelectorAll('.leaf-row').forEach((b) =>
+    b.addEventListener('click', () => openPanel(+b.dataset.i), sig))
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { closePanel(); return }
+    if (!desktop) return
+    if (e.key === ' ') { e.preventDefault(); toggleFold(); return }
+    if (openTarget < 0.5) openTarget = 1
+    if (['ArrowRight','ArrowDown'].includes(e.key)) { sel = ((sel<0?-1:sel)+1+N)%N; preview(sel) }
+    if (['ArrowLeft','ArrowUp'].includes(e.key)) { sel = ((sel<0?1:sel)-1+N)%N; preview(sel) }
+    if (e.key === 'Enter' && sel >= 0) openPanel(sel)
+  }, sig)
+
+  if (!desktop) return () => ac.abort()   // mobile: list only, no fan
+
+  // ---- build the fan ----
+  LEAVES.forEach((L, i) => {
+    const b = document.createElement('div')
+    b.className = 'blade' + (i === 0 || i === N - 1 ? ' guard' : '')
+    b.style.setProperty('--scene', `url("${SCENE}")`)
+    b.style.setProperty('--sceneW', (N * 100) + '%')
+    b.style.setProperty('--px', (i / (N - 1) * 100) + '%')
+    b.innerHTML = '<div class="leaf"></div><div class="tip"></div>'
+    b.addEventListener('pointerenter', () => { hoverIdx = i; preview(i) }, sig)
+    b.addEventListener('pointerleave', () => { hoverIdx = -1; preview(sel) }, sig)
+    b.addEventListener('click', (e) => { e.stopPropagation(); sel = i; preview(i); tOmega += 2 }, sig)
+    fangroup.appendChild(b); blades.push(b)
+
+    const t = document.createElement('div'); t.className = 'tag'; t.textContent = L.t
+    t.addEventListener('pointerenter', () => { hoverIdx = i; preview(i) }, sig)
+    t.addEventListener('pointerleave', () => { hoverIdx = -1; preview(sel) }, sig)
+    t.addEventListener('click', (e) => { e.stopPropagation(); sel = i; preview(i) }, sig)
+    fangroup.appendChild(t); tags.push(t)
+  })
+
+  const geo = () => ({
+    pivotX: innerWidth / 2, pivotY: innerHeight * 0.88,
+    R: Math.min(innerHeight * 0.60, innerWidth * 0.46),
+    W: Math.max(44, Math.min(92, innerWidth * 0.06)),
+  })
+
+  window.addEventListener('pointermove', (e) => {
+    cursorX = e.clientX; cxF = e.clientX / innerWidth - .5; cyF = e.clientY / innerHeight - .5
+  }, { passive: true, signal: ac.signal })
+
+  function render(now) {
+    const { pivotX, pivotY, R, W } = geo()
+    openF += (openTarget - openF) * 0.09
+    const spread = FULL * Math.max(0, openF)
+    const t = (now - start) / 1000
+
+    tiltX += ((-cyF * 6) - tiltX) * 0.06; tiltY += ((cxF * 9) - tiltY) * 0.06
+    fangroup.style.transform = `perspective(1500px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`
+
+    blades.forEach((bl, i) => {
+      let ang = N > 1 ? (-spread / 2 + spread * (i / (N - 1))) : 0
+      if (hoverIdx >= 0) { const d = i - hoverIdx; if (d !== 0) ang += Math.sign(d) * 6 * Math.exp(-Math.abs(d) * 0.7) }
+      ang += Math.sin(t * 0.8 + i * 0.6) * 0.5 * openF
+      const rad0 = ang * Math.PI / 180, tipx = pivotX + Math.sin(rad0) * R
+      let breeze = 0; if (cursorX != null) breeze = Math.max(0, 1 - Math.abs(tipx - cursorX) / (innerWidth * 0.15))
+      const lift = ((i === hoverIdx || i === sel) ? R * 0.035 : 0) + breeze * R * 0.03
+      bl.style.left = pivotX + 'px'; bl.style.top = (pivotY - R) + 'px'; bl.style.width = W + 'px'; bl.style.height = R + 'px'
+      bl.style.transform = `translate(-50%, ${(-lift).toFixed(1)}px) rotate(${ang.toFixed(2)}deg)`
+      bl.style.setProperty('--lb', (0.58 + breeze * 0.34).toFixed(2))
+      const rad = ang * Math.PI / 180, tipR = R + 30, tx = pivotX + Math.sin(rad) * tipR, ty = pivotY - Math.cos(rad) * tipR
+      tags[i].style.left = tx + 'px'; tags[i].style.top = ty + 'px'
+      tags[i].style.opacity = openF < 0.55 ? Math.max(0, (openF - 0.2) / 0.35) : 1
+    })
+    rivet.style.left = pivotX + 'px'; rivet.style.top = pivotY + 'px'
+
+    const targetPhi = tiltY * 0.9
+    tOmega += (targetPhi - tPhi) * 0.015 - tOmega * 0.055; tPhi += tOmega
+    tassel.style.left = pivotX + 'px'; tassel.style.top = pivotY + 'px'
+    tassel.style.setProperty('--L', (R * 0.16).toFixed(0) + 'px')
+    tassel.style.transform = `translateX(-50%) rotate(${tPhi.toFixed(2)}deg)`
+
+    raf = requestAnimationFrame(render)
+  }
+  raf = requestAnimationFrame(render)
+
+  function highlight(i) { blades.forEach((b, k) => b.classList.toggle('on', k === i)); tags.forEach((t, k) => t.classList.toggle('on', k === i)) }
+  function write(o) {
+    readout.classList.add('swap')
+    setTimeout(() => {
+      $('r-idx').textContent = o.idx || HOME.idx
+      $('r-title').textContent = o.t || HOME.t
+      $('r-body').textContent = o.b
+      readout.classList.toggle('has', !!o.li)
+      readout.classList.remove('swap')
+    }, 170)
+  }
+  function preview(i) {
+    if (i < 0) { highlight(sel); if (shown !== sel) { write(sel < 0 ? HOME : LEAVES[sel]); shown = sel } return }
+    highlight(i); if (shown !== i) { write(LEAVES[i]); shown = i }
+  }
+  write(HOME); shown = -1
+
+  function toggleFold() { openTarget = openTarget > 0.5 ? 0.12 : 1; tOmega += openTarget > 0.5 ? -7 : 7 }
+  rivet.addEventListener('click', (e) => { e.stopPropagation(); toggleFold() }, sig)
+  readout.addEventListener('click', (e) => { if (e.target.id === 'r-more' && sel >= 0) openPanel(sel) }, sig)
+  stage.addEventListener('click', (e) => { if (e.target === stage || e.target.classList.contains('ground')) { sel = -1; preview(-1) } }, sig)
+
+  return () => { cancelAnimationFrame(raf); ac.abort(); blades.forEach((b) => b.remove()); tags.forEach((t) => t.remove()) }
+}
