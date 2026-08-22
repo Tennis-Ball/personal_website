@@ -105,7 +105,6 @@ export default function Home() {
 
       <div className="corner tl">Mason Choi</div>
       <div className="corner tr">MMXXVI</div>
-      <div className="corner bl hint">Hover a leaf &nbsp;·&nbsp; <b>click the rivet</b> or press space to fold &nbsp;·&nbsp; centre to read</div>
 
       {/* ---------- the fan (desktop) ---------- */}
       <div className="stage" id="stage" aria-hidden="true">
@@ -122,7 +121,6 @@ export default function Home() {
         <span className="idx fade" id="r-idx">{HOME.idx}</span>
         <h1 className="fade" id="r-title">{HOME.t}</h1>
         <p className="fade" id="r-body">{HOME.b}</p>
-        <span className="more fade" id="r-more">Open ↗</span>
       </div>
 
       {/* ---------- the index (mobile + accessible + crawlable) ---------- */}
@@ -185,11 +183,10 @@ function initFan() {
 
   const desktop = window.matchMedia('(min-width:760px) and (pointer:fine)').matches
   const blades = [], tags = []
-  let hoverIdx = -1, sel = -1, shown = -2
-  let openF = 0.06, openTarget = 1
+  let hoverIdx = -1, shown = -2
+  let openF = 0.05, openTarget = 1
   let cursorX = null, cxF = 0, cyF = 0, tiltX = 0, tiltY = 0
   let tPhi = 0, tOmega = 0
-  const start = performance.now()
 
   // ---- reading panel (used by fan + list) ----
   function openPanel(i) {
@@ -204,8 +201,12 @@ function initFan() {
       return `<div class="entry"><span class="en">${name}<span class="ed">${x.d}</span></span><span class="ey">${x.y || ''}</span></div>`
     }).join('')
     panel.classList.add('on')
+    try { history.replaceState(null, '', '#' + LEAVES[i].key) } catch (e) {}
   }
-  function closePanel() { panel.classList.remove('on') }
+  function closePanel() {
+    panel.classList.remove('on')
+    try { history.replaceState(null, '', location.pathname + location.search) } catch (e) {}
+  }
   $('p-back').addEventListener('click', closePanel, sig)
   panel.addEventListener('click', (e) => { if (e.target === panel) closePanel() }, sig)
 
@@ -213,19 +214,24 @@ function initFan() {
   document.querySelectorAll('.leaf-row').forEach((b) =>
     b.addEventListener('click', () => openPanel(+b.dataset.i), sig))
 
+  // shareable deep links: /#work opens that section on load
+  const h0 = decodeURIComponent(location.hash.replace('#', ''))
+  const hi0 = LEAVES.findIndex((L) => L.key === h0)
+  if (hi0 >= 0) openPanel(hi0)
+
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { closePanel(); return }
     if (!desktop) return
     if (e.key === ' ') { e.preventDefault(); toggleFold(); return }
     if (openTarget < 0.5) openTarget = 1
-    if (['ArrowRight','ArrowDown'].includes(e.key)) { sel = ((sel<0?-1:sel)+1+N)%N; preview(sel) }
-    if (['ArrowLeft','ArrowUp'].includes(e.key)) { sel = ((sel<0?1:sel)-1+N)%N; preview(sel) }
-    if (e.key === 'Enter' && sel >= 0) openPanel(sel)
+    if (['ArrowRight','ArrowDown'].includes(e.key)) setHover(((hoverIdx < 0 ? -1 : hoverIdx) + 1 + N) % N)
+    if (['ArrowLeft','ArrowUp'].includes(e.key)) setHover(((hoverIdx < 0 ? 1 : hoverIdx) - 1 + N) % N)
+    if (e.key === 'Enter' && hoverIdx >= 0) openPanel(hoverIdx)
   }, sig)
 
   if (!desktop) return () => ac.abort()   // mobile: list only, no fan
 
-  // ---- build the fan ----
+  // ---- build the fan (visual only; interaction is angle-based) ----
   LEAVES.forEach((L, i) => {
     const b = document.createElement('div')
     b.className = 'blade' + (i === 0 || i === N - 1 ? ' guard' : '')
@@ -233,57 +239,71 @@ function initFan() {
     b.style.setProperty('--sceneW', (N * 100) + '%')
     b.style.setProperty('--px', (i / (N - 1) * 100) + '%')
     b.innerHTML = '<div class="leaf"></div><div class="tip"></div>'
-    b.addEventListener('pointerenter', () => { hoverIdx = i; preview(i) }, sig)
-    b.addEventListener('pointerleave', () => { hoverIdx = -1; preview(sel) }, sig)
-    b.addEventListener('click', (e) => { e.stopPropagation(); sel = i; preview(i); tOmega += 2 }, sig)
     fangroup.appendChild(b); blades.push(b)
-
     const t = document.createElement('div'); t.className = 'tag'; t.textContent = L.t
-    t.addEventListener('pointerenter', () => { hoverIdx = i; preview(i) }, sig)
-    t.addEventListener('pointerleave', () => { hoverIdx = -1; preview(sel) }, sig)
-    t.addEventListener('click', (e) => { e.stopPropagation(); sel = i; preview(i) }, sig)
     fangroup.appendChild(t); tags.push(t)
   })
 
   const geo = () => ({
-    pivotX: innerWidth / 2, pivotY: innerHeight * 0.88,
-    R: Math.min(innerHeight * 0.60, innerWidth * 0.46),
-    W: Math.max(44, Math.min(92, innerWidth * 0.06)),
+    pivotX: innerWidth / 2, pivotY: innerHeight * 0.9,
+    R: Math.min(innerHeight * 0.585, innerWidth * 0.45),
+    W: Math.max(44, Math.min(90, innerWidth * 0.058)),
   })
+
+  // Stable, angle-based hover: which sector is the cursor in? The leaves can
+  // move without changing the answer, so hovering never fights itself.
+  function hitTest(x, y) {
+    if (openF < 0.6) return -1
+    const { pivotX, pivotY, R } = geo()
+    const dx = x - pivotX, dy = y - pivotY, dist = Math.hypot(dx, dy)
+    if (dist < 0.12 * R || dist > 1.2 * R) return -1
+    const a = Math.atan2(dx, -dy) * 180 / Math.PI          // 0 = straight up
+    const spread = FULL * openF, step = spread / (N - 1)
+    if (Math.abs(a) > spread / 2 + step * 0.6) return -1
+    return Math.max(0, Math.min(N - 1, Math.round((a + spread / 2) / step)))
+  }
+  function setHover(i) { if (i !== hoverIdx) { hoverIdx = i; preview(i) } }
 
   window.addEventListener('pointermove', (e) => {
     cursorX = e.clientX; cxF = e.clientX / innerWidth - .5; cyF = e.clientY / innerHeight - .5
+    if (!panel.classList.contains('on')) setHover(hitTest(e.clientX, e.clientY))
   }, { passive: true, signal: ac.signal })
 
-  function render(now) {
+  function render() {
     const { pivotX, pivotY, R, W } = geo()
-    openF += (openTarget - openF) * 0.09
+    openF += (openTarget - openF) * 0.085
     const spread = FULL * Math.max(0, openF)
-    const t = (now - start) / 1000
+    const openness = Math.max(0, Math.min(1, (openF - 0.4) / 0.55))   // 0 folded .. 1 open
 
-    tiltX += ((-cyF * 6) - tiltX) * 0.06; tiltY += ((cxF * 9) - tiltY) * 0.06
-    fangroup.style.transform = `perspective(1500px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`
+    tiltX += ((-cyF * 3.5) - tiltX) * 0.045; tiltY += ((cxF * 5.5) - tiltY) * 0.045
+    fangroup.style.transform = `perspective(1700px) rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`
 
     blades.forEach((bl, i) => {
-      let ang = N > 1 ? (-spread / 2 + spread * (i / (N - 1))) : 0
-      if (hoverIdx >= 0) { const d = i - hoverIdx; if (d !== 0) ang += Math.sign(d) * 6 * Math.exp(-Math.abs(d) * 0.7) }
-      ang += Math.sin(t * 0.8 + i * 0.6) * 0.5 * openF
-      const rad0 = ang * Math.PI / 180, tipx = pivotX + Math.sin(rad0) * R
-      let breeze = 0; if (cursorX != null) breeze = Math.max(0, 1 - Math.abs(tipx - cursorX) / (innerWidth * 0.15))
-      const lift = ((i === hoverIdx || i === sel) ? R * 0.035 : 0) + breeze * R * 0.03
+      const baseAng = N > 1 ? (-spread / 2 + spread * (i / (N - 1))) : 0
+      let splay = 0
+      if (hoverIdx >= 0) { const d = i - hoverIdx; if (d !== 0) splay = Math.sign(d) * 5 * Math.exp(-Math.abs(d) * 0.7) }
+      const prevAng = bl._ang == null ? baseAng : bl._ang
+      const tipx = pivotX + Math.sin(prevAng * Math.PI / 180) * R
+      let breeze = 0; if (cursorX != null && openness > 0) breeze = Math.max(0, 1 - Math.abs(tipx - cursorX) / (innerWidth * 0.16))
+      const targetAng = baseAng + splay * openness
+      const targetLift = (((i === hoverIdx) ? R * 0.03 : 0) + breeze * R * 0.026) * openness
+      const targetBr = 0.58 + breeze * 0.30 * openness
+      bl._ang = bl._ang == null ? targetAng : bl._ang + (targetAng - bl._ang) * 0.15
+      bl._lift = bl._lift == null ? targetLift : bl._lift + (targetLift - bl._lift) * 0.15
+      bl._br = bl._br == null ? targetBr : bl._br + (targetBr - bl._br) * 0.15
       bl.style.left = pivotX + 'px'; bl.style.top = (pivotY - R) + 'px'; bl.style.width = W + 'px'; bl.style.height = R + 'px'
-      bl.style.transform = `translate(-50%, ${(-lift).toFixed(1)}px) rotate(${ang.toFixed(2)}deg)`
-      bl.style.setProperty('--lb', (0.58 + breeze * 0.34).toFixed(2))
-      const rad = ang * Math.PI / 180, tipR = R + 30, tx = pivotX + Math.sin(rad) * tipR, ty = pivotY - Math.cos(rad) * tipR
+      bl.style.transform = `translate(-50%, ${(-bl._lift).toFixed(2)}px) rotate(${bl._ang.toFixed(3)}deg)`
+      bl.style.setProperty('--lb', bl._br.toFixed(3))
+      const rad = bl._ang * Math.PI / 180, tipR = R + 30, tx = pivotX + Math.sin(rad) * tipR, ty = pivotY - Math.cos(rad) * tipR
       tags[i].style.left = tx + 'px'; tags[i].style.top = ty + 'px'
-      tags[i].style.opacity = openF < 0.55 ? Math.max(0, (openF - 0.2) / 0.35) : 1
+      tags[i].style.opacity = (openF < 0.62 ? Math.max(0, (openF - 0.28) / 0.34) : 1).toFixed(2)
     })
     rivet.style.left = pivotX + 'px'; rivet.style.top = pivotY + 'px'
 
     const targetPhi = tiltY * 0.9
     tOmega += (targetPhi - tPhi) * 0.015 - tOmega * 0.055; tPhi += tOmega
     tassel.style.left = pivotX + 'px'; tassel.style.top = pivotY + 'px'
-    tassel.style.setProperty('--L', (R * 0.16).toFixed(0) + 'px')
+    tassel.style.setProperty('--L', (R * 0.15).toFixed(0) + 'px')
     tassel.style.transform = `translateX(-50%) rotate(${tPhi.toFixed(2)}deg)`
 
     raf = requestAnimationFrame(render)
@@ -297,20 +317,23 @@ function initFan() {
       $('r-idx').textContent = o.idx || HOME.idx
       $('r-title').textContent = o.t || HOME.t
       $('r-body').textContent = o.b
-      readout.classList.toggle('has', !!o.li)
       readout.classList.remove('swap')
-    }, 170)
+    }, 150)
   }
-  function preview(i) {
-    if (i < 0) { highlight(sel); if (shown !== sel) { write(sel < 0 ? HOME : LEAVES[sel]); shown = sel } return }
-    highlight(i); if (shown !== i) { write(LEAVES[i]); shown = i }
-  }
+  function preview(i) { highlight(i); if (shown !== i) { write(i < 0 ? HOME : LEAVES[i]); shown = i } }
   write(HOME); shown = -1
 
-  function toggleFold() { openTarget = openTarget > 0.5 ? 0.12 : 1; tOmega += openTarget > 0.5 ? -7 : 7 }
+  function toggleFold() {
+    const closing = openTarget > 0.5
+    openTarget = closing ? 0 : 1
+    tOmega += closing ? -7 : 7
+    if (closing) setHover(-1)
+  }
   rivet.addEventListener('click', (e) => { e.stopPropagation(); toggleFold() }, sig)
-  readout.addEventListener('click', (e) => { if (e.target.id === 'r-more' && sel >= 0) openPanel(sel) }, sig)
-  stage.addEventListener('click', (e) => { if (e.target === stage || e.target.classList.contains('ground')) { sel = -1; preview(-1) } }, sig)
+  stage.addEventListener('click', () => {
+    if (openF < 0.5) { toggleFold(); return }          // a tap on the folded fan opens it
+    if (hoverIdx >= 0) { openPanel(hoverIdx); tOmega += 1.5 }
+  }, sig)
 
   return () => { cancelAnimationFrame(raf); ac.abort(); blades.forEach((b) => b.remove()); tags.forEach((t) => t.remove()) }
 }
