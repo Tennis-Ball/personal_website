@@ -5,52 +5,53 @@ import { useEffect } from 'react'
    Content — Mason Choi. Each leaf of the fan is a section.
    ============================================================ */
 const HOME = {
-  t: 'Mason Choi', idx: 'Engineer · Boston',
-  b: 'Data infrastructure, machine learning, and now fashion AI — with an épée in the other hand.',
+  t: 'Mason Choi', idx: 'Software Engineer · Web3 security',
+  b: 'Building the formal-methods engine of the future at Olympix. Two degrees in CS & math by eighteen — and a habit of chasing the hardest problems.',
 }
 
 const LEAVES = [
   { key:'work', t:'Work', idx:'Ⅰ · Employment',
-    b:'Five years of data & ML roles — most recent first.',
-    lede:'From SEC-scraping ETL to deploying models on live financial streams — and now cofounding.',
+    b:'Engineering roles — most recent first.',
+    lede:'From SEC-scraping ETL to live financial ML, and now formal methods for smart-contract security.',
     li:[
-      {a:'Stealth Startup', d:'Cofounder — building in fashion AI, bringing the technology to consumer markets.', y:'2025—'},
-      {a:'AlphaSeeker AI', d:'Configured servers for large streams of financial data; deployed ML to extract insight.', y:'2024'},
-      {a:'Atlantic Prime Estates', d:'Housing-data pipelines into AWS-hosted MySQL; regression & time-series appreciation models.', y:'2023–24', href:'https://www.atlanticprimeestates.com/'},
-      {a:'Solve Advisors', d:'BDC financial-statement parser saving ~848 hrs/yr; automated bond & loan pricing on EC2.', y:'2022–23', href:'https://solveadvisors.com/'},
-      {a:'Advantage Data · Best Credit Mgmt', d:'Python ETL scraping the SEC into the company database, replacing hundreds of manual hours.', y:'2021–22', href:'https://advantagedata.com/'},
+      {a:'Olympix — Software Engineer', d:'Building the formal-methods engine of the future; Web3 cybersecurity, on-site in New York.', y:'2025—'},
+      {a:'AlphaSeeker AI — ML Engineer', d:'Automated the training, fine-tuning, and prediction of 12 statistical models; built the entire backend of alphaseekerai.com.', y:'2024—', href:'https://alphaseekerai.com'},
+      {a:'Atlantic Prime Estates — Data Engineer', d:'ML models for property appreciation and zipcode-level profitability; pipelines for regional valuation and rent estimation.', y:'2023–24', href:'https://www.atlanticprimeestates.com/'},
+      {a:'Solve Advisors — Data Engineer / Analyst', d:'Built a BDC statement parser that saved ~848 hrs/yr; automated bond & loan pricing and treasury scraping on EC2 with Google OAuth.', y:'2022–23', href:'https://solveadvisors.com/'},
+      {a:'Advantage Data — Junior Data Engineer', d:'Automated 10-Q/10-K SEC extraction; deployed GCP ETL pipelines into BigQuery.', y:'2021–22', href:'https://advantagedata.com/'},
     ]},
   { key:'projects', t:'Projects', idx:'Ⅱ · Register',
-    b:'A register of things built since 2018.',
+    b:'A register of things built.',
     lede:'Selected work across mobile, ML, and the web. More on GitHub.',
     li:[
-      {a:'Campus Quad', d:'Mobile app bringing college students together — social feeds and a goods/services marketplace.', y:'2023–24'},
+      {a:'Vestio', d:'TikTok-style clothes-shopping app with in-house virtual try-on — upload a photo, try clothing on yourself, get recommendations, and share outfits.', y:'2024–25'},
+      {a:'Campus Quad', d:'Mobile app bringing a college campus together — social feeds and a goods/services marketplace.', y:'2023–24'},
       {a:'Lexia', d:'Chrome extension improving online-text readability, made for a friend with dyslexia.', y:'2023', href:'https://chromewebstore.google.com/detail/pikdcobajohdjlhcohgkenhkjedgdcpo'},
-      {a:'Albert', d:'Research project using GPT-3 to help train a custom transformer.', y:'2023', href:'https://github.com/Tennis-Ball/Albert'},
       {a:'Text2Notes', d:'GPT-3 tool converting textbook prose into topic-broken notes.', y:'2022–23'},
-      {a:'Melting Point Estimator', d:'TensorFlow network predicting molecular melting points from SMILES + mass.', y:'2022', href:'https://github.com/Tennis-Ball/MP-Predictor'},
       {a:'Raytracer', d:'A raytracer built from scratch in JavaScript, with Tony Zhang.', y:'2022', href:'https://tony1324.github.io/raytracer/'},
-      {a:'Filess', d:'Static asset host on Flask + AWS S3 with custom share links.', y:'2022', href:'https://filess.org'},
-      {a:'EMNIST net', d:'Neural net from scratch in NumPy — 96%+ on EMNIST Balanced.', y:'2022', href:'https://tennis-ball.github.io/Character-Classification/'},
+      {a:'Filess', d:'Asset-sharing platform on Flask + AWS S3, deployed on Heroku.', y:'2022', href:'https://filess.org'},
+      {a:'EMNIST net', d:'Neural network from scratch in NumPy — 96%+ on EMNIST Balanced (6th best).', y:'2022', href:'https://tennis-ball.github.io/Character-Classification/'},
+      {a:'Anchor', d:'Stock-insights platform — daily cloud-trained TensorFlow regression models on EC2/S3, served with Django. Grew to 275+ returning users.', y:'2021'},
+      {a:'Computer-vision app', d:'React Native app using Google’s MobileNet for species/object ID, QR scanning, and colour detection.', y:'2021'},
+      {a:'Fencing analysis tool', d:'CNNs (TensorFlow + OpenCV) that strip non-fencing frames from bout video — cut watch time by 43%.', y:'2021'},
+      {a:'Music generator', d:'Karpathy-style LSTM in TensorFlow generating original melodies and lyrics from scraped songs.', y:'2021'},
     ]},
   { key:'finance', t:'Finance', idx:'Ⅲ · Markets',
-    b:'President of the Minutemen Alternative Investment Fund.',
-    lede:'Leading the quant arm at UMass — derivatives research and live trading.',
+    b:'Head of Quantitative Finance, Minutemen Alternative Investment Fund.',
+    lede:'Led the quant arm at UMass — running a live portfolio and a trading desk.',
     li:[
-      {a:'MAIF — President', d:'Leading the premier quantitative finance fund at UMass.', y:'2024—', href:'https://www.minutemenalternativeinvestmentfund.com/'},
-      {a:'Derivatives desk', d:'Led a derivatives trading team as a quantitative researcher.', y:'2024'},
-      {a:'Gamma scalping', d:'Deployed live options algorithms generating ~3% alpha against SPY.', y:'2024'},
-      {a:'Markets', d:'Researching how politics, economics, and events shape equities, ETFs, and increasingly fixed income & FX.', y:'ongoing'},
+      {a:'MAIF — Head of Quantitative Finance', d:'Ran a $100k portfolio to a 40% annualized return; recruited and trained 24 analysts & traders; built the curriculum and oversaw 8 strategies across equities, options, and futures.', y:'2024–25', href:'https://www.minutemenalternativeinvestmentfund.com/'},
+      {a:'MAIF — Quantitative Researcher', d:'Led a derivatives team running gamma-scalping and delta-hedging algorithms — ~1% alpha vs. the S&P 500 at a 2.08 Sharpe over four months live.', y:'2024'},
+      {a:'Markets', d:'Researching how politics, economics, and events move equities, options, and futures.', y:'ongoing'},
     ]},
   { key:'education', t:'Education', idx:'Ⅳ · Study',
-    b:'Computer science & mathematics at UMass Amherst.',
-    lede:'A dual degree, with a statistics & data-science concentration.',
+    b:'Two B.S. degrees at UMass Amherst — graduated at eighteen.',
+    lede:'Computer science and mathematics in two years, with a statistics & data-science concentration.',
     li:[
-      {a:'UMass Amherst', d:'Dual degree — computer science and mathematics (statistics & data-science concentration).', y:'—'},
-      {a:'Coursework', d:'Machine Learning, NLP, Algorithms, Data Structures, Scientific Computing, Statistics II, Linear Algebra.', y:''},
-      {a:'Harvard Extension', d:'Database Systems and Principles of Big Data Processing.', y:''},
-      {a:'Toolkit', d:'Python (expert); Java, C, JavaScript, SQL. TensorFlow, Pandas, NumPy. AWS, GCP, Azure. React, Flask, Django.', y:''},
-      {a:'Languages', d:'English (native), Mandarin (professional), Korean (elementary).', y:''},
+      {a:'UMass Amherst — B.S. Computer Science', d:'Graduated with a 3.95 GPA. Independent study with Prof. Jaime Dávila: recommendation-system models for clothing selection.', y:'2023–25'},
+      {a:'UMass Amherst — B.S. Mathematics', d:'3.9 GPA, concentration in statistics and data science.', y:'2023–25'},
+      {a:'Boston Latin School', d:'Left after grade 10 for university. State épée champion; 4.41 GPA.', y:'2019–23'},
+      {a:'Toolkit', d:'Python (expert); Java, C, JavaScript, SQL. TensorFlow, Pandas, NumPy. AWS, GCP, Azure. React, Flask, Django, React Native.', y:''},
     ]},
   { key:'fencing', t:'Fencing', idx:'Ⅴ · Sport',
     b:'Épée, at the national level for seven years.',
@@ -72,7 +73,7 @@ const LEAVES = [
     ]},
   { key:'contact', t:'Contact', idx:'Ⅶ · Reach',
     b:'The quickest way is email.',
-    lede:'Say hello — or take the one-page résumé.',
+    lede:'Say hello — or take the one-page résumé. Always happy to chat.',
     li:[
       {a:'Email', d:'choi.mason@gmail.com', y:'→', href:'mailto:choi.mason@gmail.com'},
       {a:'GitHub', d:'github.com/Tennis-Ball', y:'→', href:'https://github.com/Tennis-Ball'},
@@ -90,11 +91,11 @@ export default function Home() {
     <>
       <Head>
         <title>Mason Choi</title>
-        <meta name="description" content="Mason Choi — engineer working in data infrastructure, machine learning, and fashion AI. Quantitative finance, national-level épée, and maker." />
+        <meta name="description" content="Mason Choi — software engineer in Web3 cybersecurity at Olympix. Two degrees in computer science and mathematics by eighteen; quantitative finance, machine learning, data engineering, and national-level épée." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
         <meta property="og:title" content="Mason Choi" />
-        <meta property="og:description" content="Engineer · data infrastructure, ML, and fashion AI." />
+        <meta property="og:description" content="Software engineer · Web3 security at Olympix. Quant, builder, fencer." />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#E9E4D8" />
       </Head>
