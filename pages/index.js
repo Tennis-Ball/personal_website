@@ -6,74 +6,67 @@ import { useEffect } from 'react'
    ============================================================ */
 const HOME = {
   t: 'Mason Choi', idx: 'Software Engineer · Web3 security',
-  b: 'Building the formal-methods engine of the future at Olympix. Two degrees in CS & math by eighteen — and a habit of chasing the hardest problems.',
+  b: 'Building the formal-methods engine of the future at Olympix. Two degrees in computer science and mathematics by eighteen.',
 }
 
 const LEAVES = [
   { key:'work', t:'Work', idx:'Ⅰ · Employment',
-    b:'Engineering roles — most recent first.',
+    b:'Five years of engineering roles.',
     lede:'From SEC-scraping ETL to live financial ML, and now formal methods for smart-contract security.',
     li:[
-      {a:'Olympix — Software Engineer', d:'Building the formal-methods engine of the future; Web3 cybersecurity, on-site in New York.', y:'2025—'},
-      {a:'AlphaSeeker AI — ML Engineer', d:'Automated the training, fine-tuning, and prediction of 12 statistical models; built the entire backend of alphaseekerai.com.', y:'2024—', href:'https://alphaseekerai.com'},
-      {a:'Atlantic Prime Estates — Data Engineer', d:'ML models for property appreciation and zipcode-level profitability; pipelines for regional valuation and rent estimation.', y:'2023–24', href:'https://www.atlanticprimeestates.com/'},
-      {a:'Solve Advisors — Data Engineer / Analyst', d:'Built a BDC statement parser that saved ~848 hrs/yr; automated bond & loan pricing and treasury scraping on EC2 with Google OAuth.', y:'2022–23', href:'https://solveadvisors.com/'},
-      {a:'Advantage Data — Junior Data Engineer', d:'Automated 10-Q/10-K SEC extraction; deployed GCP ETL pipelines into BigQuery.', y:'2021–22', href:'https://advantagedata.com/'},
+      {a:'Olympix — Software Engineer', d:'Building the formal-methods engine of the future. Web3 cybersecurity, in New York.', y:'2025—'},
+      {a:'AlphaSeeker AI — ML Engineer', d:'Automated training and inference for 12 statistical models; built the backend end to end.', y:'2024—', href:'https://alphaseekerai.com'},
+      {a:'Atlantic Prime Estates — Data Engineer', d:'ML for property appreciation and zipcode-level profitability, plus the pipelines feeding it.', y:'2023–24', href:'https://www.atlanticprimeestates.com/'},
+      {a:'Solve Advisors — Data Engineer', d:'A BDC statement parser that saved ~848 hrs/yr; automated bond, loan, and treasury pricing.', y:'2022–23', href:'https://solveadvisors.com/'},
+      {a:'Advantage Data — Data Engineer', d:'Automated 10-Q/10-K SEC extraction; GCP ETL pipelines into BigQuery.', y:'2021–22', href:'https://advantagedata.com/'},
     ]},
   { key:'projects', t:'Projects', idx:'Ⅱ · Register',
     b:'A register of things built.',
-    lede:'Selected work across mobile, ML, and the web. More on GitHub.',
+    lede:'Selected work. More on GitHub.',
     li:[
-      {a:'Vestio', d:'TikTok-style clothes-shopping app with in-house virtual try-on — upload a photo, try clothing on yourself, get recommendations, and share outfits.', y:'2024–25'},
-      {a:'Campus Quad', d:'Mobile app bringing a college campus together — social feeds and a goods/services marketplace.', y:'2023–24'},
+      {a:'Vestio', d:'A clothes-shopping app with in-house virtual try-on — upload a photo and wear the catalogue.', y:'2024–25'},
       {a:'Lexia', d:'Chrome extension improving online-text readability, made for a friend with dyslexia.', y:'2023', href:'https://chromewebstore.google.com/detail/pikdcobajohdjlhcohgkenhkjedgdcpo'},
-      {a:'Text2Notes', d:'GPT-3 tool converting textbook prose into topic-broken notes.', y:'2022–23'},
-      {a:'Raytracer', d:'A raytracer built from scratch in JavaScript, with Tony Zhang.', y:'2022', href:'https://tony1324.github.io/raytracer/'},
-      {a:'Filess', d:'Asset-sharing platform on Flask + AWS S3, deployed on Heroku.', y:'2022', href:'https://filess.org'},
-      {a:'EMNIST net', d:'Neural network from scratch in NumPy — 96%+ on EMNIST Balanced (6th best).', y:'2022', href:'https://tennis-ball.github.io/Character-Classification/'},
-      {a:'Anchor', d:'Stock-insights platform — daily cloud-trained TensorFlow regression models on EC2/S3, served with Django. Grew to 275+ returning users.', y:'2021'},
-      {a:'Computer-vision app', d:'React Native app using Google’s MobileNet for species/object ID, QR scanning, and colour detection.', y:'2021'},
-      {a:'Fencing analysis tool', d:'CNNs (TensorFlow + OpenCV) that strip non-fencing frames from bout video — cut watch time by 43%.', y:'2021'},
-      {a:'Music generator', d:'Karpathy-style LSTM in TensorFlow generating original melodies and lyrics from scraped songs.', y:'2021'},
+      {a:'Raytracer', d:'Built from scratch in JavaScript, with Tony Zhang.', y:'2022', href:'https://tony1324.github.io/raytracer/'},
+      {a:'Filess', d:'Asset-sharing platform on Flask and AWS S3.', y:'2022', href:'https://filess.org'},
+      {a:'EMNIST net', d:'A neural network from scratch in NumPy — 96%+ on EMNIST Balanced, 6th on the benchmark.', y:'2022', href:'https://tennis-ball.github.io/Character-Classification/'},
+      {a:'Anchor', d:'Stock predictions from TensorFlow models retrained nightly on EC2. Grew to 275+ returning users.', y:'2021'},
     ]},
   { key:'finance', t:'Finance', idx:'Ⅲ · Markets',
-    b:'Head of Quantitative Finance, Minutemen Alternative Investment Fund.',
-    lede:'Led the quant arm at UMass — running a live portfolio and a trading desk.',
+    b:'Head of Quantitative Finance at the Minutemen fund.',
+    lede:'Led the quant arm at UMass — a live portfolio and a trading desk.',
     li:[
-      {a:'MAIF — Head of Quantitative Finance', d:'Ran a $100k portfolio to a 40% annualized return; recruited and trained 24 analysts & traders; built the curriculum and oversaw 8 strategies across equities, options, and futures.', y:'2024–25', href:'https://www.minutemenalternativeinvestmentfund.com/'},
-      {a:'MAIF — Quantitative Researcher', d:'Led a derivatives team running gamma-scalping and delta-hedging algorithms — ~1% alpha vs. the S&P 500 at a 2.08 Sharpe over four months live.', y:'2024'},
-      {a:'Markets', d:'Researching how politics, economics, and events move equities, options, and futures.', y:'ongoing'},
+      {a:'MAIF — Head of Quantitative Finance', d:'Ran a $100k portfolio to a 40% annualized return; recruited and trained 24 analysts and traders across 8 strategies.', y:'2024–25', href:'https://www.minutemenalternativeinvestmentfund.com/'},
+      {a:'MAIF — Quantitative Researcher', d:'Led a derivatives team running gamma-scalping and delta-hedging — ~1% alpha vs. the S&P 500 at a 2.08 Sharpe, live.', y:'2024'},
     ]},
   { key:'education', t:'Education', idx:'Ⅳ · Study',
-    b:'Two B.S. degrees at UMass Amherst — graduated at eighteen.',
-    lede:'Computer science and mathematics in two years, with a statistics & data-science concentration.',
+    b:'Two degrees at UMass Amherst, at eighteen.',
+    lede:'Computer science and mathematics in two years.',
     li:[
-      {a:'UMass Amherst — B.S. Computer Science', d:'Graduated with a 3.95 GPA. Independent study with Prof. Jaime Dávila: recommendation-system models for clothing selection.', y:'2023–25'},
-      {a:'UMass Amherst — B.S. Mathematics', d:'3.9 GPA, concentration in statistics and data science.', y:'2023–25'},
-      {a:'Boston Latin School', d:'Left after grade 10 for university. State épée champion; 4.41 GPA.', y:'2019–23'},
-      {a:'Toolkit', d:'Python (expert); Java, C, JavaScript, SQL. TensorFlow, Pandas, NumPy. AWS, GCP, Azure. React, Flask, Django, React Native.', y:''},
+      {a:'B.S. Computer Science', d:'3.95 GPA. Independent study with Prof. Jaime Dávila on recommender models for clothing selection.', y:'2023–25'},
+      {a:'B.S. Mathematics', d:'3.9 GPA, concentration in statistics and data science.', y:'2023–25'},
+      {a:'Boston Latin School', d:'Left after grade 10 for university. State épée champion.', y:'2019–23'},
+      {a:'Toolkit', d:'Python, Java, C, JavaScript, SQL · TensorFlow, Pandas, NumPy · AWS, GCP · React, Flask, Django.', y:''},
     ]},
   { key:'fencing', t:'Fencing', idx:'Ⅴ · Sport',
     b:'Épée, at the national level for seven years.',
     lede:'Nationally ranked, a state champion, and still on the strip.',
     li:[
-      {a:'Individual', d:'Peaked 13th in the nation and 1st regionally (Cadet/U17); 5th regionally Junior (U20).', y:'2016–23'},
-      {a:'Boston Latin', d:'Varsity since 7th grade; Massachusetts state champions, exchanging A/B positions.', y:'2019–23'},
-      {a:'UMass club', d:'1st place at the Smith individual invitational.', y:'2023—'},
+      {a:'Individual', d:'Peaked 13th in the nation and 1st regionally at Cadet; 5th regionally at Junior.', y:'2016–23'},
+      {a:'Boston Latin', d:'Varsity from 7th grade; Massachusetts state champions.', y:'2019–23'},
+      {a:'UMass club', d:'1st at the Smith individual invitational.', y:'2023—'},
     ]},
   { key:'life', t:'Life', idx:'Ⅵ · Off the clock',
     b:'Making things, and being outside.',
     lede:'Objects that move, places to go, and the occasional 4AM fishing trip.',
     li:[
-      {a:'3D design & printing', d:'A printed robotic prosthetic hand in an experimental printed fabric.', y:''},
-      {a:'Kinetic art', d:'A mechatronic kinetic sculpture inspired by artist Willem van Weeghel.', y:''},
+      {a:'Making', d:'A 3D-printed robotic prosthetic hand in experimental printed fabric, and a mechatronic sculpture after Willem van Weeghel.', y:''},
       {a:'Travel', d:'Over 30 countries across four continents.', y:''},
       {a:'Outside', d:'Climbing, and 4AM fishing for bass and carp.', y:''},
       {a:'Service', d:'ZERO HERO Award for hunger-relief work; weekly meals with Boston’s HOME ministry.', y:'2021–23'},
     ]},
   { key:'contact', t:'Contact', idx:'Ⅶ · Reach',
     b:'The quickest way is email.',
-    lede:'Say hello — or take the one-page résumé. Always happy to chat.',
+    lede:'Say hello — or take the one-page résumé.',
     li:[
       {a:'Email', d:'choi.mason@gmail.com', y:'→', href:'mailto:choi.mason@gmail.com'},
       {a:'GitHub', d:'github.com/Tennis-Ball', y:'→', href:'https://github.com/Tennis-Ball'},
@@ -244,10 +237,11 @@ function initFan() {
     fangroup.appendChild(t); tags.push(t)
   })
 
+  // Lifted so the tassel always hangs clear of the bottom edge.
   const geo = () => ({
-    pivotX: innerWidth / 2, pivotY: innerHeight * 0.9,
-    R: Math.min(innerHeight * 0.585, innerWidth * 0.45),
-    W: Math.max(44, Math.min(90, innerWidth * 0.058)),
+    pivotX: innerWidth / 2, pivotY: innerHeight * 0.82,
+    R: Math.min(innerHeight * 0.50, innerWidth * 0.42),
+    W: Math.max(42, Math.min(86, innerWidth * 0.055)),
   })
 
   // Stable, angle-based hover: which sector is the cursor in? The leaves can
@@ -294,8 +288,13 @@ function initFan() {
       bl.style.left = pivotX + 'px'; bl.style.top = (pivotY - R) + 'px'; bl.style.width = W + 'px'; bl.style.height = R + 'px'
       bl.style.transform = `translate(-50%, ${(-bl._lift).toFixed(2)}px) rotate(${bl._ang.toFixed(3)}deg)`
       bl.style.setProperty('--lb', bl._br.toFixed(3))
-      const rad = bl._ang * Math.PI / 180, tipR = R + 30, tx = pivotX + Math.sin(rad) * tipR, ty = pivotY - Math.cos(rad) * tipR
-      tags[i].style.left = tx + 'px'; tags[i].style.top = ty + 'px'
+      // Label sits a fixed gap beyond the leaf's *actual* tip — the lift is
+      // included, so a hovered leaf can never rise into its own text. Side
+      // labels anchor outward instead of centring, so they never sit on the leaf.
+      const rad = bl._ang * Math.PI / 180, s = Math.sin(rad), c = Math.cos(rad), gap = 34
+      tags[i].style.left = (pivotX + s * (R + gap)) + 'px'
+      tags[i].style.top = (pivotY - bl._lift - c * (R + gap)) + 'px'
+      tags[i].style.transform = `translate(${s > 0.34 ? '0%' : s < -0.34 ? '-100%' : '-50%'}, -50%)`
       tags[i].style.opacity = (openF < 0.62 ? Math.max(0, (openF - 0.28) / 0.34) : 1).toFixed(2)
     })
     rivet.style.left = pivotX + 'px'; rivet.style.top = pivotY + 'px'
